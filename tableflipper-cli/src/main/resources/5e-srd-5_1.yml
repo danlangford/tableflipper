@@ -1,0 +1,467 @@
+tables:
+  backgrounds/acolyte/personality_trait:
+    roll: 1d8
+    results:
+      1: I idolize a particular hero of my faith, and constantly refer to that person’s deeds and example
+      2: I can find common ground between the fiercest enemies, empathizing with them and always working toward peace.
+      3: I see omens in every event and action. The gods try to speak to us, we just need to listen
+      4: Nothing can shake my optimistic attitude.
+      5: I quote (or misquote) sacred texts and proverbs in almost every situation.
+      6: I am tolerant (or intolerant) of other faiths and respect (or condemn) the worship of other gods.
+      7: I’ve enjoyed fine food, drink, and high society among my temple’s elite. Rough living grates on me.
+      8: I’ve spent so long in the temple that I have little practical experience dealing with people in the outside world.
+  backgrounds/acolyte/ideal:
+    roll: 1d6
+    results:
+      1: Tradition. The ancient traditions of worship and sacrifice must be preserved and upheld. (Lawful)
+      2: Charity. I always try to help those in need, no matter what the personal cost. (Good)
+      3: Change. We must help bring about the changes the gods are constantly working in the world. (Chaotic)
+      4: Power. I hope to one day rise to the top of my faith’s religious hierarchy. (Lawful)
+      5: Faith. I trust that my deity will guide my actions. I have faith that if I work hard, things will go well. (Lawful)
+      6: Aspiration. I seek to prove myself worthy of my god’s favor by matching my actions against his or her teachings. (Any)
+  backgrounds/acolyte/bond:
+    roll: 1d6
+    results:
+      1: I would die to recover an ancient relic of my faith that was lost long ago.
+      2: I will someday get revenge on the corrupt temple hierarchy who branded me a heretic.
+      3: I owe my life to the priest who took me in when my parents died.
+      4: Everything I do is for the common people.
+      5: I will do anything to protect the temple where I served.
+      6: I seek to preserve a sacred text that my enemies consider heretical and seek to destroy.
+  backgrounds/acolyte/flaw:
+    roll: 1d6
+    results:
+      1: I judge others harshly, and myself even more severely.
+      2: I put too much trust in those who wield power within my temple’s hierarchy.
+      3: My piety sometimes leads me to blindly trust those that profess faith in my god.
+      4: I am inflexible in my thinking.
+      5: I am suspicious of strangers and expect the worst of them.
+      6: Once I pick a goal, I become obsessed with it to the detriment of everything else in my life.
+  spells/confusion:
+    roll: 1d10
+    results:
+      1: The creature uses all its movement to move in a random direction. To determine the direction, roll a d8 and assign a direction to each die face. The creature doesn’t take an action this turn
+      2-6: The creature doesn’t move or take actions this turn.
+      7-8: The creature uses its action to make a melee attack against a randomly determined creature within its reach. If there is no creature within its reach, the creature does nothing this turn.
+      9-10: The creature can act and move normally.
+  spells/reincarnate:
+    roll: 1d100
+    results:
+      1-4: Dragonborn
+      5-13: Dwarf, hill
+      14-21: Dwarf, mountain
+      22-25: Elf, dark
+      26-34: Elf, high
+      35-42: Elf, wood
+      43-46: Gnome, forest
+      47-52: Gnome, rock
+      53-56: Half-elf
+      57-60: Half-orc
+      61-68: Halfling, lightfoot
+      69-76: Halfling, stout
+      77-96: Human
+      97-00: Tiefling
+  madness/short_term:
+    roll: 1d100
+    results:
+      1-20: The character retreats into his or her mind and becomes paralyzed. The effect ends if the character takes any damage.
+      21-30: The character becomes incapacitated and spends the duration screaming, laughing, or weeping.
+      31-40: The character becomes frightened and must use his or her action and movement each round to flee from the source of the fear.
+      41-50: The character begins babbling and is incapable of normal speech or spellcasting.
+      51-60: The character must use his or her action each round to attack the nearest creature.
+      61-70: The character experiences vivid hallucinations and has disadvantage on ability checks.
+      71-75: The character does whatever anyone tells him or her to do that isn't obviously self-destructive.
+      76-80: The character experiences an overpowering urge to eat something strange such as dirt, slime, or offal.
+      81-90: The character is stunned.
+      91-100: The character falls unconscious.
+  madness/long_term:
+    roll: 1d100
+    results:
+      1-10: The character feels compelled to repeat a specific activity over and over, such as washing hands, touching things, praying, or counting coins.
+      11-20: The character experiences vivid hallucinations and has disadvantage on ability checks.
+      21-30: The character suffers extreme paranoia. The character has disadvantage on Wisdom and Charisma checks.
+      31-40: The character regards something (usually the source of madness) with intense revulsion, as if affected by the antipathy effect of the antipathy/sympathy spell.
+      41-45: The character experiences a powerful delusion. Choose a potion. The character imagines that he or she is under its effects.
+      46-55: The character becomes attached to a "lucky charm," such as a person or an object, and has disadvantage on attack rolls, ability checks, and saving throws while more than 30 feet from it.
+      56-65: The character is blinded (25%) or deafened (75%).
+      66-75: The character experiences uncontrollable tremors or tics, which impose disadvantage on attack rolls, ability checks, and saving throws that involve Strength or Dexterity.
+      76-85: The character suffers from partial amnesia. The character knows who he or she is and retains racial traits and class features, but doesn't recognize other people or remember anything that happened before the madness took effect.
+      86-90: Whenever the character takes damage, he or she must succeed on a DC 15 Wisdom saving throw or be affected as though he or she failed a saving throw against the confusion spell. The confusion effect lasts for 1 minute.
+      91-95: The character loses the ability to speak.
+      96-100: The character falls unconscious. No amount of jostling or damage can wake the character.
+  madness/indefinite:
+    roll: 1d100
+    results:
+      1-15: "\"Being drunk keeps me sane.\""
+      16-25: "\"I keep whatever I find.\""
+      26-30: "\"I try to become more like someone else I know--adopting his or her style of dress, mannerisms, and name.\""
+      31-35: "\"I must bend the truth, exaggerate, or outright lie to be interesting to other people.\""
+      36-45: "\"Achieving my goal is the only thing of interest to me, and I'll ignore everything else to pursue it.\""
+      46-50: "\"I find it hard to care about anything that goes on around me.\""
+      51-55: "\"I don't like the way people judge me all the time.\""
+      56-70: "\"I am the smartest, wisest, strongest, fastest, and most beautiful person I know.\""
+      71-80: "\"I am convinced that powerful enemies are hunting me, and their agents are everywhere I go. I am sure they're watching me all the time.\""
+      81-85: "\"There's only one person I can trust. And only I can see this special friend.\""
+      86-95: "\"I can't take anything seriously. The more serious the situation, the funnier I find it.\""
+      96-100: "\"I've discovered that I really like killing people.\""
+  items/armor_of_resistance:
+    roll: 1d10
+    results:
+      1: Acid
+      2: Cold
+      3: Fire
+      4: Force
+      5: Lightning
+      6: Necrotic
+      7: Poison
+      8: Psychic
+      9: Radiant
+      10: Thunder
+  items/bag_of_beans:
+    roll: 1d100
+    results:
+      1: 5d4 toadstools sprout. If a creature eats a toadstool, roll any die. On an odd roll, the eater must succeed on a DC 15 Constitution saving throw or take <roll 5d6> poison damage and become poisoned for 1 hour. On an even roll, the eater gains <roll 5d6> temporary hit points for 1 hour.
+      02-10: A geyser erupts and spouts water, beer, berry juice, tea, vinegar, wine, or oil (GM's choice) 30 feet into the air for <roll 1d12> rounds.
+      11-20: A treant sprouts. There's a 50 percent chance that the treant is chaotic evil and attacks.
+      21-30: An animate, immobile stone statue in your likeness rises. It makes verbal threats against you. If you leave it and others come near, it describes you as the most heinous of villains and directs the newcomers to find and attack you. If you are on the same plane of existence as the statue, it knows where you are. The statue becomes inanimate after 24 hours.
+      31-40: A campfire with blue flames springs forth and burns for 24 hours (or until it is extinguished).
+      41-50: <roll 1d6+6> shriekers sprout
+      51-60: <roll 1d4+8> bright pink toads crawl forth. Whenever a toad is touched, it transforms into a Large or smaller monster of the GM's choice. The monster remains for 1 minute, then disappears in a puff of bright pink smoke.
+      61-70: A hungry bulette burrows up and attacks.
+      71-80: A fruit tree grows. It has <roll 1d10+20> fruit, <roll 1d8> of which act as randomly determined magic potions, while one acts as an ingested poison of the GM's choice. The tree vanishes after 1 hour. Picked fruit remains, retaining any magic for 30 days.
+      81-90: A nest of <roll 1d4+3> eggs springs up. Any creature that eats an egg must make a DC 20 Constitution saving throw. On a successful save, a creature permanently increases its lowest ability score by 1, randomly choosing among equally low scores. On a failed save, the creature takes <roll 10d6> force damage from an internal magical explosion.
+      91-99: A pyramid with a 60-foot‐square base bursts upward. Inside is a sarcophagus containing a mummy lord. The pyramid is treated as the mummy lord's lair, and its sarcophagus contains treasure of the GM's choice.
+      100: A giant beanstalk sprouts, growing to a height of the GM's choice. The top leads where the GM chooses, such as to a great view, a cloud giant's castle, or a different plane of existence.
+  items/grey_bag_of_tricks:
+    roll: 1d8
+    results:
+      1: Weasel
+      2: Giant rat
+      3: Badger
+      4: Boar
+      5: Panther
+      6: Giant badger
+      7: Dire wolf
+      8: Giant elk
+  items/rust_bag_of_tricks:
+    roll: 1d8
+    results:
+      1: Rat
+      2: Owl
+      3: Mastiff
+      4: Goat
+      5: Giant goat
+      6: Giant boar
+      7: Lion
+      8: Brown bear
+  items/tan_bag_of_tricks:
+    roll: 1d8
+    results:
+      1: Jackal
+      2: Ape
+      3: Baboon
+      4: Axe beak
+      5: Black bear
+      6: Giant weasel
+      7: Giant hyena
+      8: Tiger
+  items/candle_of_invocation:
+    roll: 1d20
+    results:
+      1-2: Chaotic evil
+      3-4: Chaotic neutral
+      5-7: Chaotic good
+      8-9: Neutral evil
+      10-11: Neutral
+      12-13: Neutral good
+      14-15: Lawful evil
+      16-17: Lawful neutral
+      18-20: Lawful good
+  items/deck_of_illusions:
+    roll: 1d34
+    results:
+      1: (Ace of hearts) Red dragon
+      2: (King of hearts) Knight and four guards
+      3: (Queen of hearts) Succubus or incubus
+      4: (Jack of hearts) Druid
+      5: (Ten of hearts) Cloud giant
+      6: (Nine of hearts) Ettin
+      7: (Eight of hearts) Bugbear
+      8: (Two of hearts) Goblin
+      9: (Ace of diamonds) Beholder
+      10: (King of diamonds) Archmage and mage apprentice
+      11: (Queen of diamonds) Night hag
+      12: (Jack of diamonds) Assassin
+      13: (Ten of diamonds) Fire giant
+      14: (Nine of diamonds) Ogre mage
+      15: (Eight of diamonds) Gnoll
+      16: (Two of diamonds) Kobold
+      17: (Ace of spades) Lich
+      18: (King of spades) Priest and two acolytes
+      19: (Queen of spades) Medusa
+      20: (Jack of spades) Veteran
+      21: (Ten of spades) Frost giant
+      22: (Nine of spades) Troll
+      23: (Eight of spades) Hobgoblin
+      24: (Two of spades) Goblin
+      25: (Ace of clubs) Iron golem
+      26: (King of clubs) Bandit captain and three bandits
+      27: (Queen of clubs) Erinyes
+      28: (Jack of clubs) Berserker
+      29: (Ten of clubs) Hill giant
+      30: (Nine of clubs) Ogre
+      31: (Eight of clubs) Orc
+      32: (Two of clubs) Kobold
+      33-34: (Joker) You (the deck's owner)
+  items/deck_of_many_things_13:
+    roll: 1d13
+    results:
+      1: (King of diamonds) <template domt/Sun>
+      2: (Queen of diamonds) <template domt/Moon>
+      3: (Jack of diamonds) <template domt/Star>
+      4: (King of hearts) <template domt/Throne>
+      5: (Queen of hearts) <template domt/Key>
+      6: (Jack of hearts) <template domt/Knight>
+      7: (King of clubs) <template domt/The Void>
+      8: (Queen of clubs) <template domt/Flames>
+      9: (Jack of clubs) <template domt/Skull>
+      10: (King of spades) <template domt/Ruin>
+      11: (Queen of spades) <template domt/Euryale>
+      12: (Jack of spades) <template domt/Rogue>
+      13: (Joker w/o TM) <template domt/Jester>
+  items/deck_of_many_things_22:
+    roll: 1d22
+    results:
+      1: (Ace of diamonds) <template domt/Vizier>
+      2: (King of diamonds) <template domt/Sun>
+      3: (Queen of diamonds) <template domt/Moon>
+      4: (Jack of diamonds) <template domt/Star>
+      5: (Two of diamonds) <template domt/Comet>
+      6: (Ace of hearts) <template domt/The_Fates>
+      7: (King of hearts) <template domt/Throne>
+      8: (Queen of hearts) <template domt/Key>
+      9: (Jack of hearts) <template domt/Knight>
+      10: (Two of hearts) <template domt/Gem>
+      11: (Ace of clubs) <template domt/Talons>
+      12: (King of clubs) <template domt/The_Void>
+      13: (Queen of clubs) <template domt/Flames>
+      14: (Jack of clubs) <template domt/Skull>
+      15: (Two of clubs) <template domt/Idiot>
+      16: (Ace of spades) <template domt/Donjon>
+      17: (King of spades) <template domt/Ruin>
+      18: (Queen of spades) <template domt/Euryale>
+      19: (Jack of spades) <template domt/Rogue>
+      20: (Two of spades) <template domt/Balance>
+      21: (Joker w/TM) <template domt/Fool>
+      22: (Joker w/o TM) <template domt/Jester>
+  items/efreeti_bottle:
+    roll: 1d100
+    results:
+      1-10: The efreeti attacks you. After fighting for 5 rounds, the efreeti disappears, and the bottle loses its magic.
+      11-90: The efreeti serves you for 1 hour, doing as you command. Then the efreeti returns to the bottle, and a new stopper contains it. The stopper can't be removed for 24 hours. The next two times the bottle is opened, the same effect occurs. If the bottle is opened a fourth time, the efreeti escapes and disappears, and the bottle loses its magic.
+      91-100: The efreeti can cast the wish spell three times for you. It disappears when it grants the final wish or after 1 hour, and the bottle loses its magic.
+  items/feather_token:
+    roll: 1d100
+    results:
+      1-20: <template feather_token/Anchor>
+      21-35: <template feather_token/Bird>
+      36-50: <template feather_token/Fan>
+      51-65: <template feather_token/Swan_Boat>
+      66-90: <template feather_token/Tree>
+      91-100: <template feather_token/Whip>
+  items/horn_of_valhalla:
+    roll: 1d100
+    results:
+      1-40: Silver Horn, <roll 2d4+2> Berserkers
+      41-75: Brass Horn, <roll 3d4+3> Berserkers Requires proficiency with all simple weapons
+      76-90: Bronze Horn, <roll 4d4+4> Berserkers Requires proficiency with all medium armor
+      91-100: Iron Horn, <roll 5d4+5> Berserkers Requires proficiency with all martial weapons
+  items/iron_flask:
+    roll: 1d100
+    results:
+      1-50: Empty
+      51-54: Demon (type 1)
+      55-58: Demon (type 2)
+      59-62: Demon (type 3)
+      63-64: Demon (type 4)
+      65: Demon (type 5)
+      66: Demon (type 6)
+      67: Deva
+      68-69: Devil (greater)
+      70-73: Devil (lesser)
+      74-75: Djinni
+      76-77: Efreeti
+      78-83: Elemental (any)
+      84-86: Invisible Stalker
+      87-90: Night hag
+      91: Planetar
+      92-95: Salamander
+      96: Solar
+      97-99: Succubus/incubus
+      100: Xorn
+  items/manual_of_golems:
+    roll: 1d20
+    results:
+      1-5: Manual of Clay Golems takes 30 days and costs 65,000 GP
+      6-17: Manual of Flesh Golems takes 60 days and costs 50,000 GP
+      18: Manual of Iron Golems takes 120 days and costs 100,000 GP
+      19-20: Manual of Stone Golems takes 90 days and costs 80,000 GP
+  items/necklace_of_prayer_beads:
+    roll: 1d20
+    results:
+      1-6: Bead of Blessing contains spell Bless
+      7-12: Bead of Curing contains spell Cure wounds (2nd level) or lesser restoration
+      13-16: Bead of Favor contains spell Greater restoration
+      17-18: Bead of Smiting contains spell Branding smite
+      19: Bead of Summons contains spell Planar ally
+      20: Bead of Wind walking contains spell Wind walk
+  items/potion_of_resistance:
+    roll: 1d10
+    results:
+      1: Acid
+      2: Cold
+      3: Fire
+      4: Force
+      5: Lightning
+      6: Necrotic
+      7: Poison
+      8: Psychic
+      9: Radiant
+      10: Thunder
+  items/ring_of_resistance:
+    roll: 1d10
+    results:
+      1: Acid. Perl gem resists Acid damage
+      2: Cold. Tourmaline gem resists Cold damage
+      3: Fire. Garnet gem resists Fire damage
+      4: Force. Sapphire gem resists Force damage
+      5: Lightning. Citrine gem resists Lightning damage
+      6: Necrotic. Jet gem resists Necrotic damage
+      7: Poison. Amethyst gem resists Poison damage
+      8: Psychic. Jade gem resists Psychic damage
+      9: Radiant. Topaz gem resists Radiant damage
+      10: Thunder. Spinel gem resists Thunder damage
+  items/robe_of_useful_items:
+    roll: 1d100
+    results:
+      1-8: Bag of 100 gp
+      9-15: Silver coffer (1 foot long, 6 inches wide and deep) worth 500 gp
+      16-22: Iron door (up to 10 feet wide and 10 feet high, barred on one side of your choice), which you can place in an opening you can reach; it conforms to fit the opening, attaching and hinging itself
+      23-30: 10 gems worth 100 gp each
+      31-44: Wooden ladder (24 feet long)
+      45-51: A riding horse with saddle bags
+      52-59: Pit (a cube 10 feet on a side), which you can place on the ground within 10 feet of you
+      60-68: Potion of healing (4)
+      69-75: Rowboat (12 feet long)
+      76-83: Spell scroll containing one spell of 1st to 3rd level
+      84-90: Mastiff (2)
+      91-96: Window (2 feet by 4 feet, up to 2 feet deep), which you can place on a vertical surface you can reach
+      97-100: Portable ram
+  items/sphere_of_annihalation:
+    roll: 1d100
+    results:
+      1-50: The sphere is destroyed.
+      51-85: The sphere moves through the portal or into the extradimensional space.
+      86-100: A spatial rift sends each creature and object within 180 feet of the sphere, including the sphere, to a random plane of existence.
+  items/wand_of_wonder:
+    roll: 1d100
+    results:
+      01-05: You cast slow.
+      06-10: You cast faerie fire.
+      11-15: You are stunned until the start of your next turn, believing something awesome just happened.
+      16-20: You cast gust of wind.
+      21-25: You cast detect thoughts on the target you chose. If you didn't target a creature, you instead take <roll 1d6> psychic damage.
+      26-30: You cast stinking cloud.
+      31-33: Heavy rain falls in a 60-foot radius centered on the target. The area becomes lightly obscured. The rain falls until the start of your next turn.
+      34-36: <table items/wand_of_wonder/animals> in the unoccupied space nearest the target. The animal isn't under your control and acts as it normally would.
+      37-46: You cast lightning bolt.
+      47-49: A cloud of 600 oversized butterflies fills a 30‐foot radius centered on the target. The area becomes heavily obscured. The butterflies remain for 10 minutes.
+      50-53: You enlarge the target as if you had cast enlarge/reduce. If the target can't be affected by that spell, or if you didn't target a creature, you become the target.
+      54-58: You cast darkness.
+      59-62: Grass grows on the ground in a 60‐foot radius centered on the target. If grass is already there, it grows to ten times its normal size and remains overgrown for 1 minute.
+      63-65: An object of the GM's choice disappears into the Ethereal Plane. The object must be neither worn nor carried, within 120 feet of the target, and no larger than 10 feet in any dimension.
+      66-69: You shrink yourself as if you had cast enlarge/reduce on yourself.
+      70-79: You cast fireball.
+      80-84: You cast invisibility on yourself.
+      85-87: Leaves grow from the target. If you chose a point in space as the target, leaves sprout from the creature nearest to that point. Unless they are picked off, the leaves turn brown and fall off after 24 hours.
+      88-90: A stream of <roll 1d4×10> gems, each worth 1 gp, shoots from the wand's tip in a line 30 feet long and 5 feet wide. Each gem deals 1 bludgeoning damage, and the total damage of the gems is divided equally among all creatures in the line.
+      91-95: A burst of colorful shimmering light extends from you in a 30‐foot radius. You and each creature in the area that can see must succeed on a DC 15 Constitution saving throw or become blinded for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+      96-97: The target's skin turns bright blue for <roll 1d10> days. If you chose a point in space, the creature nearest to that point is affected.
+      98-00: If you targeted a creature, it must make a DC 15 Constitution saving throw. If you didn't target a creature, you become the target and must make the saving throw. If the saving throw fails by 5 or more, the target is instantly petrified. On any other failed save, the target is restrained and begins to turn to stone. While restrained in this way, the target must repeat the saving throw at the end of its next turn, becoming petrified on a failure or ending the effect on a success. The petrification lasts until the target is freed by the greater restoration spell or similar magic.
+  items/wand_of_wonder/animals:
+    roll: 1d100
+    results:
+      01-25: a rhinoceros appears
+      26–50: an elephant appears
+      51–00: a rat appears
+  sentient/communication:
+    roll: 1d100
+    results:
+      01–60: The item communicates by transmitting emotion to the creature carrying or wielding it.
+      61–90: The item can speak, read, and understand one or more languages.
+      91–00: The item can speak, read, and understand one or more languages. In addition, the item can communicate telepathically with any character that carries or wields it.
+  sentient/senses:
+    roll: 1d4
+    results:
+      1: Hearing and normal vision out to 30 feet.
+      2: Hearing and normal vision out to 60 feet
+      3: Hearing and normal vision out to 120 feet.
+      4: Hearing and darkvision out to 120 feet.
+  sentient/alignment:
+    roll: 1d100
+    results:
+      01–15: Lawful good
+      16–35: Neutral good
+      36–50: Chaotic good
+      51–63: Lawful neutral
+      64–73: Neutral
+      74–85: Chaotic neutral
+      86–89: Lawful evil
+      90–96: Neutral evil
+      97–00: Chaotic evil
+
+  sentient/special_purpose:
+    roll: 1d10
+    results:
+      1: Aligned. The item seeks to defeat or destroy those of a diametrically opposed alignment. (Such an item is never neutral.)
+      2: Bane. The item seeks to defeat or destroy creatures of a particular kind, such as fiends, shapechangers, trolls, or wizards.
+      3: Protector. The item seeks to defend a particular race or kind of creature, such as elves or druids.
+      4: Crusader. The item seeks to defeat, weaken, or destroy the servants of a particular deity.
+      5: Templar. The item seeks to defend the servants and interests of a particular deity.
+      6: Destroyer. The item craves destruction and goads its user to fight arbitrarily.
+      7: Glory Seeker. The item seeks renown as the greatest magic item in the world, by establishing its user as a famous or notorious figure.
+      8: Lore Seeker. The item craves knowledge or is determined to solve a mystery, learn a secret, or unravel a cryptic prophecy.
+      9: Destiny Seeker. The item is convinced that it and its wielder have key roles to play in future events.
+      10: Creator Seeker. The item seeks its creator and wants to understand why it was created.
+
+
+templates:
+  domt/Balance: Balance. Your mind suffers a wrenching alteration, causing your alignment to change. Lawful becomes chaotic, good becomes evil, and vice versa. If you are true neutral or unaligned, this card has no effect on you.
+  domt/Comet: Comet. If you single-handedly defeat the next hostile monster or group of monsters you encounter, you gain experience points enough to gain one level. Otherwise, this card has no effect.
+  domt/Donjon: Donjon. You disappear and become entombed in a state of suspended animation in an extradimensional sphere. Everything you were wearing and carrying stays behind in the space you occupied when you disappeared. You remain imprisoned until you are found and removed from the sphere. You can't be located by any divination magic, but a wish spell can reveal the location of your prison. You draw no more cards.
+  domt/Euryale: Euryale. The card's medusa-like visage curses you. You take a −2 penalty on saving throws while cursed in this way. Only a god or the magic of The Fates card can end this curse.
+  domt/The_Fates: The Fates. Reality's fabric unravels and spins anew, allowing you to avoid or erase one event as if it never happened. You can use the card's magic as soon as you draw the card or at any other time before you die.
+  domt/Flames: Flames. A powerful devil becomes your enemy. The devil seeks your ruin and plagues your life, savoring your suffering before attempting to slay you. This enmity lasts until either you or the devil dies.
+  domt/Fool: Fool. You lose 10,000 XP, discard this card, and draw from the deck again, counting both draws as one of your declared draws. If losing that much XP would cause you to lose a level, you instead lose an amount that leaves you with just enough XP to keep your level.
+  domt/Gem: Gem. Twenty-five pieces of jewelry worth 2,000 gp each or fifty gems worth 1,000 gp each appear at your feet.
+  domt/Idiot: Idiot. Permanently reduce your Intelligence by <roll 1d4+1> (to a minimum score of 1). You can draw one additional card beyond your declared draws.
+  domt/Jester: Jester. You gain 10,000 XP, or you can draw two additional cards beyond your declared draws.
+  domt/Key: Key. A rare or rarer magic weapon with which you are proficient appears in your hands. The GM chooses the weapon.
+  domt/Knight: Knight. You gain the service of a 4th-level fighter who appears in a space you choose within 30 feet of you. The fighter is of the same race as you and serves you loyally until death, believing the fates have drawn him or her to you. You control this character.
+  domt/Moon: Moon. You are granted the ability to cast the wish spell <roll 1d3> times.
+  domt/Rogue: Rogue. A nonplayer character of the GM's choice becomes hostile toward you. The identity of your new enemy isn't known until the NPC or someone else reveals it. Nothing less than a wish spell or divine intervention can end the NPC's hostility toward you.
+  domt/Ruin: Ruin. All forms of wealth that you carry or own, other than magic items, are lost to you. Portable property vanishes. Businesses, buildings, and land you own are lost in a way that alters reality the least. Any documentation that proves you should own something lost to this card also disappears.
+  domt/Skull: Skull. You summon an avatar of death--a ghostly humanoid skeleton clad in a tattered black robe and carrying a spectral scythe. It appears in a space of the GM's choice within 10 feet of you and attacks you, warning all others that you must win the battle alone. The avatar fights until you die or it drops to 0 hit points, whereupon it disappears. If anyone tries to help you, the helper summons its own avatar of death. A creature slain by an avatar of death can't be restored to life.
+  domt/Star: Star. Increase one of your ability scores by 2. The score can exceed 20 but can't exceed 24.
+  domt/Sun: Sun. You gain 50,000 XP, and a wondrous item (which the GM determines randomly) appears in your hands.
+  domt/Talons: Talons. Every magic item you wear or carry disintegrates. Artifacts in your possession aren't destroyed but do vanish.
+  domt/Throne: Throne. You gain proficiency in the Persuasion skill, and you double your proficiency bonus on checks made with that skill. In addition, you gain rightful ownership of a small keep somewhere in the world. However, the keep is currently in the hands of monsters, which you must clear out before you can claim the keep as yours.
+  domt/Vizier: Vizier. At any time you choose within one year of drawing this card, you can ask a question in meditation and mentally receive a truthful answer to that question. Besides information, the answer helps you solve a puzzling problem or other dilemma. In other words, the knowledge comes with wisdom on how to apply it.
+  domt/The_Void: The Void. This black card spells disaster. Your soul is drawn from your body and contained in an object in a place of the GM's choice. One or more powerful beings guard the place. While your soul is trapped in this way, your body is incapacitated. A wish spell can't restore your soul, but the spell reveals the location of the object that holds it. You draw no more cards.
+
+  feather_token/Anchor: Anchor. You can use an action to touch the token to a boat or ship. For the next 24 hours, the vessel can't be moved by any means. Touching the token to the vessel again ends the effect. When the effect ends, the token disappears.
+  feather_token/Bird: Bird. You can use an action to toss the token 5 feet into the air. The token disappears and an enormous, multicolored bird takes its place. The bird has the statistics of a roc, but it obeys your simple commands and can't attack. It can carry up to 500 pounds while flying at its maximum speed (16 miles an hour for a maximum of 144 miles per day, with a one-hour rest for every 3 hours of flying), or 1,000 pounds at half that speed. The bird disappears after flying its maximum distance for a day or if it drops to 0 hit points. You can dismiss the bird as an action.
+  feather_token/Fan: Fan. If you are on a boat or ship, you can use an action to toss the token up to 10 feet in the air. The token disappears, and a giant flapping fan takes its place. The fan floats and creates a wind strong enough to fill the sails of one ship, increasing its speed by 5 miles per hour for 8 hours. You can dismiss the fan as an action.
+  feather_token/Swan_Boat: Swan Boat. You can use an action to touch the token to a body of water at least 60 feet in diameter. The token disappears, and a 50-foot-long, 20-foot- wide boat shaped like a swan takes its place. The boat is self-propelled and moves across water at a speed of 6 miles per hour. You can use an action while on the boat to command it to move or to turn up to 90 degrees. The boat can carry up to thirty-two Medium or smaller creatures. A Large creature counts as four Medium creatures, while a Huge creature counts as nine. The boat remains for 24 hours and then disappears. You can dismiss the boat as an action.
+  feather_token/Tree: Tree. You must be outdoors to use this token. You can use an action to touch it to an unoccupied space on the ground. The token disappears, and in its place a nonmagical oak tree springs into existence. The tree is 60 feet tall and has a 5-foot-diameter trunk, and its branches at the top spread out in a 20-foot radius.
+  feather_token/Whip: Whip. You can use an action to throw the token to a point within 10 feet of you. The token disappears, and a floating whip takes its place. You can then use a bonus action to make a melee spell attack against a creature within 10 feet of the whip, with an attack bonus of +9. On a hit, the target takes <roll 1d6+5> force damage. As a bonus action on your turn, you can direct the whip to fly up to 20 feet and repeat the attack against a creature within 10 feet of it. The whip disappears after 1 hour, when you use an action to dismiss it, or when you are incapacitated or die.

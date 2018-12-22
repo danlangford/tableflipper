@@ -1,0 +1,51 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>dan.langford.tableflipper</groupId>
+        <artifactId>tableflipper</artifactId>
+        <version>${revision}</version>
+    </parent>
+    <artifactId>tableflipper-ui</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>dan.langford.tableflipper</groupId>
+            <artifactId>tableflipper-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.google.inject</groupId>
+            <artifactId>guice</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+        </dependency>
+        <!-- following needed once we get up to JAVA11 -->
+        <!--<dependency>-->
+            <!--<groupId>org.openjfx</groupId>-->
+            <!--<artifactId>javafx-controls</artifactId>-->
+            <!--<version>11.0.1</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.openjfx</groupId>-->
+            <!--<artifactId>javafx-fxml</artifactId>-->
+            <!--<version>11.0.1</version>-->
+        <!--</dependency>-->
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>dan.langford.tableflipper.ui.MainLauncher</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
