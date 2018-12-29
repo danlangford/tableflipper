@@ -21,7 +21,7 @@ public class TableFlipperApp extends Application {
         Parent root = fxmlLoader.load(getClass().getResourceAsStream("scene.fxml"));
         primaryStage.setScene(new Scene(root));
 
-        primaryStage.setTitle("JavaFX and Maven");
+        primaryStage.setTitle("Table Flipper");
         primaryStage.show();
     }
 

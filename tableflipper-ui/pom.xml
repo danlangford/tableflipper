@@ -29,12 +29,10 @@
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
-            <version>11.0.1</version>
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
-            <version>11.0.1</version>
         </dependency>
     </dependencies>
 
@@ -46,7 +44,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>dan.langford.tableflipper.ui.MainLauncher</mainClass>
+                            <mainClass>dan.langford.tableflipper.ui.ShadeLauncher</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

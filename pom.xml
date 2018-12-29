@@ -13,7 +13,7 @@
     <packaging>pom</packaging>
 
     <properties>
-        <revision>0.0.3</revision>
+        <revision>0.0.4</revision>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
 
@@ -22,6 +22,11 @@
         <slf4j.version>1.8.0-beta2</slf4j.version>
         <junit.version>5.4.0-M1</junit.version>
         <surefire.version>3.0.0-M3</surefire.version>
+        <javafx.version>11.0.1</javafx.version>
+
+        <distOutputDirectory>../target</distOutputDirectory>
+
+        <auto-gen-notice>CAUTION: this README.asc was auto created from original src/main/doc</auto-gen-notice>
     </properties>
 
     <modules>
@@ -30,6 +35,8 @@
         <module>tableflipper-ui</module>
         <!--<module>tableflipper-cli-jlink</module>-->
         <!--<module>tableflipper-ui-jlink</module>-->
+        <module>tableflipper-cli-fatjar</module>
+        <module>tableflipper-ui-fatjar</module>
     </modules>
 
     <dependencyManagement>
@@ -75,6 +82,39 @@
                 <groupId>org.junit.jupiter</groupId>
                 <artifactId>junit-jupiter-api</artifactId>
                 <version>${junit.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-controls</artifactId>
+                <version>${javafx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-fxml</artifactId>
+                <version>${javafx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-graphics </artifactId>
+                <version>${javafx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-graphics </artifactId>
+                <version>${javafx.version}</version>
+                <classifier>mac</classifier>
+            </dependency>
+            <dependency>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-graphics </artifactId>
+                <version>${javafx.version}</version>
+                <classifier>linux</classifier>
+            </dependency>
+            <dependency>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-graphics </artifactId>
+                <version>${javafx.version}</version>
+                <classifier>win</classifier>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -172,7 +212,32 @@
                     </execution>
                 </executions>
             </plugin>
-
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>readme-md</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.basedir}</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>${project.basedir}/src/main/doc</directory>
+                                    <includes>
+                                        <include>README.asc</include>
+                                    </includes>
+                                    <filtering>true</filtering>
+                                </resource>
+                            </resources>
+                            <encoding>UTF-8</encoding>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
 
