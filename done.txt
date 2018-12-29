@@ -1,0 +1,2 @@
+x 2018-12-28 add more information on Readme about building and running the applications
+x 2018-12-28 mvnw config to force travis on correct maven version
