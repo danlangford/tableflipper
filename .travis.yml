@@ -1,11 +1,15 @@
 language: java
 jdk: openjdk11
+cache:
+  directories:
+    - $HOME/.m2
 deploy:
   provider: releases
   api_key:
     secure: T0BP+4oS9yBJ/z17DW9EZmdy5D1UoSIK5GSeEZtf2esTHVO+4hmG0mdObg8JiwJs+TGRecDM0Crbm4JFjKdndf9F4CNY0Y4pUF2zbWxMAwc2wCy+Ra80jJYnzSwHLhaLf/pyS4KuzOwqQF7eUbHBQhvJCotb6TBqUd8sTQaRb1Ut8976LH33hQNiK0WY/Pd3q7sAbmGoXVrHjZrnm/A1pJPUJvNm7TFG4cVF/wizVr/Ws2C2LjP5cvxRHJJPUtOYe00C3HLK6prY1rgjmGEgJC/sEWSSNtmbY/OpRW/oaCU6bFCalp5VFW9je6bfvY3sKkn25+tjDwJyjT19QeNZtdDXFGSUnF2EkK14uzfMAdcKv9eCSd90IgmIhfIQIuniutxzzlM+BOfB+nsnahO+750fxfD51LJAOUx6WPU6Yc+65jUPBZhv0QQH8lzs6YvBkh0yrtYyMwb5nWaHIJ6Me7zbsLIp5sV0Spy+ubkPjRbGdXD9rsqW5hkZFYIF9P5+fuySX6M23PozsvReeYvgrrZ4cyOIxeQrdYhnw1xVEwxqb5QDjrTJBjsulKLi27FJGGwCCHFVEDjvLfz4GpityLKVWBR1xlag1/nu51QAMtFECHEIPxlqmyBNZZsdCl3umrGremuvlukuM+X7Fq1tDmx80vF5j7Rxxn8JSEHl01E=
-  file:
-    - target/tableflipper-cli-0.0.5.jar
-    - target/tableflipper-ui-0.0.5.jar
+  file_glob: true
+  file: ./target/tableflipper*.jar
+  skip_cleanup: true
+  overwrite: true
   on:
     tags: true

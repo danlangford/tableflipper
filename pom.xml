@@ -239,10 +239,9 @@
                             <outputDirectory>${project.basedir}</outputDirectory>
                             <resources>
                                 <resource>
-                                    <directory>${project.basedir}/src/main/root</directory>
+                                    <directory>${project.basedir}/src/main/doc</directory>
                                     <includes>
                                         <include>README.asc</include>
-                                        <include>.travis.yml</include>
                                     </includes>
                                     <filtering>true</filtering>
                                 </resource>

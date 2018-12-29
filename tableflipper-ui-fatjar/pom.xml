@@ -9,6 +9,7 @@
 
     <properties>
         <destFileName>tableflipper-ui-${revision}.jar</destFileName>
+        <multiplatform>true</multiplatform>
     </properties>
 
     <dependencies>
@@ -23,7 +24,7 @@
         <profile>
             <id>multiplatform</id>
             <activation>
-                <property><name>multiplatform</name></property>
+                <property><name>!singleos</name></property>
             </activation>
             <dependencies>
                     <dependency>
