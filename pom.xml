@@ -1,9 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0">
     <modelVersion>4.0.0</modelVersion>
     <parent>
+        <!-- this parent helps achieve reproducibility of builds across different maven versions -->
         <groupId>org.apache</groupId>
         <artifactId>apache</artifactId>
-        <version>18</version>
+        <version>22-SNAPSHOT</version>
+        <relativePath/>
     </parent>
     <groupId>dan.langford.tableflipper</groupId>
     <artifactId>tableflipper</artifactId>
@@ -11,15 +13,23 @@
     <packaging>pom</packaging>
 
     <properties>
-        <revision>0.0.2</revision>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
+        <revision>0.0.3</revision>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+
+        <lombok.version>1.18.4</lombok.version>
+        <guice.version>4.2.2</guice.version>
+        <slf4j.version>1.8.0-beta2</slf4j.version>
+        <junit.version>5.4.0-M1</junit.version>
+        <surefire.version>3.0.0-M3</surefire.version>
     </properties>
 
     <modules>
         <module>tableflipper-core</module>
         <module>tableflipper-cli</module>
         <module>tableflipper-ui</module>
+        <!--<module>tableflipper-cli-jlink</module>-->
+        <!--<module>tableflipper-ui-jlink</module>-->
     </modules>
 
     <dependencyManagement>
@@ -30,19 +40,41 @@
                 <version>${revision}</version>
             </dependency>
             <dependency>
+                <groupId>org.yaml</groupId>
+                <artifactId>snakeyaml</artifactId>
+                <version>1.24-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.inject</groupId>
+                <artifactId>javax.inject</artifactId>
+                <version>1</version>
+            </dependency>
+            <dependency>
                 <groupId>com.google.inject</groupId>
                 <artifactId>guice</artifactId>
-                <version>4.2.2</version>
+                <!-- adding classifier here doesnt actually do anything, its just a reminder that we want this classifier to make Java 11 builds easier. it does remove the ability for Guice to use reflection though -->
+                <classifier>no_aop</classifier>
+                <version>${guice.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-api</artifactId>
-                <version>1.8.0-beta2</version>
+                <version>${slf4j.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-simple</artifactId>
-                <version>1.8.0-beta2</version>
+                <version>${slf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-api</artifactId>
+                <version>${junit.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -52,10 +84,122 @@
             <plugins>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-jar-plugin</artifactId>
-                    <version>3.1.1</version>
+                    <artifactId>maven-enforcer-plugin</artifactId>
+                    <version>3.0.0-M2</version>
                 </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>versions-maven-plugin</artifactId>
+                    <version>2.7</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.8.0</version>
+                    <!-- could i use version range here? -->
+                    <configuration>
+                        <source>${maven.compiler.source}</source>
+                        <target>${maven.compiler.target}</target>
+                        <!--<annotationProcessorPaths>-->
+                            <!--<path>-->
+                                <!--<groupId>org.projectlombok</groupId>-->
+                                <!--<artifactId>lombok</artifactId>-->
+                                <!--<version>${lombok.version}</version>-->
+                            <!--</path>-->
+                        <!--</annotationProcessorPaths>-->
+                        <!--&lt;!&ndash; this helps when getting error: file should be on source path, or on patch path for module &ndash;&gt;-->
+                        <!--<compilerArgs>-->
+                            <!--<arg>-sourcepath</arg>-->
+                            <!--<arg>${project.basedir}/src/main/java${path.separator}${project.basedir}/target/generated-sources/annotations${path.separator}/</arg>-->
+                        <!--</compilerArgs>-->
+                    </configuration>
+                </plugin>
+                <!--<plugin>-->
+                    <!--&lt;!&ndash; jlink wont work until all dependencies have proper module-info.java files &ndash;&gt;-->
+                    <!--<groupId>org.apache.maven.plugins</groupId>-->
+                    <!--<artifactId>maven-jlink-plugin</artifactId>-->
+                    <!--<version>3.0.0-alpha-2-SNAPSHOT</version>-->
+                    <!--<extensions>true</extensions>-->
+                    <!--<dependencies>-->
+                        <!--<dependency>-->
+                            <!--<groupId>org.ow2.asm</groupId>-->
+                            <!--<artifactId>asm</artifactId>-->
+                            <!--<version>7.0</version>-->
+                        <!--</dependency>-->
+                    <!--</dependencies>-->
+                <!--</plugin>-->
             </plugins>
         </pluginManagement>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>enforce-maven-version</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <configuration>
+                            <rules>
+                                <requireMavenVersion>
+                                    <version>[3.6,)</version>
+                                </requireMavenVersion>
+                                <requireJavaVersion>
+                                    <version>[11,)</version>
+                                </requireJavaVersion>
+                            </rules>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>versions-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>display-dependency-updates</goal>
+                            <goal>display-plugin-updates</goal>
+                            <goal>display-property-updates</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
     </build>
+
+    <repositories>
+        <repository>
+            <!-- includes snakeyaml snapshots  -->
+            <id>sonatype-snapshots</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+            <snapshots><enabled>true</enabled></snapshots>
+            <releases><enabled>false</enabled></releases>
+        </repository>
+        <repository>
+            <!-- includes org.apache:apache parent pom snapshots -->
+            <id>apache-snapshot</id>
+            <url>https://repository.apache.org/content/repositories/snapshots-group</url>
+            <snapshots><enabled>true</enabled></snapshots>
+            <releases><enabled>false</enabled></releases>
+        </repository>
+    </repositories>
+    <!--<pluginRepositories>-->
+        <!--<pluginRepository>-->
+            <!--&lt;!&ndash; includes maven-jlink-plugin snapshot builds &ndash;&gt;-->
+            <!--<id>apache-snapshot</id>-->
+            <!--<url>https://repository.apache.org/content/repositories/snapshots-group</url>-->
+            <!--<snapshots><enabled>true</enabled></snapshots>-->
+            <!--<releases><enabled>false</enabled></releases>-->
+        <!--</pluginRepository>-->
+    <!--</pluginRepositories>-->
+
 </project>

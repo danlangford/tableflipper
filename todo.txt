@@ -1,1 +1,3 @@
-allow users to upload their own yml files
+allow users to load their own yml files
+add unit tests
+add more information on Readme about building and running the applications

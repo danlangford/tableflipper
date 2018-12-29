@@ -1,31 +1,23 @@
 package dan.langford.tableflipper.ui;
 
-import dan.langford.tableflipper.core.service.DirectoryService;
-import dan.langford.tableflipper.core.service.TemplateService;
+import dan.langford.tableflipper.TableFlipper;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
-import jdk.nashorn.internal.objects.NativeString;
 
 import javax.inject.Inject;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
-import java.util.function.Consumer;
-import java.util.function.Predicate;
 
 import static java.util.stream.Collectors.toList;
 
 public class SceneController {
 
     @Inject
-    private DirectoryService dir;
-
-    @Inject
-    private TemplateService tmplt;
+    private TableFlipper flipper;
     
     @FXML
     private Label jVersionLabel;
@@ -47,7 +39,7 @@ public class SceneController {
     public void handleClick(MouseEvent event){
         String selected = tableList.getSelectionModel().getSelectedItem();
         if(selected!=null&&selected.trim().length()>0) {
-            tableResults.setText(tmplt.rollTable(selected));
+            tableResults.setText(flipper.rollOnTable(selected));
         }
     }
 
@@ -81,7 +73,7 @@ public class SceneController {
         String javafxVersion = System.getProperty("javafx.version");
         jVersionLabel.setText("Hello, JavaFX " + javafxVersion + " Running on Java " + javaVersion + ".");
 
-        entireList = new ArrayList<String>(dir.getTableNames());
+        entireList = new ArrayList<>(flipper.getTableNames());
         filteredList = entireList;
 
         tableList.setItems(FXCollections.observableList(filteredList));

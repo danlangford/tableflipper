@@ -13,24 +13,29 @@
             <artifactId>tableflipper-core</artifactId>
         </dependency>
         <dependency>
+            <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
+        </dependency>
+        <dependency>
             <groupId>com.google.inject</groupId>
             <artifactId>guice</artifactId>
+            <classifier>no_aop</classifier>
+            <version>${guice.version}</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
         </dependency>
-        <!-- following needed once we get up to JAVA11 -->
-        <!--<dependency>-->
-            <!--<groupId>org.openjfx</groupId>-->
-            <!--<artifactId>javafx-controls</artifactId>-->
-            <!--<version>11.0.1</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>org.openjfx</groupId>-->
-            <!--<artifactId>javafx-fxml</artifactId>-->
-            <!--<version>11.0.1</version>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+            <version>11.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-fxml</artifactId>
+            <version>11.0.1</version>
+        </dependency>
     </dependencies>
 
     <build>

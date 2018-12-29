@@ -216,44 +216,44 @@ tables:
   items/deck_of_many_things_13:
     roll: 1d13
     results:
-      1: (King of diamonds) <template domt/Sun>
-      2: (Queen of diamonds) <template domt/Moon>
-      3: (Jack of diamonds) <template domt/Star>
-      4: (King of hearts) <template domt/Throne>
-      5: (Queen of hearts) <template domt/Key>
-      6: (Jack of hearts) <template domt/Knight>
-      7: (King of clubs) <template domt/The Void>
-      8: (Queen of clubs) <template domt/Flames>
-      9: (Jack of clubs) <template domt/Skull>
-      10: (King of spades) <template domt/Ruin>
-      11: (Queen of spades) <template domt/Euryale>
-      12: (Jack of spades) <template domt/Rogue>
-      13: (Joker w/o TM) <template domt/Jester>
+      1: (King of diamonds) <desc domt/Sun>
+      2: (Queen of diamonds) <desc domt/Moon>
+      3: (Jack of diamonds) <desc domt/Star>
+      4: (King of hearts) <desc domt/Throne>
+      5: (Queen of hearts) <desc domt/Key>
+      6: (Jack of hearts) <desc domt/Knight>
+      7: (King of clubs) <desc domt/The_Void>
+      8: (Queen of clubs) <desc domt/Flames>
+      9: (Jack of clubs) <desc domt/Skull>
+      10: (King of spades) <desc domt/Ruin>
+      11: (Queen of spades) <desc domt/Euryale>
+      12: (Jack of spades) <desc domt/Rogue>
+      13: (Joker w/o TM) <desc domt/Jester>
   items/deck_of_many_things_22:
     roll: 1d22
     results:
-      1: (Ace of diamonds) <template domt/Vizier>
-      2: (King of diamonds) <template domt/Sun>
-      3: (Queen of diamonds) <template domt/Moon>
-      4: (Jack of diamonds) <template domt/Star>
-      5: (Two of diamonds) <template domt/Comet>
-      6: (Ace of hearts) <template domt/The_Fates>
-      7: (King of hearts) <template domt/Throne>
-      8: (Queen of hearts) <template domt/Key>
-      9: (Jack of hearts) <template domt/Knight>
-      10: (Two of hearts) <template domt/Gem>
-      11: (Ace of clubs) <template domt/Talons>
-      12: (King of clubs) <template domt/The_Void>
-      13: (Queen of clubs) <template domt/Flames>
-      14: (Jack of clubs) <template domt/Skull>
-      15: (Two of clubs) <template domt/Idiot>
-      16: (Ace of spades) <template domt/Donjon>
-      17: (King of spades) <template domt/Ruin>
-      18: (Queen of spades) <template domt/Euryale>
-      19: (Jack of spades) <template domt/Rogue>
-      20: (Two of spades) <template domt/Balance>
-      21: (Joker w/TM) <template domt/Fool>
-      22: (Joker w/o TM) <template domt/Jester>
+      1: (Ace of diamonds) <desc domt/Vizier>
+      2: (King of diamonds) <desc domt/Sun>
+      3: (Queen of diamonds) <desc domt/Moon>
+      4: (Jack of diamonds) <desc domt/Star>
+      5: (Two of diamonds) <desc domt/Comet>
+      6: (Ace of hearts) <desc domt/The_Fates>
+      7: (King of hearts) <desc domt/Throne>
+      8: (Queen of hearts) <desc domt/Key>
+      9: (Jack of hearts) <desc domt/Knight>
+      10: (Two of hearts) <desc domt/Gem>
+      11: (Ace of clubs) <desc domt/Talons>
+      12: (King of clubs) <desc domt/The_Void>
+      13: (Queen of clubs) <desc domt/Flames>
+      14: (Jack of clubs) <desc domt/Skull>
+      15: (Two of clubs) <desc domt/Idiot>
+      16: (Ace of spades) <desc domt/Donjon>
+      17: (King of spades) <desc domt/Ruin>
+      18: (Queen of spades) <desc domt/Euryale>
+      19: (Jack of spades) <desc domt/Rogue>
+      20: (Two of spades) <desc domt/Balance>
+      21: (Joker w/TM) <desc domt/Fool>
+      22: (Joker w/o TM) <desc domt/Jester>
   items/efreeti_bottle:
     roll: 1d100
     results:
@@ -263,12 +263,12 @@ tables:
   items/feather_token:
     roll: 1d100
     results:
-      1-20: <template feather_token/Anchor>
-      21-35: <template feather_token/Bird>
-      36-50: <template feather_token/Fan>
-      51-65: <template feather_token/Swan_Boat>
-      66-90: <template feather_token/Tree>
-      91-100: <template feather_token/Whip>
+      1-20: <desc feather_token/Anchor>
+      21-35: <desc feather_token/Bird>
+      36-50: <desc feather_token/Fan>
+      51-65: <desc feather_token/Swan_Boat>
+      66-90: <desc feather_token/Tree>
+      91-100: <desc feather_token/Whip>
   items/horn_of_valhalla:
     roll: 1d100
     results:
@@ -435,7 +435,7 @@ tables:
       10: Creator Seeker. The item seeks its creator and wants to understand why it was created.
 
 
-templates:
+descriptions:
   domt/Balance: Balance. Your mind suffers a wrenching alteration, causing your alignment to change. Lawful becomes chaotic, good becomes evil, and vice versa. If you are true neutral or unaligned, this card has no effect on you.
   domt/Comet: Comet. If you single-handedly defeat the next hostile monster or group of monsters you encounter, you gain experience points enough to gain one level. Otherwise, this card has no effect.
   domt/Donjon: Donjon. You disappear and become entombed in a state of suspended animation in an extradimensional sphere. Everything you were wearing and carrying stays behind in the space you occupied when you disappeared. You remain imprisoned until you are found and removed from the sphere. You can't be located by any divination magic, but a wish spell can reveal the location of your prison. You draw no more cards.

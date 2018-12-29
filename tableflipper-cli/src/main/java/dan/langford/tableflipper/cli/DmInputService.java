@@ -1,7 +1,5 @@
 package dan.langford.tableflipper.cli;
 
-import org.apache.commons.lang.StringUtils;
-import org.apache.commons.lang.math.NumberUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -17,7 +15,7 @@ import static java.util.stream.Collectors.toList;
 // i think we do need some easy way to select a table to be rolled
 public class DmInputService {
 
-    private Logger log = LoggerFactory.getLogger(this.getClass());
+    private final Logger log = LoggerFactory.getLogger(getClass());
 
     private final Scanner scanner = new Scanner(System.in);
 
@@ -39,15 +37,15 @@ public class DmInputService {
         String input = "";
 
         // continue the loop if we didnt get a number, or if the number is too large
-        while (!NumberUtils.isDigits(input) || NumberUtils.toInt(input)>filteredItems.size()-1) {
-            if(StringUtils.isBlank(input)) {
+        while (!Lang3Utils.isNumeric(input) || Lang3Utils.toInt(input)>filteredItems.size()-1) {
+            if(Lang3Utils.isBlank(input)) {
                 say("clearing all filters");
                 filteredItems = items;
-            } else if (StringUtils.isAlphaSpace(input)) {
+            } else if (Lang3Utils.isAlphaSpace(input)) {
                 say("applying filter: "+input);
                 String $input = input;
                 filteredItems = items.stream()
-                        .filter(s -> StringUtils.containsIgnoreCase(s, $input))
+                        .filter(s -> Lang3Utils.containsIgnoreCase(s, $input))
                         .collect(toList());
                 if(filteredItems.size()==0) {
                     say("no items match the filter of "+input);
@@ -63,7 +61,7 @@ public class DmInputService {
             }
             input = ask("please select an item");
         }
-        String selection = filteredItems.get(NumberUtils.toInt(input));
+        String selection = filteredItems.get(Lang3Utils.toInt(input));
         say("your selection: "+selection);
         return selection;
     }
