@@ -1,8 +1,6 @@
-package dan.langford.tableflipper.test;
+package dan.langford.tableflipper.plugin;
 
 
-import dan.langford.tableflipper.plugin.RollPlugin;
-import dan.langford.tableflipper.plugin.TomPlugin;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,7 +18,10 @@ public class RollPluginTest {
     public void testExpressions() {
         TomPlugin p = new RollPlugin();
 
-        List.of("1d20", "2d6", "3d12+3", "4d4-4", "6d6qww").forEach(expr -> {
+        // unfortunately invalid expressions will not always throw exceptions
+        //
+
+        List.of("1d20", "2d6", "3d12+3", "4d4-4", "6d6y").forEach(expr -> {
             assertDoesNotThrow(() -> {
                 log.info("attempting expr [{}]",expr);
                 String result = p.resolve(expr).orElseThrow();
@@ -29,8 +30,7 @@ public class RollPluginTest {
             });
         });
 
-
-        assertThrows(IllegalStateException.class, () -> p.resolve("5dwes @"));
+        assertThrows(IllegalStateException.class, () -> p.resolve("5dz"));
 
     }
 }

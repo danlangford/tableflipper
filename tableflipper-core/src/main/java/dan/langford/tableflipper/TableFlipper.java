@@ -8,6 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.inject.Inject;
+import java.io.Reader;
 import java.util.Collection;
 import java.util.Map;
 import java.util.regex.Matcher;
@@ -60,6 +61,10 @@ public class TableFlipper {
 //        return recursiveTemplate(format("<roll {0}>", diceExpr));
         // to avoid creating a string only to parse and split a string lets call the plugins directly
         return recursiveTemplate(roll.resolve(diceExpr).orElse(format(ERR, "roll", diceExpr)));
+    }
+
+    public void addModel(Reader reader) {
+        throw new IllegalStateException("net yet implementeded");
     }
 
     private String recursiveTemplate(String templateExpr){

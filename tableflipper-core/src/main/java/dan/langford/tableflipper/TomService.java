@@ -4,17 +4,38 @@ import dan.langford.tableflipper.tom.TableObjectModel;
 import org.yaml.snakeyaml.Yaml;
 import org.yaml.snakeyaml.constructor.Constructor;
 
+import java.io.InputStreamReader;
+import java.io.Reader;
+
+import static java.util.Objects.requireNonNull;
+
 /**
  * someday this will need to do more to allow at run time the reading in of a new Table Object Model and merging it with existing entries
  */
 public class TomService {
 
-    private final TableObjectModel model = new Yaml(new Constructor(TableObjectModel.class)).load(getClass().getClassLoader().getResourceAsStream("5e-srd-5_1.yml"));
+    private TableObjectModel model;
 
     public TomService() {
+        this.load(new InputStreamReader(requireNonNull(getClass().getClassLoader().getResourceAsStream("5e-srd-5_1.yml"))));
+    }
+
+    public void unload(){
+        this.model=null;
+    }
+
+    public void load(Reader io){
+        if(this.model==null) {
+            this.model = new Yaml(new Constructor(TableObjectModel.class)).load(io);
+        } else {
+            this.model.putAll(new Yaml(new Constructor(TableObjectModel.class)).load(io));
+        }
     }
 
     public TableObjectModel getModel() {
+        if(this.model==null){
+            throw new IllegalStateException("model is not loaded");
+        }
         return this.model;
     }
 

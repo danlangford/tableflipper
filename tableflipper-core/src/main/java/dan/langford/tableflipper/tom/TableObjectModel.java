@@ -1,5 +1,7 @@
 package dan.langford.tableflipper.tom;
 
+import java.util.Collections;
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -7,8 +9,8 @@ import java.util.Map;
  */
 public class TableObjectModel {
 
-    private Map<String, Table> tables;
-    private Map<String, String> descriptions;
+    private Map<String, Table> tables = Collections.emptyMap();
+    private Map<String, String> descriptions = Collections.emptyMap();
 
     public TableObjectModel() {
     }
@@ -31,6 +33,20 @@ public class TableObjectModel {
 
     public String toString() {
         return "TableObjectModel(tables=" + this.getTables() + ", descriptions=" + this.getDescriptions() + ")";
+    }
+
+    public void putAll(TableObjectModel altModel) {
+
+        Map<String,Table> tempTab = new HashMap<>();
+        tempTab.putAll(this.tables);
+        tempTab.putAll(altModel.getTables());
+        this.tables = tempTab;
+
+        Map<String,String> tempDesc = new HashMap<>();
+        tempDesc.putAll(this.descriptions);
+        tempDesc.putAll(altModel.getDescriptions());
+        this.descriptions = tempDesc;
+
     }
 
     public static class Table {
