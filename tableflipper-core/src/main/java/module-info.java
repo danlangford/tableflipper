@@ -11,6 +11,8 @@ module dan.langford.tableflipper {
     requires org.slf4j;
     requires javax.inject;
 
+    requires io.github.classgraph;
+
     exports dan.langford.tableflipper.tom to snakeyaml;
 
     // someday maybe play with "provides" and SPI stuff for "plugins"

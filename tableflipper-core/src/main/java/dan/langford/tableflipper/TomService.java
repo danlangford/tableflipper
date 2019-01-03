@@ -1,12 +1,15 @@
 package dan.langford.tableflipper;
 
 import dan.langford.tableflipper.tom.TableObjectModel;
+import io.github.classgraph.ClassGraph;
+import io.github.classgraph.Resource;
+import io.github.classgraph.ScanResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.yaml.snakeyaml.Yaml;
 import org.yaml.snakeyaml.constructor.Constructor;
 
-import java.io.BufferedReader;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.util.HashMap;
@@ -25,11 +28,12 @@ public class TomService {
     private TableObjectModel model;
 
     public TomService() {
-        String dir = "tables";
-        BufferedReader br = new BufferedReader(new InputStreamReader(requireNonNull(getClass().getClassLoader().getResourceAsStream(dir))));
-        br.lines()
-                .filter(l -> l.toLowerCase().endsWith(".yml") || l.toLowerCase().endsWith(".yaml"))
-                .forEach(y->this.load(new InputStreamReader(requireNonNull(getClass().getResourceAsStream("/"+dir+"/"+y)))));
+
+        try (ScanResult scanResult = new ClassGraph().whitelistPathsNonRecursive("tables").scan()) {
+            scanResult.getResourcesWithExtension("yml").forEachInputStream((Resource res, InputStream stream) -> {
+                this.load(new InputStreamReader(requireNonNull(stream)));
+            });
+        }
     }
 
     public void unload(){
