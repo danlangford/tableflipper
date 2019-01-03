@@ -64,7 +64,7 @@ public class TableFlipper {
     }
 
     public void addModel(Reader reader) {
-        throw new IllegalStateException("net yet implementeded");
+        throw new IllegalStateException("not yet implemented");
     }
 
     private String recursiveTemplate(String templateExpr){

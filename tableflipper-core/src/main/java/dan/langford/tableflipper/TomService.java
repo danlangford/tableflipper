@@ -1,11 +1,16 @@
 package dan.langford.tableflipper;
 
 import dan.langford.tableflipper.tom.TableObjectModel;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.yaml.snakeyaml.Yaml;
 import org.yaml.snakeyaml.constructor.Constructor;
 
+import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.Reader;
+import java.util.HashMap;
+import java.util.Map;
 
 import static java.util.Objects.requireNonNull;
 
@@ -14,10 +19,17 @@ import static java.util.Objects.requireNonNull;
  */
 public class TomService {
 
+    private final Logger log = LoggerFactory.getLogger(getClass());
+
+
     private TableObjectModel model;
 
     public TomService() {
-        this.load(new InputStreamReader(requireNonNull(getClass().getClassLoader().getResourceAsStream("5e-srd-5_1.yml"))));
+        String dir = "tables";
+        BufferedReader br = new BufferedReader(new InputStreamReader(requireNonNull(getClass().getClassLoader().getResourceAsStream(dir))));
+        br.lines()
+                .filter(l -> l.toLowerCase().endsWith(".yml") || l.toLowerCase().endsWith(".yaml"))
+                .forEach(y->this.load(new InputStreamReader(requireNonNull(getClass().getResourceAsStream("/"+dir+"/"+y)))));
     }
 
     public void unload(){
@@ -25,11 +37,23 @@ public class TomService {
     }
 
     public void load(Reader io){
-        if(this.model==null) {
-            this.model = new Yaml(new Constructor(TableObjectModel.class)).load(io);
+        if(model==null) {
+            model = new Yaml(new Constructor(TableObjectModel.class)).load(io);
         } else {
-            this.model.putAll(new Yaml(new Constructor(TableObjectModel.class)).load(io));
+            putAll(new Yaml(new Constructor(TableObjectModel.class)).load(io));
         }
+    }
+
+    public void putAll(TableObjectModel altModel) {
+        Map<String, TableObjectModel.Table> tempTab = new HashMap<>();
+        tempTab.putAll(model.getTables());
+        tempTab.putAll(altModel.getTables());
+        model.setTables(tempTab);
+
+        Map<String,String> tempDesc = new HashMap<>();
+        tempDesc.putAll(model.getDescriptions());
+        tempDesc.putAll(altModel.getDescriptions());
+        model.setDescriptions(tempDesc);
     }
 
     public TableObjectModel getModel() {

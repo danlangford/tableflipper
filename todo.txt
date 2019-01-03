@@ -1,3 +1,5 @@
 allow users to load their own yml files
 add unit tests
 create travis config
+consider the use case where we always want to roll just one item off the lists. instead of a Table a List would allow a user to not care about the Roll and assigning numbers
+consider adding a notes field to the Table object were one could record where it was sourced from

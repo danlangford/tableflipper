@@ -1,7 +1,7 @@
 package dan.langford.tableflipper.plugin;
 
-import dan.langford.tableflipper.tom.TableObjectModel.Table;
 import dan.langford.tableflipper.TomService;
+import dan.langford.tableflipper.tom.TableObjectModel.Table;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
