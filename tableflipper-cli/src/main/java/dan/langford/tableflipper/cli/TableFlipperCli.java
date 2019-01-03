@@ -1,11 +1,13 @@
 package dan.langford.tableflipper.cli;
 
+import com.google.inject.Module;
 import dan.langford.tableflipper.TableFlipper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.inject.Inject;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 import static com.google.inject.Guice.createInjector;
 
@@ -16,7 +18,9 @@ public class TableFlipperCli {
 //        Injector injector = createInjector((Module) b -> ServiceLoader.load(TableFlipper.class).findFirst().ifPresent(tf -> b.bind(TableFlipper.class).toInstance(tf)));
 //        injector.getInstance(TableFlipperCli.class).run();
 
-        createInjector().getInstance(TableFlipperCli.class).run();
+        createInjector((Module) binder -> {
+            binder.bind(Scanner.class).toInstance(new Scanner(System.in));
+        }).getInstance(TableFlipperCli.class).run();
 
     }
 

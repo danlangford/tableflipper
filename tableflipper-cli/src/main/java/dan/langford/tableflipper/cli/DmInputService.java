@@ -17,18 +17,11 @@ public class DmInputService {
 
     private final Logger log = LoggerFactory.getLogger(getClass());
 
-    private final Scanner scanner = new Scanner(System.in);
+    private final Scanner scanner;
 
     @Inject
-    public DmInputService(){}
-
-    @Deprecated
-    private <T extends Enum<T>> T enumMenu(Class<T> enumType) {
-        for (T c : enumType.getEnumConstants()) {
-            log.info("{0}: {1}", c.ordinal()+1, c.name());
-        }
-        int response = Integer.valueOf(scanner.nextLine().trim());
-        return enumType.getEnumConstants()[response-1];
+    public DmInputService(Scanner scanner){
+        this.scanner = scanner;
     }
 
     public String promptFor(List<String> items){
