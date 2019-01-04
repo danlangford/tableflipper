@@ -33,4 +33,4 @@ tables:
   npc-traits/name:
     oneOf: [ <table npc-traits/syllabel><table npc-traits/syllabel><table npc-traits/syllabel> ]
   npc-traits/syllabel:
-    oneOf: [do, re, mi, fa, so, la, ti, do, "'"]
+    oneOf: [do, di, ra, re, ri, me, ma, mi, fa, fi, se, sol, si, le, lo, la, li, te, ta, ti, nu, "'", ""]
