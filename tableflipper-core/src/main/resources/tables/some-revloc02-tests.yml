@@ -1,0 +1,60 @@
+tables:
+  sentient/item:
+    oneOf: ["Purpose: <table sentient/special_purpose> \nAlignment: <table sentient/alignment> \nCommunication: <table sentient/communication> \nSenses: <table sentient/senses>"]
+  wild_magic/surge:
+    oneOf:
+      - <table wild_magic/target> has a <table spell> spell cast/centered on them
+      - <table wild_magic/target> gains <table monster_feature> for <roll 1d100> rounds
+      - <table wild_magic/target> has <table ability_score> <table modified> by <roll 2d8> points (min 1, max 30), for <roll 1d12> rounds
+      - <table wild_magic/target> has <table ability_score> <table modified> by <roll 2d4> points (min 1, max 30), returns to normal at the rate of 2 points per day
+      - <roll 1d12> <table monster> summoned for <roll 1d12> <table duration_skewed>, <table disposition> to <table wild_magic/target>
+      - <table wild_magic/target> has <table wild_magic/effect> for <roll 1d12> <table duration_skewed>
+  wild_magic/target:
+    oneOf:
+      - caster
+      - target
+      - random ally (within 60')
+      - random enemy (within 60')
+      - <roll 1d4> random nearby creatures (within 60')
+  modified:
+    oneOf: [decreased, increased]
+  disposition:
+    oneOf:
+      - friendly
+      - hostile
+  duration:
+    oneOf:
+      - seconds
+      - rounds
+      - minutes
+      - hours
+      - days
+      - weeks
+      - months
+      - years
+      - decades
+      - centuries
+  duration_skewed:
+    roll: 1d100
+    results:
+      1-10: seconds
+      11-49: rounds
+      50-69: minutes
+      70-79: hours
+      80-85: days
+      86-90: weeks
+      91-94: months
+      95-97: years
+      98-99: decades
+      100: centuries
+  ability_score:
+    oneOf:
+      - Str
+      - Dex
+      - Con
+      - Int
+      - Wis
+      - Cha
+  wild_magic/effect:
+    oneOf:
+      - huge list of so many different random effects
