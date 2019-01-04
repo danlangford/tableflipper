@@ -4,10 +4,7 @@ import dan.langford.tableflipper.TableFlipper;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
-import javafx.scene.control.ListView;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 
@@ -15,6 +12,7 @@ import javax.inject.Inject;
 import java.util.ArrayList;
 import java.util.List;
 
+import static java.text.MessageFormat.format;
 import static java.util.stream.Collectors.toList;
 
 public class SceneController {
@@ -37,6 +35,8 @@ public class SceneController {
     @FXML
     private TextField filter;
 
+    @FXML
+    private MenuBar menuBar;
 
     @FXML
     public void handleClick(MouseEvent event){
@@ -72,9 +72,10 @@ public class SceneController {
     }
     
     public void initialize() {
+
         String javaVersion = System.getProperty("java.version");
         String javafxVersion = System.getProperty("javafx.version");
-        jVersionLabel.setText("Hello, JavaFX " + javafxVersion + " Running on Java " + javaVersion + ".");
+        jVersionLabel.setText(format("JavaFX {0} Running on Java {1}.", javafxVersion, javaVersion));
 
         entireList = new ArrayList<>(flipper.getTableNames());
         filteredList = entireList;
