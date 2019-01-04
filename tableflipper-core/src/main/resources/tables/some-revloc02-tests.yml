@@ -5,8 +5,7 @@ tables:
     oneOf:
       - <table wild_magic/target> has a <table spell> spell cast/centered on them
       - <table wild_magic/target> gains <table monster_feature> for <roll 1d100> rounds
-      - <table wild_magic/target> has <table ability_score> <table modified> by <roll 2d8> points (min 1, max 30), for <roll 1d12> rounds
-      - <table wild_magic/target> has <table ability_score> <table modified> by <roll 2d4> points (min 1, max 30), returns to normal at the rate of 2 points per day
+      - <table ability_score_change>
       - <roll 1d12> <table monster> summoned for <roll 1d12> <table duration_skewed>, <table disposition> to <table wild_magic/target>
       - <table wild_magic/target> has <table wild_magic/effect> for <roll 1d12> <table duration_skewed>
   wild_magic/target:
@@ -16,24 +15,10 @@ tables:
       - random ally (within 60')
       - random enemy (within 60')
       - <roll 1d4> random nearby creatures (within 60')
-  modified:
-    oneOf: [decreased, increased]
   disposition:
-    oneOf:
-      - friendly
-      - hostile
+    oneOf: [friendly, hostile]
   duration:
-    oneOf:
-      - seconds
-      - rounds
-      - minutes
-      - hours
-      - days
-      - weeks
-      - months
-      - years
-      - decades
-      - centuries
+    oneOf: [seconds, rounds, minutes, hours, days, weeks, months, years, decades, centuries]
   duration_skewed:
     roll: 1d100
     results:
@@ -47,14 +32,16 @@ tables:
       95-97: years
       98-99: decades
       100: centuries
-  ability_score:
+  ability_score_change:
     oneOf:
-      - Str
-      - Dex
-      - Con
-      - Int
-      - Wis
-      - Cha
+      - <table wild_magic/target> has <table ability_score> <table modified> by <roll 1d4> points (min 1, max 30), for <roll 1d12> <table duration_skewed>
+      - <table wild_magic/target> has <table ability_score> <table modified> by <roll 2d4> points (min 1, max 30), returns to normal at the rate of 2 points per day
+      - <table wild_magic/target> has <table ability_score> <table modified> by <roll 2d8> points (min 1, max 30), for <roll 1d12> rounds
+      - <table wild_magic/target> has <table ability_score> <table modified> by <roll 2d12> points (min 1, max 30), for <roll 1d12> seconds
+  ability_score:
+    oneOf: [Str, Dex, Con, Int, Wis, Cha]
+  modified:
+    oneOf: [decreased, increased]
   wild_magic/effect:
     oneOf:
       - huge list of so many different random effects
