@@ -3,7 +3,7 @@ tables:
   npc-traits/npc:
     roll: 1d1
     results:
-      1: "Physical: <table npc-traits/physical>\nPersonality: <table npc-traits/personality>"
+      1: "Name: <table npc-traits/name>\nPhysical: <table npc-traits/physical>\nPersonality: <table npc-traits/personality>"
   npc-traits/physical:
     roll: 1d12
     results:
@@ -34,3 +34,19 @@ tables:
       10: Polite and Patient
       11: Weak-willed (You get a sense that this NPC gets pushed around often.)
       12: Concerned (You might be able to use this as a hook for a side quest or encounter.  What is he or she concerned about?  A lost item or person?  An unsettling stranger in town?  Maybe they’re concerned for the PCs because they overheard a group of ruffians planning violence towards them.)
+  npc-traits/name:
+    roll: 1d1
+    results:
+      1: <table npc-traits/syllabel><table npc-traits/syllabel><table npc-traits/syllabel>
+  npc-traits/syllabel:
+    roll: 1d9
+    results:
+      1: do
+      2: re
+      3: mi
+      4: fa
+      5: so
+      6: la
+      7: ti
+      8: do
+      9: "'"

@@ -9,13 +9,18 @@ import org.slf4j.LoggerFactory;
 import org.yaml.snakeyaml.Yaml;
 import org.yaml.snakeyaml.constructor.Constructor;
 
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
+import java.nio.file.Files;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.regex.Pattern;
 
+import static java.nio.file.Paths.get;
 import static java.util.Objects.requireNonNull;
+import static java.util.regex.Pattern.CASE_INSENSITIVE;
 
 /**
  * someday this will need to do more to allow at run time the reading in of a new Table Object Model and merging it with existing entries
@@ -24,15 +29,32 @@ public class TomService {
 
     private final Logger log = LoggerFactory.getLogger(getClass());
 
+    private static Pattern yaml = Pattern.compile(".*\\.ya?ml$", CASE_INSENSITIVE);
 
     private TableObjectModel model;
 
     public TomService() {
 
         try (ScanResult scanResult = new ClassGraph().whitelistPathsNonRecursive("tables").scan()) {
-            scanResult.getResourcesWithExtension("yml").forEachInputStream((Resource res, InputStream stream) -> {
+            scanResult.getResourcesMatchingPattern(yaml).forEachInputStream((Resource res, InputStream stream) -> {
                 this.load(new InputStreamReader(requireNonNull(stream)));
             });
+        }
+
+        String userHome = System.getProperty("user.home");
+        if(userHome!=null && !userHome.trim().isEmpty()) {
+            try {
+                Files.newDirectoryStream(get(userHome + "/tableflipper"), entry -> entry.toString().endsWith(".yml") || entry.toString().endsWith(".yaml"))
+                        .forEach(p -> {
+                            try {
+                                this.load(Files.newBufferedReader(p));
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
+                        });
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 
