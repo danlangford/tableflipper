@@ -1,42 +1,38 @@
 tables:
   backgrounds/acolyte/personality_trait:
-    roll: 1d8
-    results:
-      1: I idolize a particular hero of my faith, and constantly refer to that person’s deeds and example
-      2: I can find common ground between the fiercest enemies, empathizing with them and always working toward peace.
-      3: I see omens in every event and action. The gods try to speak to us, we just need to listen
-      4: Nothing can shake my optimistic attitude.
-      5: I quote (or misquote) sacred texts and proverbs in almost every situation.
-      6: I am tolerant (or intolerant) of other faiths and respect (or condemn) the worship of other gods.
-      7: I’ve enjoyed fine food, drink, and high society among my temple’s elite. Rough living grates on me.
-      8: I’ve spent so long in the temple that I have little practical experience dealing with people in the outside world.
+    oneOf:
+      - I idolize a particular hero of my faith, and constantly refer to that person’s deeds and example
+      - I can find common ground between the fiercest enemies, empathizing with them and always working toward peace.
+      - I see omens in every event and action. The gods try to speak to us, we just need to listen
+      - Nothing can shake my optimistic attitude.
+      - I quote (or misquote) sacred texts and proverbs in almost every situation.
+      - I am tolerant (or intolerant) of other faiths and respect (or condemn) the worship of other gods.
+      - I’ve enjoyed fine food, drink, and high society among my temple’s elite. Rough living grates on me.
+      - I’ve spent so long in the temple that I have little practical experience dealing with people in the outside world.
   backgrounds/acolyte/ideal:
-    roll: 1d6
-    results:
-      1: Tradition. The ancient traditions of worship and sacrifice must be preserved and upheld. (Lawful)
-      2: Charity. I always try to help those in need, no matter what the personal cost. (Good)
-      3: Change. We must help bring about the changes the gods are constantly working in the world. (Chaotic)
-      4: Power. I hope to one day rise to the top of my faith’s religious hierarchy. (Lawful)
-      5: Faith. I trust that my deity will guide my actions. I have faith that if I work hard, things will go well. (Lawful)
-      6: Aspiration. I seek to prove myself worthy of my god’s favor by matching my actions against his or her teachings. (Any)
+    oneOf:
+      - Tradition. The ancient traditions of worship and sacrifice must be preserved and upheld. (Lawful)
+      - Charity. I always try to help those in need, no matter what the personal cost. (Good)
+      - Change. We must help bring about the changes the gods are constantly working in the world. (Chaotic)
+      - Power. I hope to one day rise to the top of my faith’s religious hierarchy. (Lawful)
+      - Faith. I trust that my deity will guide my actions. I have faith that if I work hard, things will go well. (Lawful)
+      - Aspiration. I seek to prove myself worthy of my god’s favor by matching my actions against his or her teachings. (Any)
   backgrounds/acolyte/bond:
-    roll: 1d6
-    results:
-      1: I would die to recover an ancient relic of my faith that was lost long ago.
-      2: I will someday get revenge on the corrupt temple hierarchy who branded me a heretic.
-      3: I owe my life to the priest who took me in when my parents died.
-      4: Everything I do is for the common people.
-      5: I will do anything to protect the temple where I served.
-      6: I seek to preserve a sacred text that my enemies consider heretical and seek to destroy.
+    oneOf:
+      - I would die to recover an ancient relic of my faith that was lost long ago.
+      - I will someday get revenge on the corrupt temple hierarchy who branded me a heretic.
+      - I owe my life to the priest who took me in when my parents died.
+      - Everything I do is for the common people.
+      - I will do anything to protect the temple where I served.
+      - I seek to preserve a sacred text that my enemies consider heretical and seek to destroy.
   backgrounds/acolyte/flaw:
-    roll: 1d6
-    results:
-      1: I judge others harshly, and myself even more severely.
-      2: I put too much trust in those who wield power within my temple’s hierarchy.
-      3: My piety sometimes leads me to blindly trust those that profess faith in my god.
-      4: I am inflexible in my thinking.
-      5: I am suspicious of strangers and expect the worst of them.
-      6: Once I pick a goal, I become obsessed with it to the detriment of everything else in my life.
+    oneOf:
+      - I judge others harshly, and myself even more severely.
+      - I put too much trust in those who wield power within my temple’s hierarchy.
+      - My piety sometimes leads me to blindly trust those that profess faith in my god.
+      - I am inflexible in my thinking.
+      - I am suspicious of strangers and expect the worst of them.
+      - Once I pick a goal, I become obsessed with it to the detriment of everything else in my life.
   spells/confusion:
     roll: 1d10
     results:
@@ -105,18 +101,8 @@ tables:
       86-95: "\"I can't take anything seriously. The more serious the situation, the funnier I find it.\""
       96-100: "\"I've discovered that I really like killing people.\""
   items/armor_of_resistance:
-    roll: 1d10
-    results:
-      1: Acid
-      2: Cold
-      3: Fire
-      4: Force
-      5: Lightning
-      6: Necrotic
-      7: Poison
-      8: Psychic
-      9: Radiant
-      10: Thunder
+    oneOf: [Acid, Cold, Fire, Force, Lightning, Necrotic, Poison, Psychic, Radiant, Thunder]
+
   items/bag_of_beans:
     roll: 1d100
     results:
@@ -133,38 +119,14 @@ tables:
       91-99: A pyramid with a 60-foot‐square base bursts upward. Inside is a sarcophagus containing a mummy lord. The pyramid is treated as the mummy lord's lair, and its sarcophagus contains treasure of the GM's choice.
       100: A giant beanstalk sprouts, growing to a height of the GM's choice. The top leads where the GM chooses, such as to a great view, a cloud giant's castle, or a different plane of existence.
   items/grey_bag_of_tricks:
-    roll: 1d8
-    results:
-      1: Weasel
-      2: Giant rat
-      3: Badger
-      4: Boar
-      5: Panther
-      6: Giant badger
-      7: Dire wolf
-      8: Giant elk
+    oneOf: [Weasel, Giant rat, Badger, Boar, Panther, Giant badger, Dire wolf, Giant elk]
+
   items/rust_bag_of_tricks:
-    roll: 1d8
-    results:
-      1: Rat
-      2: Owl
-      3: Mastiff
-      4: Goat
-      5: Giant goat
-      6: Giant boar
-      7: Lion
-      8: Brown bear
+    oneOf: [Rat, Owl, Mastiff, Goat, Giant goat, Giant boar, Lion, Brown bear]
+      
   items/tan_bag_of_tricks:
-    roll: 1d8
-    results:
-      1: Jackal
-      2: Ape
-      3: Baboon
-      4: Axe beak
-      5: Black bear
-      6: Giant weasel
-      7: Giant hyena
-      8: Tiger
+    oneOf: [Jackal, Ape, Baboon, Axe beak, Black bear, Giant weasel, Giant hyena, Tiger]
+
   items/candle_of_invocation:
     roll: 1d20
     results:
@@ -178,41 +140,41 @@ tables:
       16-17: Lawful neutral
       18-20: Lawful good
   items/deck_of_illusions:
-    roll: 1d34
-    results:
-      1: (Ace of hearts) Red dragon
-      2: (King of hearts) Knight and four guards
-      3: (Queen of hearts) Succubus or incubus
-      4: (Jack of hearts) Druid
-      5: (Ten of hearts) Cloud giant
-      6: (Nine of hearts) Ettin
-      7: (Eight of hearts) Bugbear
-      8: (Two of hearts) Goblin
-      9: (Ace of diamonds) Beholder
-      10: (King of diamonds) Archmage and mage apprentice
-      11: (Queen of diamonds) Night hag
-      12: (Jack of diamonds) Assassin
-      13: (Ten of diamonds) Fire giant
-      14: (Nine of diamonds) Ogre mage
-      15: (Eight of diamonds) Gnoll
-      16: (Two of diamonds) Kobold
-      17: (Ace of spades) Lich
-      18: (King of spades) Priest and two acolytes
-      19: (Queen of spades) Medusa
-      20: (Jack of spades) Veteran
-      21: (Ten of spades) Frost giant
-      22: (Nine of spades) Troll
-      23: (Eight of spades) Hobgoblin
-      24: (Two of spades) Goblin
-      25: (Ace of clubs) Iron golem
-      26: (King of clubs) Bandit captain and three bandits
-      27: (Queen of clubs) Erinyes
-      28: (Jack of clubs) Berserker
-      29: (Ten of clubs) Hill giant
-      30: (Nine of clubs) Ogre
-      31: (Eight of clubs) Orc
-      32: (Two of clubs) Kobold
-      33-34: (Joker) You (the deck's owner)
+    oneOf:
+      - (Ace of hearts) Red dragon
+      - (King of hearts) Knight and four guards
+      - (Queen of hearts) Succubus or incubus
+      - (Jack of hearts) Druid
+      - (Ten of hearts) Cloud giant
+      - (Nine of hearts) Ettin
+      - (Eight of hearts) Bugbear
+      - (Two of hearts) Goblin
+      - (Ace of diamonds) Beholder
+      - (King of diamonds) Archmage and mage apprentice
+      - (Queen of diamonds) Night hag
+      - (Jack of diamonds) Assassin
+      - (Ten of diamonds) Fire giant
+      - (Nine of diamonds) Ogre mage
+      - (Eight of diamonds) Gnoll
+      - (Two of diamonds) Kobold
+      - (Ace of spades) Lich
+      - (King of spades) Priest and two acolytes
+      - (Queen of spades) Medusa
+      - (Jack of spades) Veteran
+      - (Ten of spades) Frost giant
+      - (Nine of spades) Troll
+      - (Eight of spades) Hobgoblin
+      - (Two of spades) Goblin
+      - (Ace of clubs) Iron golem
+      - (King of clubs) Bandit captain and three bandits
+      - (Queen of clubs) Erinyes
+      - (Jack of clubs) Berserker
+      - (Ten of clubs) Hill giant
+      - (Nine of clubs) Ogre
+      - (Eight of clubs) Orc
+      - (Two of clubs) Kobold
+      - (Joker) You (the deck's owner)
+      - (Joker) You (the deck's owner)
   items/deck_of_many_things_13:
     roll: 1d13
     results:
@@ -316,31 +278,20 @@ tables:
       19: Bead of Summons contains spell Planar ally
       20: Bead of Wind walking contains spell Wind walk
   items/potion_of_resistance:
-    roll: 1d10
-    results:
-      1: Acid
-      2: Cold
-      3: Fire
-      4: Force
-      5: Lightning
-      6: Necrotic
-      7: Poison
-      8: Psychic
-      9: Radiant
-      10: Thunder
+    oneOf: [Acid, Cold, Fire, Force, Lightning, Necrotic, Poison, Psuchic, Radiant, Thunder]
+
   items/ring_of_resistance:
-    roll: 1d10
-    results:
-      1: Acid. Perl gem resists Acid damage
-      2: Cold. Tourmaline gem resists Cold damage
-      3: Fire. Garnet gem resists Fire damage
-      4: Force. Sapphire gem resists Force damage
-      5: Lightning. Citrine gem resists Lightning damage
-      6: Necrotic. Jet gem resists Necrotic damage
-      7: Poison. Amethyst gem resists Poison damage
-      8: Psychic. Jade gem resists Psychic damage
-      9: Radiant. Topaz gem resists Radiant damage
-      10: Thunder. Spinel gem resists Thunder damage
+    oneOf:
+      - Acid. Perl gem resists Acid damage
+      - Cold. Tourmaline gem resists Cold damage
+      - Fire. Garnet gem resists Fire damage
+      - Force. Sapphire gem resists Force damage
+      - Lightning. Citrine gem resists Lightning damage
+      - Necrotic. Jet gem resists Necrotic damage
+      - Poison. Amethyst gem resists Poison damage
+      - Psychic. Jade gem resists Psychic damage
+      - Radiant. Topaz gem resists Radiant damage
+      - Thunder. Spinel gem resists Thunder damage
   items/robe_of_useful_items:
     roll: 1d100
     results:
@@ -401,12 +352,11 @@ tables:
       61–90: The item can speak, read, and understand one or more languages.
       91–00: The item can speak, read, and understand one or more languages. In addition, the item can communicate telepathically with any character that carries or wields it.
   sentient/senses:
-    roll: 1d4
-    results:
-      1: Hearing and normal vision out to 30 feet.
-      2: Hearing and normal vision out to 60 feet
-      3: Hearing and normal vision out to 120 feet.
-      4: Hearing and darkvision out to 120 feet.
+    oneOf:
+      - Hearing and normal vision out to 30 feet.
+      - Hearing and normal vision out to 60 feet
+      - Hearing and normal vision out to 120 feet.
+      - Hearing and darkvision out to 120 feet.
   sentient/alignment:
     roll: 1d100
     results:
@@ -421,18 +371,17 @@ tables:
       97–00: Chaotic evil
 
   sentient/special_purpose:
-    roll: 1d10
-    results:
-      1: Aligned. The item seeks to defeat or destroy those of a diametrically opposed alignment. (Such an item is never neutral.)
-      2: Bane. The item seeks to defeat or destroy creatures of a particular kind, such as fiends, shapechangers, trolls, or wizards.
-      3: Protector. The item seeks to defend a particular race or kind of creature, such as elves or druids.
-      4: Crusader. The item seeks to defeat, weaken, or destroy the servants of a particular deity.
-      5: Templar. The item seeks to defend the servants and interests of a particular deity.
-      6: Destroyer. The item craves destruction and goads its user to fight arbitrarily.
-      7: Glory Seeker. The item seeks renown as the greatest magic item in the world, by establishing its user as a famous or notorious figure.
-      8: Lore Seeker. The item craves knowledge or is determined to solve a mystery, learn a secret, or unravel a cryptic prophecy.
-      9: Destiny Seeker. The item is convinced that it and its wielder have key roles to play in future events.
-      10: Creator Seeker. The item seeks its creator and wants to understand why it was created.
+    oneOf:
+      - Aligned. The item seeks to defeat or destroy those of a diametrically opposed alignment. (Such an item is never neutral.)
+      - Bane. The item seeks to defeat or destroy creatures of a particular kind, such as fiends, shapechangers, trolls, or wizards.
+      - Protector. The item seeks to defend a particular race or kind of creature, such as elves or druids.
+      - Crusader. The item seeks to defeat, weaken, or destroy the servants of a particular deity.
+      - Templar. The item seeks to defend the servants and interests of a particular deity.
+      - Destroyer. The item craves destruction and goads its user to fight arbitrarily.
+      - Glory Seeker. The item seeks renown as the greatest magic item in the world, by establishing its user as a famous or notorious figure.
+      - Lore Seeker. The item craves knowledge or is determined to solve a mystery, learn a secret, or unravel a cryptic prophecy.
+      - Destiny Seeker. The item is convinced that it and its wielder have key roles to play in future events.
+      - Creator Seeker. The item seeks its creator and wants to understand why it was created.
 
 
 descriptions:

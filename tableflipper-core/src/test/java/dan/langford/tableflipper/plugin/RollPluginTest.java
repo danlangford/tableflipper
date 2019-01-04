@@ -21,7 +21,7 @@ public class RollPluginTest {
         // unfortunately invalid expressions will not always throw exceptions
         //
 
-        List.of("1d20", "2d6", "3d12+3", "4d4-4", "6d6y").forEach(expr -> {
+        List.of("78", "1d20", "2d6", "3d12+3", "4d4-4", "6d6y").forEach(expr -> {
             assertDoesNotThrow(() -> {
                 log.info("attempting expr [{}]",expr);
                 String result = p.resolve(expr).orElseThrow();

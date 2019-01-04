@@ -1,52 +1,36 @@
 tables:
   # https://nerdsonearth.com/2015/03/npc-personality-traits-dnd-5e/
   npc-traits/npc:
-    roll: 1d1
-    results:
-      1: "Name: <table npc-traits/name>\nPhysical: <table npc-traits/physical>\nPersonality: <table npc-traits/personality>"
+    oneOf: ["Name: <table npc-traits/name>\nPhysical: <table npc-traits/physical>\nPersonality: <table npc-traits/personality>"]
   npc-traits/physical:
-    roll: 1d12
-    results:
-      1: Bushy Sideburns (Obviously, this is funnier if it’s a female NPC.)
-      2: Noticeably Crooked Teeth (You can play this NPC with a touch of self-contiousness, like hiding their mouth when they talk, for example.)
-      3: Freckled
-      4: Missing 7th Finger (Adds a touch of mystery to the character.)
-      5: Scar from an Animal Attack (Perhaps this looks like 4 claw slashes.)
-      6: Single Braid in Beard (Add some beads. Why not?)
-      7: Missing Right Ear (Perhaps this is a badge of honor and they don’t try to hide it behind hair.)
-      8: Impeccably Dressed (Dapper, and this stands out amongst most others who are more casually dressed.)
-      9: Frizzy Hair
-      10: Heavily Perfumed (You don’t just catch a whiff, it almost knocks you over.)
-      11: Grey Eyes
-      12: Thin and Wiry
+    oneOf:
+      - Bushy Sideburns (Obviously, this is funnier if it’s a female NPC.)
+      - Noticeably Crooked Teeth (You can play this NPC with a touch of self-contiousness, like hiding their mouth when they talk, for example.)
+      - Freckled
+      - Missing 7th Finger (Adds a touch of mystery to the character.)
+      - Scar from an Animal Attack (Perhaps this looks like 4 claw slashes.)
+      - Single Braid in Beard (Add some beads. Why not?)
+      - Missing Right Ear (Perhaps this is a badge of honor and they don’t try to hide it behind hair.)
+      - Impeccably Dressed (Dapper, and this stands out amongst most others who are more casually dressed.)
+      - Frizzy Hair
+      - Heavily Perfumed (You don’t just catch a whiff, it almost knocks you over.)
+      - Grey Eyes
+      - Thin and Wiry
   npc-traits/personality:
-    roll: 1d12
-    results:
-      1: Intolerant Toward Others (Toward other races, other professions, other cases, or perhaps other beliefs.)
-      2: Enthusiastic (Every conversation is predictably encouraging and optimistic.)
-      3: Well-Spoken (Makes you wonder where their education came from.)
-      4: Man of Few Words (This NPC isn’t withholding, it’s just that every answer is just one word or so.)
-      5: Jealous (of the PCs)
-      6: Mean to Commoners or Service Staff
-      7: Compassionate (Perhaps you catch them given coppers to beggar kids or they ask you to show mercy.)
-      8: Bloodthirsty (Consistently pushing PCs into a fight with bandits, goblins, whoever…)
-      9: Studious (Asks questions. Considers answers. Wants to understand fully and willing to take the time to get to the truth.)
-      10: Polite and Patient
-      11: Weak-willed (You get a sense that this NPC gets pushed around often.)
-      12: Concerned (You might be able to use this as a hook for a side quest or encounter.  What is he or she concerned about?  A lost item or person?  An unsettling stranger in town?  Maybe they’re concerned for the PCs because they overheard a group of ruffians planning violence towards them.)
+    oneOf:
+      - Intolerant Toward Others (Toward other races, other professions, other cases, or perhaps other beliefs.)
+      - Enthusiastic (Every conversation is predictably encouraging and optimistic.)
+      - Well-Spoken (Makes you wonder where their education came from.)
+      - Man of Few Words (This NPC isn’t withholding, it’s just that every answer is just one word or so.)
+      - Jealous (of the PCs)
+      - Mean to Commoners or Service Staff
+      - Compassionate (Perhaps you catch them given coppers to beggar kids or they ask you to show mercy.)
+      - Bloodthirsty (Consistently pushing PCs into a fight with bandits, goblins, whoever…)
+      - Studious (Asks questions. Considers answers. Wants to understand fully and willing to take the time to get to the truth.)
+      - Polite and Patient
+      - Weak-willed (You get a sense that this NPC gets pushed around often.)
+      - Concerned (You might be able to use this as a hook for a side quest or encounter.  What is he or she concerned about?  A lost item or person?  An unsettling stranger in town?  Maybe they’re concerned for the PCs because they overheard a group of ruffians planning violence towards them.)
   npc-traits/name:
-    roll: 1d1
-    results:
-      1: <table npc-traits/syllabel><table npc-traits/syllabel><table npc-traits/syllabel>
+    oneOf: [ <table npc-traits/syllabel><table npc-traits/syllabel><table npc-traits/syllabel> ]
   npc-traits/syllabel:
-    roll: 1d9
-    results:
-      1: do
-      2: re
-      3: mi
-      4: fa
-      5: so
-      6: la
-      7: ti
-      8: do
-      9: "'"
+    oneOf: [do, re, mi, fa, so, la, ti, do, "'"]

@@ -1,6 +1,7 @@
 package dan.langford.tableflipper.tom;
 
 import java.util.Collections;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -37,37 +38,43 @@ public class TableObjectModel {
     public static class Table {
         String roll, name;
         Map<String,String> results;
+        List<String> oneOf;
 
         public Table() {
         }
 
         public String getRoll() {
-            return this.roll;
-        }
-
-        public String getName() {
-            return this.name;
-        }
-
-        public Map<String, String> getResults() {
-            return this.results;
+            return roll;
         }
 
         public void setRoll(String roll) {
             this.roll = roll;
         }
 
+        public String getName() {
+            return name;
+        }
+
         public void setName(String name) {
             this.name = name;
+        }
+
+        public Map<String, String> getResults() {
+            return results;
         }
 
         public void setResults(Map<String, String> results) {
             this.results = results;
         }
 
-        public String toString() {
-            return "TableObjectModel.Table(roll=" + this.getRoll() + ", name=" + this.getName() + ", results=" + this.getResults() + ")";
+        public List<String> getOneOf() {
+            return oneOf;
         }
+
+        public void setOneOf(List<String> oneOf) {
+            this.oneOf = oneOf;
+        }
+
         // TODO see if i can create a RollGroup that can test given numbers against a range
     }
 }

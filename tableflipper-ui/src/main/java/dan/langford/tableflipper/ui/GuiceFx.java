@@ -1,7 +1,7 @@
 package dan.langford.tableflipper.ui;
 
-import com.google.inject.*;
 import com.google.inject.Module;
+import com.google.inject.*;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 

@@ -31,15 +31,31 @@ public class TablePlugin implements TomPlugin {
             log.debug("table {} not found", tableName);
             tableResult[0] = null;
         } else {
-            String expr = table.getRoll();
-            roll.resolve(expr,false).ifPresentOrElse(rollResult -> {
-                log.debug("rolled {}={} for table {}", expr, rollResult, tableName);
-                String rollGroup = findRollGroup(table, Integer.parseInt(rollResult));
-                tableResult[0] = table.getResults().get(rollGroup);
-            }, () -> {
-                log.debug("problem rolling {}",expr);
-                tableResult[0] = null;
-            });
+            if(table.getRoll()!=null && table.getResults() !=null) {
+                String expr = table.getRoll();
+                roll.resolve(expr,false).ifPresentOrElse(rollResult -> {
+                    log.debug("rolled {}={} for table {}", expr, rollResult, tableName);
+                    String rollGroup = findRollGroup(table, Integer.parseInt(rollResult));
+                    tableResult[0] = table.getResults().get(rollGroup);
+                }, () -> {
+                    log.debug("problem rolling {}",expr);
+                    tableResult[0] = null;
+                });
+            } else if (table.getOneOf()!=null) {
+                String expr = "1d"+table.getOneOf().size();
+                roll.resolve(expr,false).ifPresentOrElse(rollResult -> {
+                    log.debug("rolled {}={} for table {}", expr, rollResult, tableName);
+                    tableResult[0] = table.getOneOf().get(Integer.parseInt(rollResult)-1);
+                }, () -> {
+                    log.debug("problem rolling {}",expr);
+                    tableResult[0] = null;
+                });
+            } else {
+                log.debug("not enough info to roll table");
+                tableResult[0]=null;
+            }
+
+
 
         }
         return Optional.ofNullable(tableResult[0]);
