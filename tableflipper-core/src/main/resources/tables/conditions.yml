@@ -1,0 +1,19 @@
+tables:
+  core/condition:
+    oneOf:
+      - Blinded
+      - Charmed
+      - Deafened
+      - Fatigued
+      - Frightened
+      - Grappled
+      - Incapacitated
+      - Invisible
+      - Paralyzed
+      - Petrified
+      - Poisoned
+      - Prone
+      - Restrained
+      - Stunned
+      - Unconscious
+      - Exhaustion
