@@ -52,7 +52,7 @@ tables:
     oneOf:
       - <table wild_magic/target> have their <table utility/body_part> turn the color <table utility/color> for <roll 1d12> <table duration> (a remove curse spell can fix this)
       - <table wild_magic/target> incurs the <table core/condition> condition for <roll 1d100> rounds
-      - <table substantial_level>, <table utility/color>-colored <table floaty_things> float within <roll 1d10>' around <table wild_magic/target>, for <roll 1d12> <table duration_skewed>
+      - <table substantial_level>, <table utility/color>-colored <table floaty_things> float within <roll 1d10>' surrounding <table wild_magic/target>, for <roll 1d12> <table duration_skewed>
   utility/body_part:
     oneOf:
       - ankle
