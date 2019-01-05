@@ -1,9 +1,7 @@
 package dan.langford.tableflipper.ui;
 
-import com.vladsch.flexmark.ast.Emphasis;
-import com.vladsch.flexmark.ast.Heading;
-import com.vladsch.flexmark.ast.Paragraph;
-import com.vladsch.flexmark.ast.StrongEmphasis;
+import com.vladsch.flexmark.ast.*;
+import com.vladsch.flexmark.util.ast.BlankLine;
 import com.vladsch.flexmark.util.ast.Node;
 import com.vladsch.flexmark.util.sequence.BasedSequence;
 import javafx.scene.text.Text;
@@ -31,6 +29,8 @@ public class TextFlowRenderContext {
             psuedoClasses = copyWith(psuedoClasses, "emphasis");
         } else if (node instanceof StrongEmphasis) {
             psuedoClasses = copyWith(psuedoClasses, "strongEmphasis");
+        } else if (node instanceof BlockQuote) {
+            psuedoClasses = copyWith(psuedoClasses, "blockQuote");
         } else if (node instanceof com.vladsch.flexmark.ast.Text) {
             return List.of(styledText(node.getChars(), psuedoClasses));
         } else if(node instanceof Heading) {
@@ -39,12 +39,18 @@ public class TextFlowRenderContext {
             return List.of(styledText(node.getChildChars(), psuedoClasses));
         } else if(node instanceof Paragraph) {
             results.add(styledText("\n",psuedoClasses));
+        }else if(node instanceof SoftLineBreak) {
+            results.add(styledText("\n",psuedoClasses));
+        } else if(node instanceof BlankLine) {
+            results.add(styledText("\n\n",psuedoClasses));
         } else {
             log.info("not handling {}", node.getClass());
         }
 
         List<String> p = psuedoClasses;
-        node.getChildren().forEach(n -> results.addAll(render(n, p)));
+        node.getChildren().forEach(n -> {
+            results.addAll(render(n, p));
+        });
         return results;
     }
 

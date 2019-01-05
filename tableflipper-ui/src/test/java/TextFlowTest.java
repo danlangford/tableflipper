@@ -45,10 +45,7 @@ public class TextFlowTest {
 
         robot.interact(() -> {
             textFlow.getChildren().setAll(texts);
-//            textFlow.getStylesheets().add(getClass().getResource("/markdown.css").toExternalForm());
-
         });
-
 
         assertEquals(4, texts.size());
         assertTrue(texts.get(0).getStyleClass().isEmpty());
@@ -61,9 +58,36 @@ public class TextFlowTest {
     }
 
     @Test
-    public void headerMarkdownTest(FxRobot robot) {
+    public void headerMarkdownTest(FxRobot robot) throws InterruptedException {
 
-        Document doc = VladschUtils.jfxParser().parse("# Header1 \n Hello *World* Nice **Picnic**");
+
+
+        Document doc = VladschUtils.jfxParser().parse("A First Level Header\n" +
+                "====================\n" +
+                "\n" +
+                "A Second Level Header\n" +
+                "---------------------\n" +
+                "\n" +
+                "Now is the time for all good men to come to\n" +
+                "the aid of their country. This is just a\n" +
+                "regular paragraph.\n" +
+                "\n" +
+                "The quick brown fox jumped over the lazy\n" +
+                "dog's back.\n" +
+                "\n" +
+                "### Header 3\n" +
+                "\n" +
+                "> This is a blockquote.\n" +
+                "> \n" +
+                "> This is the second paragraph in the blockquote.\n" +
+                ">\n" +
+                "> ## This is an H2 in a blockquote" +
+                "\n\n\n\n" +
+                "Some of these words *are emphasized*.\n" +
+                "Some of these words _are emphasized also_.\n" +
+                "\n" +
+                "Use two asterisks for **strong emphasis**.\n" +
+                "Or, if you prefer, __use two underscores instead__.");
         List<Text> texts = new TextFlowRenderContext().render(doc);
 
         robot.interact(() -> {
@@ -71,8 +95,10 @@ public class TextFlowTest {
         });
 
         StringBuilder sb = new StringBuilder();
-        DebugUtils.saveNode(textFlow).apply(sb);
+        DebugUtils.saveWindow().apply(sb);
         log.info("screenshot? {}",sb);
+
+        Thread.sleep(5_000L);
 
         verifyThat(textFlow, hasText("Hello World Nice Picnic"));
 

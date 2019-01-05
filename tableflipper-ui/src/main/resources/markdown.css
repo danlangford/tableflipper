@@ -10,6 +10,12 @@
     -fx-font-style: italic;
 }
 
+.blockQuote {
+    -fx-fill: blue;
+    -fx-padding: 50px;
+    -fx-indent: 10%;
+}
+
 .heading1 {
     -fx-font-size: 220%;
 }

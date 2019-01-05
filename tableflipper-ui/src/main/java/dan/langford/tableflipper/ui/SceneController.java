@@ -14,7 +14,6 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.text.TextFlow;
-import javafx.scene.web.WebView;
 
 import javax.inject.Inject;
 import java.util.ArrayList;
@@ -36,9 +35,6 @@ public class SceneController {
     private ListView<String> tableList;
 
     @FXML
-    private WebView webView;
-
-    @FXML
     private TextField filter;
 
     @FXML
@@ -55,12 +51,9 @@ public class SceneController {
         if(selected!=null&&selected.trim().length()>0) {
             String rollResult = flipper.rollOnTable(selected);
             Document node = VladschUtils.jfxParser().parse(rollResult);
-            String html = VladschUtils.jfxRenderer().render(node);
-            webView.getEngine().loadContent(html);
 
-
-            Collection<? extends Node> children = new TextFlowRenderContext().render(node);
-            textFlow.getChildren().setAll(children);
+            Collection<? extends Node> texts = new TextFlowRenderContext().render(node);
+            textFlow.getChildren().setAll(texts);
 
         }
     }

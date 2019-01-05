@@ -11,7 +11,6 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.TextFlow?>
-<?import javafx.scene.web.WebView?>
 
 <Pane stylesheets="/markdown.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dan.langford.tableflipper.ui.SceneController">
    <children>
@@ -47,12 +46,9 @@
             </VBox>
          </left>
          <center>
-            <HBox BorderPane.alignment="CENTER">
-               <children>
-                  <WebView fx:id="webView" minHeight="-1.0" minWidth="-1.0" prefHeight="500.0" prefWidth="300.0" />
-                  <TextFlow fx:id="textFlow" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="500.0" prefWidth="300.0" />
-               </children>
-            </HBox>
+
+                  <TextFlow fx:id="textFlow" />
+
          </center>
          <right>
             <Label text="notes" wrapText="true" BorderPane.alignment="TOP_LEFT" />

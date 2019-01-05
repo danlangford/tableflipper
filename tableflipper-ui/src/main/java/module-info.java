@@ -4,7 +4,6 @@ module dan.langford.tableflipper.ui {
 
     requires javafx.controls;
     requires javafx.fxml;
-    requires javafx.web;
     requires javax.inject;
     requires com.google.guice;
     requires dan.langford.tableflipper;
