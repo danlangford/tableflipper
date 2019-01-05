@@ -3,11 +3,13 @@ tables:
     oneOf: ["Purpose: <table sentient/special_purpose> \nAlignment: <table sentient/alignment> \nCommunication: <table sentient/communication> \nSenses: <table sentient/senses>"]
   wild_magic/surge:
     oneOf:
+      - Roll a Wild Magic Surge effect for the next <roll 1d20> rounds
       - <table wild_magic/target> has a <table core/spell> spell cast/centered on them
       - <table wild_magic/target> gains <table core/monster_feature> for <roll 1d100> rounds
       - <table ability_score_change>
       - <roll 1d12> <table core/monster> summoned for <roll 1d12> <table duration_skewed>, <table disposition> to <table wild_magic/target>
-      - <table wild_magic/target> has <table wild_magic/effect> for <roll 1d12> <table duration_skewed>
+      - <table wild_magic/target> gains <table damage_susceptibility> to <table core/damage_type> damage for <roll 1d12> <table duration_skewed>
+      - <table wild_magic/effect>
   wild_magic/target:
     oneOf:
       - caster
@@ -17,6 +19,10 @@ tables:
       - <roll 1d4> random nearby creatures (within 60')
   disposition:
     oneOf: [friendly, hostile]
+  damage_susceptibility:
+    oneOf: [vulnerability, resistance, immunity]
+  core/damage_type:
+    oneOf: [all, acid, bludgeoning, cold, fire, force, lightning, necrotic, piercing, poison, psychic, radiant, slashing, thunder]
   duration:
     oneOf: [seconds, rounds, minutes, hours, days, weeks, months, years, decades, centuries]
   duration_skewed:
@@ -44,4 +50,146 @@ tables:
     oneOf: [decreased, increased]
   wild_magic/effect:
     oneOf:
-      - huge list of so many different random effects
+      - <table wild_magic/target> have their <table utility/body_part> turn the color <table utility/color> for <roll 1d12> <table duration> (a remove curse spell can fix this)
+      - <table wild_magic/target> incurs the <table core/condition> condition for <roll 1d100> rounds
+      - <table substantial_level>, <table utility/color>-colored <table floaty_things> float within <roll 1d10>' around <table wild_magic/target>, for <roll 1d12> <table duration_skewed>
+  utility/body_part:
+    oneOf:
+      - ankle
+      - armpit
+      - arms
+      - beard
+      - calf
+      - cheeks
+      - chest
+      - chin
+      - earlobe
+      - ears
+      - elbow
+      - eyebrows
+      - eyelashes
+      - eyelids
+      - eyes
+      - face
+      - feet
+      - finger
+      - fingernails
+      - forearm
+      - forehead
+      - gums
+      - hair
+      - left hand
+      - right hand
+      - hands
+      - head
+      - heel
+      - hip
+      - index finger
+      - jaw
+      - knees
+      - knuckles
+      - legs
+      - lips
+      - mouth
+      - mustache
+      - neck
+      - nose
+      - shoulders
+      - teeth
+      - toes
+      - tongue
+      - tushie
+      - wrists
+  utility/color:
+    oneOf:
+      - invisible
+      - amaranth
+      - amber
+      - amethyst
+      - apricot
+      - aquamarine
+      - azure
+      - baby blue
+      - beige
+      - black
+      - blue
+      - blue-green
+      - blue-violet
+      - blush
+      - bronze
+      - brown
+      - burgundy
+      - byzantium
+      - carmine
+      - cerise
+      - cerulean
+      - champagne
+      - chartreuse green
+      - chocolate
+      - cobalt blue
+      - coffee
+      - copper
+      - coral
+      - crimson
+      - cyan
+      - desert sand
+      - electric blue
+      - emerald
+      - erin
+      - gold
+      - gray
+      - green
+      - harlequin
+      - indigo
+      - ivory
+      - jade
+      - jungle green
+      - lavender
+      - lemon
+      - lilac
+      - lime
+      - magenta
+      - magenta rose
+      - maroon
+      - mauve
+      - navy blue
+      - ocher
+      - olive
+      - orange
+      - orange-red
+      - orchid
+      - peach
+      - pear
+      - periwinkle
+      - persian blue
+      - pink
+      - plum
+      - prussian blue
+      - puce
+      - purple
+      - raspberry
+      - red
+      - red-violet
+      - rose
+      - ruby
+      - salmon
+      - sangria
+      - sapphire
+      - scarlet
+      - silver
+      - slate gray
+      - spring bud
+      - spring green
+      - tan
+      - taupe
+      - teal
+      - turquoise
+      - ultramarine
+      - violet
+      - viridian
+      - white
+      - yellow
+  floaty_things:
+    oneOf: [butterflies, flower petals, bubbles, gnats, feathers, humming birds, balls, balloons, leaves, plumes of smoke, flames, droplets, dandelion seeds, flies]
+  substantial_level:
+    oneOf: [real, illusory, ethereal, astral, shadow, fey, celestial, demonic]
