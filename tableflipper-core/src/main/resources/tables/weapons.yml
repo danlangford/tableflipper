@@ -77,4 +77,4 @@ tables:
     roll: 1d100
     results:
       1-50: ""
-      51
+      51:
