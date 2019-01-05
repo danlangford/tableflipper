@@ -1,0 +1,188 @@
+tables:
+  encounter_flavor/flavor:
+    oneOf: ["Mood: <table encounter_flavor/mood>\nActivity: <table encounter_flavor/activity>\nDisposition (hostility level): <table encounter_flavor/disposition>\nHealth: <table encounter_flavor/health> \nCondition (optional): <table core/condition>"]
+  encounter_flavor/mood:
+    oneOf:
+      - accepted
+      - accomplished
+      - aggravated
+      - amused
+      - angry
+      - annoyed
+      - anxious
+      - apathetic
+      - ashamed
+      - bewildered
+      - blank
+      - blissful
+      - bored
+      - bouncy
+      - calm
+      - cautious
+      - cheerful
+      - chipper
+      - cold
+      - complacent
+      - confused
+      - content
+      - cranky
+      - crazy
+      - crushed
+      - curious
+      - cynical
+      - depressed
+      - determined
+      - devious
+      - dirty
+      - disappointed
+      - discontent
+      - ditzy
+      - dorky
+      - drained
+      - drunk
+      - ecstatic
+      - energetic
+      - enraged
+      - enthralled
+      - envious
+      - excited
+      - exhausted
+      - flirty
+      - focused
+      - frustrated
+      - full
+      - giddy
+      - giggly
+      - gloomy
+      - good
+      - grateful
+      - groggy
+      - grumpy
+      - guilty
+      - happy
+      - high
+      - hopeful
+      - hot
+      - hungry
+      - hyper
+      - impressed
+      - infuriated
+      - irate
+      - irritated
+      - jealous
+      - jubilant
+      - lazy
+      - lethargic
+      - listless
+      - lonely
+      - loving
+      - mad
+      - melancholy
+      - mellow
+      - mischievous
+      - moody
+      - naughty
+      - nerdy
+      - nervous
+      - numb
+      - optimistic
+      - peaceful
+      - pessimistic
+      - pleased
+      - predatory
+      - recumbent
+      - refreshed
+      - rejected
+      - rejuvenated
+      - relaxed
+      - relieved
+      - restless
+      - rushed
+      - sad
+      - satisfied
+      - scared
+      - shocked
+      - sick
+      - silly
+      - sleepy
+      - smart
+      - stressed
+      - surprised
+      - sympathetic
+      - thankful
+      - tired
+      - touched
+      - uncomfortable
+      - weird
+  encounter_flavor/activity:
+    oneOf:
+      - ambushing
+      - assembling
+      - boozing
+      - building
+      - burying
+      - concentrating
+      - crafting
+      - dead
+      - defending
+      - dying
+      - eating
+      - fighting
+      - fleeing
+      - foraging
+      - gathering
+      - guarding
+      - hiding
+      - hunting
+      - idling
+      - lazing
+      - loitering
+      - meditating
+      - negotiating
+      - partying
+      - pooping
+      - praying
+      - protecting
+      - pursuing
+      - relaxing
+      - resting
+      - robbing
+      - rummaging
+      - running
+      - scavenging
+      - searching
+      - sleeping
+      - stalking
+      - struggling
+      - trading
+      - travelling
+      - waiting
+      - walking
+      - watching
+  encounter_flavor/disposition:
+    oneOf:
+      - ally
+      - warm
+      - kind
+      - friendly
+      - amiable
+      - cordial
+      - polite
+      - indifferent
+      - tolerent
+      - unfriendly
+      - apprehensive
+      - dubious
+      - threatening
+      - malevolence
+      - attack
+  encounter_flavor/health:
+    oneOf:
+      - feeble (25% hp)
+      - weak (50% hp)
+      - unhealthy (75% hp)
+      - normal (100% hp)
+      - healthy (125% hp)
+      - hardy (150% hp)
+
+
