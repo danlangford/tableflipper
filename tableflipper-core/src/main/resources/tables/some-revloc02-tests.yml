@@ -7,9 +7,21 @@ tables:
       - <table wild_magic/target> has a <table core/spell> spell cast/centered on them
       - <table wild_magic/target> gains <table core/monster_feature> for <roll 1d100> rounds
       - <table ability_score_change>
-      - <roll 1d12> <table core/monster> summoned for <roll 1d12> <table duration_skewed>, <table disposition> to <table wild_magic/target>
       - <table wild_magic/target> gains <table damage_susceptibility> to <table core/damage_type> damage for <roll 1d12> <table duration_skewed>
+      - A <table weapon/quality> <table weapon/equal_probability_type> appears equiped to <table wild_magic/target>, for <roll 2d4> rounds
       - <table wild_magic/effect>
+  wild_magic/effect:
+    oneOf:
+      - <roll 1d12> <table core/monster> summoned for <roll 1d12> <table duration_skewed>, <table disposition> to <table wild_magic/target>
+      - <table wild_magic/target> have their <table utility/body_part> turn the color <table utility/color> for <roll 1d12> <table duration> (a remove curse spell can fix this)
+      - <table wild_magic/target> incurs the <table core/condition> condition for <roll 1d100> rounds
+      - <table substantial_level>, <table utility/color>-colored <table floaty_things> float within <roll 1d10>' surrounding <table wild_magic/target>, for <roll 1d12> <table duration_skewed>
+  ability_score_change:
+    oneOf:
+      - <table wild_magic/target> has <table ability_score> <table modified> by <roll 1d4> points (min 1, max 30), for <roll 1d12> <table duration_skewed>
+      - <table wild_magic/target> has <table ability_score> <table modified> by <roll 2d4> points (min 1, max 30), returns to normal at the rate of 2 points per day
+      - <table wild_magic/target> has <table ability_score> <table modified> by <roll 2d8> points (min 1, max 30), for <roll 1d12> rounds
+      - <table wild_magic/target> has <table ability_score> <table modified> by <roll 2d12> points (min 1, max 30), for <roll 1d12> seconds
   wild_magic/target:
     oneOf:
       - caster
@@ -38,21 +50,10 @@ tables:
       95-97: years
       98-99: decades
       100: centuries
-  ability_score_change:
-    oneOf:
-      - <table wild_magic/target> has <table ability_score> <table modified> by <roll 1d4> points (min 1, max 30), for <roll 1d12> <table duration_skewed>
-      - <table wild_magic/target> has <table ability_score> <table modified> by <roll 2d4> points (min 1, max 30), returns to normal at the rate of 2 points per day
-      - <table wild_magic/target> has <table ability_score> <table modified> by <roll 2d8> points (min 1, max 30), for <roll 1d12> rounds
-      - <table wild_magic/target> has <table ability_score> <table modified> by <roll 2d12> points (min 1, max 30), for <roll 1d12> seconds
   ability_score:
     oneOf: [Str, Dex, Con, Int, Wis, Cha]
   modified:
     oneOf: [decreased, increased]
-  wild_magic/effect:
-    oneOf:
-      - <table wild_magic/target> have their <table utility/body_part> turn the color <table utility/color> for <roll 1d12> <table duration> (a remove curse spell can fix this)
-      - <table wild_magic/target> incurs the <table core/condition> condition for <roll 1d100> rounds
-      - <table substantial_level>, <table utility/color>-colored <table floaty_things> float within <roll 1d10>' surrounding <table wild_magic/target>, for <roll 1d12> <table duration_skewed>
   utility/body_part:
     oneOf:
       - ankle

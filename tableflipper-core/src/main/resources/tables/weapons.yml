@@ -44,16 +44,37 @@ tables:
       - crossbow, heavy
       - longbow
       - net
-  weapon_equal_probability_type:
+  weapon/equal_probability_type:
     oneOf:
       - <table core/simple_melee_weapon>
       - <table core/simple_ranged_weapon>
       - <table core/martial_melee_weapon>
       - <table core/martial_ranged_weapon>
-  weapon_equal_probability_single:
+  weapon/equal_probability_single:
     roll: 1d37
     results:
       1-10: <table core/simple_melee_weapon>
       11-14: <table core/simple_ranged_weapon>
       15-32: <table core/martial_melee_weapon>
       33-37: <table core/martial_ranged_weapon>
+  weapon/quality:
+    roll: 1d100
+    results:
+      1-2: -3
+      3-6: -2
+      7-14: -1
+      15-25: rusty
+      26-40: normal
+      41-50: masterwork
+      51-60: mithral
+      61-70: adamantine
+      71-80: +1
+      81-90: +2
+      91-97: +3
+      98-99: +4
+      100: +5
+  weapon/magic_special_ability:
+    roll: 1d100
+    results:
+      1-50: ""
+      51
