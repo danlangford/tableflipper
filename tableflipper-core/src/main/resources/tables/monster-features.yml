@@ -1,5 +1,5 @@
 tables:
-  monster_feature:
+  core/monster_feature:
     oneOf:
       - Aggressive (similar to Orc)
       - Ambusher (similar to Doppelganger)

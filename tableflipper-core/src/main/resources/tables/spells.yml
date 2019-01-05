@@ -1,5 +1,5 @@
 tables:
-  spell:
+  core/spell:
     oneOf:
       - Acid Splash (cantrip, phb 211)
       - Blade Ward (cantrip, phb 218)

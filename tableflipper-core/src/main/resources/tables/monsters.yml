@@ -1,5 +1,5 @@
 tables:
-  monster:
+  core/monster:
     oneOf:
       - Frog (CR 0, mm 322)
       - Sea Horse (CR 0, mm 337)
