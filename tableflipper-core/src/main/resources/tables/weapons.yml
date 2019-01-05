@@ -1,0 +1,59 @@
+tables:
+  core/simple_melee_weapon:
+    oneOf:
+      - club
+      - dagger
+      - greatclub
+      - handaxe
+      - javelin
+      - light hammer
+      - mace
+      - quarterstaff
+      - sickle
+      - spear
+  core/simple_ranged_weapon:
+    oneOf:
+      - crossbow, light
+      - dart
+      - shortbow
+      - sling
+  core/martial_melee_weapon:
+    oneOf:
+      - battleaxe
+      - flail
+      - glaive
+      - greataxe
+      - greatsword
+      - halberd
+      - lance
+      - longsword
+      - maul
+      - morningstar
+      - pike
+      - rapier
+      - scimitar
+      - shortsword
+      - trident
+      - war pick
+      - warhammer
+      - whip
+  core/martial_ranged_weapon:
+    oneOf:
+      - blowgun
+      - crossbow, hand
+      - crossbow, heavy
+      - longbow
+      - net
+  weapon_equal_probability_type:
+    oneOf:
+      - <table core/simple_melee_weapon>
+      - <table core/simple_ranged_weapon>
+      - <table core/martial_melee_weapon>
+      - <table core/martial_ranged_weapon>
+  weapon_equal_probability_single:
+    roll: 1d37
+    results:
+      1-10: <table core/simple_melee_weapon>
+      11-14: <table core/simple_ranged_weapon>
+      15-32: <table core/martial_melee_weapon>
+      33-37: <table core/martial_ranged_weapon>
