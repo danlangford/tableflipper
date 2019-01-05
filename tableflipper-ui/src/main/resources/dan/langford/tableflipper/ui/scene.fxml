@@ -5,17 +5,19 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.TextFlow?>
+<?import javafx.scene.web.WebView?>
 
-<Pane xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dan.langford.tableflipper.ui.SceneController">
+<Pane stylesheets="/markdown.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dan.langford.tableflipper.ui.SceneController">
    <children>
       <BorderPane layoutX="1.0">
          <top>
-            <MenuBar BorderPane.alignment="CENTER" useSystemMenuBar="true" fx:id="menuBar">
+            <MenuBar fx:id="menuBar" useSystemMenuBar="true" BorderPane.alignment="CENTER">
                <menus>
                   <Menu mnemonicParsing="false" text="File">
                      <items>
@@ -45,7 +47,12 @@
             </VBox>
          </left>
          <center>
-                <TextArea fx:id="tableResults" promptText="table roll results will appear here" wrapText="true" BorderPane.alignment="CENTER" />
+            <HBox BorderPane.alignment="CENTER">
+               <children>
+                  <WebView fx:id="webView" minHeight="-1.0" minWidth="-1.0" prefHeight="500.0" prefWidth="300.0" />
+                  <TextFlow fx:id="textFlow" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="500.0" prefWidth="300.0" />
+               </children>
+            </HBox>
          </center>
          <right>
             <Label text="notes" wrapText="true" BorderPane.alignment="TOP_LEFT" />
@@ -53,6 +60,7 @@
          <bottom>
             <Label fx:id="jVersionLabel" text="jVersionLabel" wrapText="true" BorderPane.alignment="CENTER_LEFT" />
          </bottom>
-      </BorderPane>
+
+            </BorderPane>
    </children>
 </Pane>
