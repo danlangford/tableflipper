@@ -3,10 +3,10 @@ tables:
     oneOf: ["Purpose: <table sentient/special_purpose> \nAlignment: <table sentient/alignment> \nCommunication: <table sentient/communication> \nSenses: <table sentient/senses>"]
   wild_magic/surge:
     oneOf:
-      - <table wild_magic/target> has a <table spell> spell cast/centered on them
-      - <table wild_magic/target> gains <table monster_feature> for <roll 1d100> rounds
+      - <table wild_magic/target> has a <table core/spell> spell cast/centered on them
+      - <table wild_magic/target> gains <table core/monster_feature> for <roll 1d100> rounds
       - <table ability_score_change>
-      - <roll 1d12> <table monster> summoned for <roll 1d12> <table duration_skewed>, <table disposition> to <table wild_magic/target>
+      - <roll 1d12> <table core/monster> summoned for <roll 1d12> <table duration_skewed>, <table disposition> to <table wild_magic/target>
       - <table wild_magic/target> has <table wild_magic/effect> for <roll 1d12> <table duration_skewed>
   wild_magic/target:
     oneOf:
