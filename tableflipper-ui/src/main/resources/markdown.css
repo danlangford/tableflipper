@@ -1,0 +1,35 @@
+.root {
+    -fx-font-family: Arial;
+}
+
+.strongEmphasis {
+    -fx-font-weight: bold;
+}
+
+.emphasis {
+    -fx-font-style: italic;
+}
+
+.heading1 {
+    -fx-font-size: 220%;
+}
+
+.heading2 {
+    -fx-font-size: 200%;
+}
+
+.heading3 {
+    -fx-font-size: 180%;
+}
+
+.heading4 {
+    -fx-font-size: 160%;
+}
+
+.heading5 {
+    -fx-font-size: 140%;
+}
+
+.heading6 {
+    -fx-font-size: 120%;
+}

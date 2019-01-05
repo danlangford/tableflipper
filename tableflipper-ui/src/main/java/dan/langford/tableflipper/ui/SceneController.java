@@ -1,15 +1,24 @@
 package dan.langford.tableflipper.ui;
 
+import com.vladsch.flexmark.util.ast.Document;
+import com.vladsch.flexmark.util.options.MutableDataSet;
 import dan.langford.tableflipper.TableFlipper;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.*;
+import javafx.scene.Node;
+import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
+import javafx.scene.control.MenuBar;
+import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.text.TextFlow;
+import javafx.scene.web.WebView;
 
 import javax.inject.Inject;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 import static java.text.MessageFormat.format;
@@ -26,23 +35,33 @@ public class SceneController {
     @FXML
     private ListView<String> tableList;
 
-//    @FXML
-//    private TreeView<String> tableTree;
-
     @FXML
-    private TextArea tableResults;
+    private WebView webView;
 
     @FXML
     private TextField filter;
 
     @FXML
+    private TextFlow textFlow;
+
+    @FXML
     private MenuBar menuBar;
+
+    MutableDataSet options = new MutableDataSet();
 
     @FXML
     public void handleClick(MouseEvent event){
         String selected = tableList.getSelectionModel().getSelectedItem();
         if(selected!=null&&selected.trim().length()>0) {
-            tableResults.setText(flipper.rollOnTable(selected));
+            String rollResult = flipper.rollOnTable(selected);
+            Document node = VladschUtils.jfxParser().parse(rollResult);
+            String html = VladschUtils.jfxRenderer().render(node);
+            webView.getEngine().loadContent(html);
+
+
+            Collection<? extends Node> children = new TextFlowRenderContext().render(node);
+            textFlow.getChildren().setAll(children);
+
         }
     }
 
@@ -81,22 +100,6 @@ public class SceneController {
         filteredList = entireList;
 
         tableList.setItems(FXCollections.observableList(filteredList));
-
-//        TreeItem<String> root = new TreeItem<>("tables");
-//        for (String name : filteredList) {
-//            TreeItem<String> temp = root;
-//            for (String part : name.split("/")) {
-//                Optional<TreeItem<String>> child = temp.getChildren().stream().filter(s -> s.getValue().equals(part)).findAny();
-//                if (child.isPresent()) {
-//                    temp = child.get();
-//                } else {
-//                    TreeItem<String> tempChild = new TreeItem<>(part);
-//                    temp.getChildren().add(tempChild);
-//                    temp = tempChild;
-//                }
-//            }
-//        }
-//        tableTree.setRoot(root);
 
     }
 }
