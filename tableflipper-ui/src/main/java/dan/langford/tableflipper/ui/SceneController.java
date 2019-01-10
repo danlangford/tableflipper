@@ -41,6 +41,12 @@ public class SceneController {
     private TextFlow textFlow;
 
     @FXML
+    private TextFlow history1;
+
+    @FXML
+    private TextFlow history2;
+
+    @FXML
     private MenuBar menuBar;
 
     MutableDataSet options = new MutableDataSet();
@@ -53,6 +59,8 @@ public class SceneController {
             Document node = VladschUtils.jfxParser().parse(rollResult);
 
             Collection<? extends Node> texts = new TextFlowRenderContext().render(node);
+            history2.getChildren().setAll(history1.getChildren());
+            history1.getChildren().setAll(textFlow.getChildren());
             textFlow.getChildren().setAll(texts);
 
         }
