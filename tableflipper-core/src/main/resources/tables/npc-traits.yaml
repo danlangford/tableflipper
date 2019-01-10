@@ -1,7 +1,7 @@
 tables:
   # https://nerdsonearth.com/2015/03/npc-personality-traits-dnd-5e/
   npc-traits/npc:
-    oneOf: [ "**Name** <table npc-traits/name>\n **Physical** <table npc-traits/physical>\n **Personality** <table npc-traits/personality>" ]
+    oneOf: [ "__Name__ <table npc-traits/name>\n __Physical__ <table npc-traits/physical>\n __Personality__ <table npc-traits/personality>" ]
   npc-traits/physical:
     oneOf:
       - Bushy Sideburns (Obviously, this is funnier if it’s a female NPC.)
