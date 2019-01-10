@@ -11,56 +11,57 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.TextFlow?>
 
-<Pane stylesheets="/markdown.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dan.langford.tableflipper.ui.SceneController">
-   <children>
-      <BorderPane layoutX="1.0">
-         <top>
-            <MenuBar fx:id="menuBar" useSystemMenuBar="true" BorderPane.alignment="CENTER">
-               <menus>
-                  <Menu mnemonicParsing="false" text="File">
-                     <items>
-                        <MenuItem mnemonicParsing="false" text="Close" />
-                     </items>
-                  </Menu>
-                  <Menu mnemonicParsing="false" text="Edit">
-                     <items>
-                        <MenuItem mnemonicParsing="false" text="Delete" />
-                     </items>
-                  </Menu>
-                  <Menu mnemonicParsing="false" text="Help">
-                     <items>
-                        <MenuItem mnemonicParsing="false" text="About" />
-                     </items>
-                  </Menu>
-               </menus>
-            </MenuBar>
-         </top>
-         <left>
-            <VBox BorderPane.alignment="CENTER">
-               <children>
-                  <TextField fx:id="filter" onAction="#handleAction" onKeyTyped="#handleKeyTyped" promptText="filter" />
-                   <ListView fx:id="tableList" onMouseClicked="#handleClick" VBox.vgrow="ALWAYS" />
-                  <!--<TreeView fx:id="tableTree" prefHeight="200.0" prefWidth="200.0" />-->
-               </children>
-            </VBox>
-         </left>
-         <right>
-            <Label text="notes" wrapText="true" BorderPane.alignment="TOP_LEFT" />
-         </right>
-         <bottom>
-            <Label fx:id="jVersionLabel" text="jVersionLabel" wrapText="true" BorderPane.alignment="CENTER_LEFT" />
-         </bottom>
-         <center>
-            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
-               <children>
-      
-                        <TextFlow fx:id="textFlow" />
-                  <TextFlow fx:id="history1" prefHeight="200.0" prefWidth="200.0" />
-                  <TextFlow fx:id="history2" prefHeight="200.0" prefWidth="200.0" />
-               </children>
-            </VBox>
-         </center>
+<Pane stylesheets="/markdown.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="dan.langford.tableflipper.ui.SceneController">
+    <children>
+        <BorderPane layoutX="1.0">
+            <top>
+                <MenuBar fx:id="menuBar" useSystemMenuBar="true" BorderPane.alignment="CENTER">
+                    <menus>
+                        <Menu mnemonicParsing="false" text="File">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Close"/>
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Edit">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Delete"/>
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Help">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="About"/>
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+            </top>
+            <left>
+                <VBox BorderPane.alignment="CENTER">
+                    <children>
+                        <TextField fx:id="filter" onAction="#handleAction" onKeyTyped="#handleKeyTyped"
+                                   promptText="filter"/>
+                        <ListView fx:id="tableList" onMouseClicked="#handleClick" VBox.vgrow="ALWAYS"/>
+                        <!--<TreeView fx:id="tableTree" prefHeight="200.0" prefWidth="200.0" />-->
+                    </children>
+                </VBox>
+            </left>
+            <center>
+                <VBox BorderPane.alignment="CENTER">
+                    <children>
 
-            </BorderPane>
-   </children>
+                        <TextFlow fx:id="textFlow" prefHeight="150.0" prefWidth="300.0"/>
+                        <TextFlow fx:id="history1" prefHeight="150.0" prefWidth="300.0"/>
+                        <TextFlow fx:id="history2" prefHeight="150.0" prefWidth="300.0"/>
+                    </children>
+                </VBox>
+            </center>
+            <right>
+                <Label text="notes" wrapText="true" BorderPane.alignment="TOP_LEFT"/>
+            </right>
+            <bottom>
+                <Label fx:id="jVersionLabel" text="jVersionLabel" wrapText="true" BorderPane.alignment="CENTER_LEFT"/>
+            </bottom>
+        </BorderPane>
+    </children>
 </Pane>
