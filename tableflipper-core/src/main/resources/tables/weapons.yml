@@ -60,11 +60,11 @@ tables:
   weapon/quality:
     roll: 1d100
     results:
-      1-2: -3
-      3-6: -2
-      7-14: -1
+      1-2: cursed -3
+      3-6: cursed -2
+      7-14: cursed -1
       15-25: rusty
-      26-40: normal
+      26-40: ""
       41-50: masterwork
       51-60: mithral
       61-70: adamantine
