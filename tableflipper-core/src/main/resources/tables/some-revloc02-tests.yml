@@ -10,8 +10,10 @@ tables:
       - <table wild_magic/target> gains <table damage_susceptibility> to <table core/damage_type> damage for <roll 1d12> <table duration_skewed>
       - A <table weapon/quality> <table weapon/equal_probability_type> appears equiped to <table wild_magic/target>, for <roll 2d4> rounds
       - <table wild_magic/effect>
+      - <table wild_magic/target> <table wild_magic/magic_fabric_modified>
   wild_magic/effect:
     oneOf:
+      - Caster casts a <table core/spell> spell (in addition to the spell that caused the wild magic surge)
       - <roll 1d12> <table core/monster> summoned for <roll 1d12> <table duration_skewed>, <table disposition> to <table wild_magic/target>
       - <table wild_magic/target> have their <table utility/body_part> turn the color <table utility/color> for <roll 1d12> <table duration> (a remove curse spell can fix this)
       - <table wild_magic/target> incurs the <table core/condition> condition for <roll 1d100> rounds
@@ -28,7 +30,7 @@ tables:
       - target
       - random ally (within 60')
       - random enemy (within 60')
-      - <roll 1d4> random nearby creatures (within 60')
+      - <roll 1d4> random creatures (within 60')
   disposition:
     oneOf: [friendly, hostile]
   damage_susceptibility:
@@ -54,6 +56,16 @@ tables:
     oneOf: [Str, Dex, Con, Int, Wis, Cha]
   modified:
     oneOf: [decreased, increased]
+  wild_magic/magic_fabric_modified:
+    oneOf:
+      - loses a 1st level spell slot
+      - loses <roll 1d2> sorcery points
+      - regains all expended sorcery points
+      - regains lowest expended spell slot
+      - gains a 1st level spell slot
+      - gains <roll 1d4> sorcery points
+      - has the ability to cast any cantrip for the next <roll 1d4> rounds
+      - has the ability to cast any 1st level spell for 1 round
   utility/body_part:
     oneOf:
       - ankle
