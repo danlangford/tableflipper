@@ -36,15 +36,18 @@ public class TableFlipperCli {
 
     private void run() {
 
-        String doExit="";
+        String choice="";
+        String decision="";
         do {
-            String decision = dm.promptFor(new ArrayList<>(flipper.getTableNames()));
-            log.debug("you selected {}", decision);
+            if(!choice.toLowerCase().equals("r")) {
+                decision = dm.promptFor(new ArrayList<>(flipper.getTableNames()));
+                log.debug("you selected {}", decision);
+            }
             dm.say("\nRoll on Table {} is {}\n", decision, flipper.rollOnTable(decision));
-            doExit = dm.ask("press [Enter] to continue, [x] to exit.");
-        } while (!doExit.toLowerCase().contains("x"));
+            choice = dm.ask("press [Enter] for another table, [r] to reroll the table, [x] to exit.");
+        } while (!choice.toLowerCase().equals("x"));
 
-        log.debug("exiting due to response: {}", doExit);
+        log.debug("exiting due to response: {}", choice);
 
     }
 }
