@@ -18,8 +18,7 @@ tables:
       - <table wild_magic/target> have their <table utility/body_part> turn the color <table utility/color> for <roll 1d12> <table duration> (a remove curse spell can fix this)
       - <table wild_magic/target> incurs the <table core/condition> condition for <roll 1d100> rounds
       - <roll 100d12> <table substantial_level>, <table utility/color>-colored <table floaty_things> float within <roll 2d8>' surrounding <table wild_magic/target>, for <roll 1d12> <table duration_skewed>
-      - <table wild_magic/target> instantly receives all of the benefits of a short rest
-      - <table wild_magic/target> instantly receives all of the benefits of a long rest
+      - <table wild_magic/target> instantly receives all of the benefits of a <table short_or_long> rest
       - <table wild_magic/target> has <roll 2d50> <table money> <table target_proximity>
   ability_score_change:
     oneOf:
@@ -36,6 +35,8 @@ tables:
       - <roll 1d4> random creatures (within 60')
   disposition:
     oneOf: [friendly, hostile]
+  short_or_long:
+    oneOf: [short, long]
   damage_susceptibility:
     oneOf: [vulnerability, resistance, immunity]
   core/damage_type:
@@ -71,6 +72,11 @@ tables:
       - gains <roll 1d4> sorcery points
       - has the ability to cast any cantrip for the next <roll 2d4> rounds
       - has the ability to cast any 1st level spell for 1 round
+      - has all of their <table character_capability> become <table multiplier> as potent for <roll 1d4> rounds
+  character_capability:
+    oneOf: [magic items, spells, class features, feats, ability modifiers, proficiency, saving throws]
+  multiplier:
+    oneOf: [half, twice, thrice]
   target_proximity:
     oneOf:
       - appear in their hands
