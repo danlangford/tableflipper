@@ -1,5 +1,5 @@
 tables:
-  dndspeak/personality_quirks:
+  dndspeak/personality_quirk:
     oneOf:
       - "You’re a vegan, and make sure everyone you meet knows."
       - "You’re obsessed with personal hygiene."

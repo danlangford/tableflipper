@@ -1,5 +1,5 @@
 tables:
-  dndspeak/npc/physical_traits:
+  dndspeak/npc/physical_trait:
     oneOf:
       - A long, glorious beard. Each braid represents another person that has asked him what the braids mean.
       - The npc has a cleft cut into their nose.

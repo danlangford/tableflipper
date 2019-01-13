@@ -176,7 +176,7 @@ tables:
       - dubious
       - threatening
       - malevolence
-      - attack on sight
+      - murderous
   encounter_flavor/health:
     oneOf:
       - feeble (25% hp)
