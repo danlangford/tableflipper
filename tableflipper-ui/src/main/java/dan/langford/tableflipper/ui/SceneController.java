@@ -39,7 +39,7 @@ public class SceneController {
     private TextField filter;
 
     @FXML
-    private TextFlow textFlow;
+    private TextFlow tableResults;
 
     @FXML
     private TextFlow history1;
@@ -66,8 +66,8 @@ public class SceneController {
 
             Collection<? extends Node> texts = new TextFlowRenderContext().render(node);
             history2.getChildren().setAll(history1.getChildren());
-            history1.getChildren().setAll(textFlow.getChildren());
-            textFlow.getChildren().setAll(texts);
+            history1.getChildren().setAll(tableResults.getChildren());
+            tableResults.getChildren().setAll(texts);
 
         }
     }
