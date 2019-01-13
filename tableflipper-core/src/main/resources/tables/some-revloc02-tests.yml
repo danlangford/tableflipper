@@ -1,3 +1,9 @@
 tables:
   sentient/item:
     oneOf: ["Purpose: <table sentient/special_purpose> \nAlignment: <table sentient/alignment> \nCommunication: <table sentient/communication> \nSenses: <table sentient/senses>"]
+  test/recursive:
+    oneOf:
+      - this
+      - that
+      - the other thing
+      - <table test/recursive> and <table test/recursive>
