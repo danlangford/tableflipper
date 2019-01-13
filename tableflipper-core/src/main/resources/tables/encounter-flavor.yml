@@ -1,6 +1,6 @@
 tables:
   encounter_flavor/flavor:
-    oneOf: ["Mood: <table encounter_flavor/mood>\nActivity: <table encounter_flavor/activity>\nDisposition (hostility level): <table encounter_flavor/disposition>\nHealth: <table encounter_flavor/health> \nCondition (optional): <table core/condition>"]
+    oneOf: ["__Mood:__ <table encounter_flavor/mood>\n__Activity:__ <table encounter_flavor/activity>\n__Disposition (hostility level):__ <table encounter_flavor/disposition>\n__Health:__ <table encounter_flavor/health> \n__Condition (optional):__ <table core/condition>"]
   encounter_flavor/mood:
     oneOf:
       - accepted
@@ -159,6 +159,7 @@ tables:
       - waiting
       - walking
       - watching
+  # disposition is supposed to represent the level of hostility from most friendly to attacking on sight
   encounter_flavor/disposition:
     oneOf:
       - ally
@@ -175,7 +176,7 @@ tables:
       - dubious
       - threatening
       - malevolence
-      - attack
+      - attack on sight
   encounter_flavor/health:
     oneOf:
       - feeble (25% hp)

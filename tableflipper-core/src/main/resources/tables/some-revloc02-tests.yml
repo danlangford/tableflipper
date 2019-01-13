@@ -1,31 +1,33 @@
 tables:
   sentient/item:
     oneOf: ["Purpose: <table sentient/special_purpose> \nAlignment: <table sentient/alignment> \nCommunication: <table sentient/communication> \nSenses: <table sentient/senses>"]
+  # wild magic main table, contains the most magical and most common and fun results
   wild_magic/surge:
     oneOf:
       - <table wild_magic/target> has a <table core/spell> spell cast/centered on them
       - <table wild_magic/target> gains <table core/monster_feature> for <roll 1d100> rounds
-      - <table wild_magic/target> gains <table damage_susceptibility> to <table core/damage_type> damage for <roll 1d12> <table duration_skewed>
+      - <table wild_magic/target> gains <table utility/damage_susceptibility> to <table core/damage_type> damage for <roll 1d12> <table utility/duration_skewed>
       - A <table weapon/quality> <table weapon/equal_probability_type> appears equipped to <table wild_magic/target>, for <roll 2d4> rounds
       - <table wild_magic/target> <table wild_magic/magic_fabric_modified>
-      - <table ability_score_change>
+      - <table wild_magic/ability_score_change>
       - <table wild_magic/effect>
+  # effect table represents either more rare or more unusual/random results that are necessarily magic in nature
   wild_magic/effect:
     oneOf:
       - Roll a Wild Magic Surge effect for the next <roll 1d20> rounds
       - Caster casts a <table core/spell> spell (in addition to the spell that caused the wild magic surge), and they may choose the target and other spell parameters
-      - <roll 1d12> <table core/monster> summoned for <roll 1d12> <table duration_skewed>, <table disposition> to <table wild_magic/target>
-      - <table wild_magic/target> have their <table utility/body_part> turn the color <table utility/color> for <roll 1d12> <table duration> (a remove curse spell can fix this)
+      - <roll 1d12> <table core/monster> summoned for <roll 1d12> <table utility/duration_skewed>, <table wild_magic/disposition> <table wild_magic/target>
+      - <table wild_magic/target> have their <table utility/body_part> turn the color <table utility/color> for <roll 1d12> <table utility/duration> (a remove curse spell can fix this)
       - <table wild_magic/target> incurs the <table core/condition> condition for <roll 1d100> rounds
-      - <roll 100d12> <table substantial_level>, <table utility/color>-colored <table floaty_things> float within <roll 2d8>' surrounding <table wild_magic/target>, for <roll 1d12> <table duration_skewed>
-      - <table wild_magic/target> instantly receives all of the benefits of a <table short_or_long> rest
-      - <table wild_magic/target> has <roll 2d50> <table money> <table target_proximity>
-  ability_score_change:
+      - <roll 100d12> <table wild_magic/substantial_level>, <table utility/color>-colored <table wild_magic/floaty_things> float within <roll 2d8>' surrounding <table wild_magic/target>, for <roll 1d12> <table utility/duration_skewed>
+      - <table wild_magic/target> instantly receives all of the benefits of a <table utility/short_or_long> rest
+      - <table wild_magic/target> has <roll 2d50> <table core/money> <table wild_magic/target_proximity>
+  wild_magic/ability_score_change:
     oneOf:
-      - <table wild_magic/target> has <table ability_score> <table modified> by <roll 1d4> points (min 1, max 30), for <roll 1d12> <table duration_skewed>
-      - <table wild_magic/target> has <table ability_score> <table modified> by <roll 2d4> points (min 1, max 30), returns to normal at the rate of 2 points per day
-      - <table wild_magic/target> has <table ability_score> <table modified> by <roll 2d8> points (min 1, max 30), for <roll 1d12> rounds
-      - <table wild_magic/target> has <table ability_score> <table modified> by <roll 2d12> points (min 1, max 30), for <roll 1d12> seconds
+      - <table wild_magic/target> has <table core/ability_score> <table utility/modified> by <roll 1d4> points (min 1, max 30), for <roll 1d12> <table utility/duration_skewed>
+      - <table wild_magic/target> has <table core/ability_score> <table utility/modified> by <roll 2d4> points (min 1, max 30), returns to normal at the rate of 2 points per day
+      - <table wild_magic/target> has <table core/ability_score> <table utility/modified> by <roll 2d8> points (min 1, max 30), for <roll 1d12> rounds
+      - <table wild_magic/target> has <table core/ability_score> <table utility/modified> by <roll 2d12> points (min 1, max 30), for <roll 1d12> seconds
   wild_magic/target:
     oneOf:
       - caster
@@ -33,17 +35,21 @@ tables:
       - random ally (within 60')
       - random enemy (within 60')
       - <roll 1d4> random creatures (within 60')
-  disposition:
-    oneOf: [friendly, hostile]
-  short_or_long:
+  wild_magic/disposition:
+    roll: 1d100
+    results:
+      1-40: friendly to
+      41-80: hostile to
+      81-100: controlled by
+  utility/short_or_long:
     oneOf: [short, long]
-  damage_susceptibility:
+  utility/damage_susceptibility:
     oneOf: [vulnerability, resistance, immunity]
   core/damage_type:
     oneOf: [all, acid, bludgeoning, cold, fire, force, lightning, necrotic, piercing, poison, psychic, radiant, slashing, thunder]
-  duration:
+  utility/duration:
     oneOf: [seconds, rounds, minutes, hours, days, weeks, months, years, decades, centuries]
-  duration_skewed:
+  utility/duration_skewed:
     roll: 1d100
     results:
       1-10: seconds
@@ -56,11 +62,11 @@ tables:
       95-97: years
       98-99: decades
       100: centuries
-  ability_score:
+  core/ability_score:
     oneOf: [Str, Dex, Con, Int, Wis, Cha]
-  money:
+  core/money:
     oneOf: [cp, sp, ep, gp, pp]
-  modified:
+  utility/modified:
     oneOf: [decreased, increased]
   wild_magic/magic_fabric_modified:
     oneOf:
@@ -72,12 +78,12 @@ tables:
       - gains <roll 1d4> sorcery points
       - has the ability to cast any cantrip for the next <roll 2d4> rounds
       - has the ability to cast any 1st level spell for 1 round
-      - has all of their <table character_capability> become <table multiplier> as potent for <roll 1d4> rounds
+      - has all of their <table character_capability> become <table utility/multiplier> as potent for <roll 1d4> rounds
   character_capability:
     oneOf: [magic items, spells, class features, feats, ability modifiers, proficiency, saving throws]
-  multiplier:
+  utility/multiplier:
     oneOf: [half, twice, thrice]
-  target_proximity:
+  wild_magic/target_proximity:
     oneOf:
       - appear in their hands
       - rain down around them from above
@@ -220,7 +226,7 @@ tables:
       - viridian
       - white
       - yellow
-  floaty_things:
+  wild_magic/floaty_things:
     oneOf: [butterflies, flower petals, bubbles, gnats, feathers, humming birds, balls, balloons, leaves, plumes of smoke, flames, droplets, dandelion seeds, flies]
-  substantial_level:
+  wild_magic/substantial_level:
     oneOf: [real, illusory, ethereal, astral, shadowfell, feywild, celestial, demonic]
