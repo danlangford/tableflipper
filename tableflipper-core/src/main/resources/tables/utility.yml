@@ -1,0 +1,161 @@
+# utility tables are potentially useful over a wide range of topics
+tables:
+  utility/short_or_long:
+    oneOf: [short, long]
+  utility/damage_susceptibility:
+    oneOf: [vulnerability, resistance, immunity]
+  utility/duration:
+    oneOf: [seconds, rounds, minutes, hours, days, weeks, months, years, decades, centuries]
+  utility/duration_skewed:
+    roll: 1d100
+    results:
+      1-10: seconds
+      11-49: rounds
+      50-69: minutes
+      70-79: hours
+      80-85: days
+      86-90: weeks
+      91-94: months
+      95-97: years
+      98-99: decades
+      100: centuries
+  utility/modified:
+    oneOf: [decreased, increased]
+  utility/multiplier:
+    oneOf: [half, twice, thrice]
+  utility/body_part:
+    oneOf:
+      - ankle
+      - armpit
+      - arms
+      - beard
+      - calf
+      - cheeks
+      - chest
+      - chin
+      - earlobe
+      - ears
+      - elbow
+      - eyebrows
+      - eyelashes
+      - eyelids
+      - eyes
+      - face
+      - feet
+      - finger
+      - fingernails
+      - forearm
+      - forehead
+      - gums
+      - hair
+      - left hand
+      - right hand
+      - hands
+      - head
+      - heel
+      - hip
+      - index finger
+      - jaw
+      - knees
+      - knuckles
+      - legs
+      - lips
+      - mouth
+      - mustache
+      - neck
+      - nose
+      - shoulders
+      - teeth
+      - toes
+      - tongue
+      - tushie
+      - wrists
+  utility/color:
+    oneOf:
+      - invisible
+      - amaranth
+      - amber
+      - amethyst
+      - apricot
+      - aquamarine
+      - azure
+      - baby blue
+      - beige
+      - black
+      - blue
+      - blue-green
+      - blue-violet
+      - blush
+      - bronze
+      - brown
+      - burgundy
+      - byzantium
+      - carmine
+      - cerise
+      - cerulean
+      - champagne
+      - chartreuse green
+      - chocolate
+      - cobalt blue
+      - coffee
+      - copper
+      - coral
+      - crimson
+      - cyan
+      - desert sand
+      - electric blue
+      - emerald
+      - erin
+      - gold
+      - gray
+      - green
+      - harlequin
+      - indigo
+      - ivory
+      - jade
+      - jungle green
+      - lavender
+      - lemon
+      - lilac
+      - lime
+      - magenta
+      - magenta rose
+      - maroon
+      - mauve
+      - navy blue
+      - ocher
+      - olive
+      - orange
+      - orange-red
+      - orchid
+      - peach
+      - pear
+      - periwinkle
+      - persian blue
+      - pink
+      - plum
+      - prussian blue
+      - puce
+      - purple
+      - raspberry
+      - red
+      - red-violet
+      - rose
+      - ruby
+      - salmon
+      - sangria
+      - sapphire
+      - scarlet
+      - silver
+      - slate gray
+      - spring bud
+      - spring green
+      - tan
+      - taupe
+      - teal
+      - turquoise
+      - ultramarine
+      - violet
+      - viridian
+      - white
+      - yellow

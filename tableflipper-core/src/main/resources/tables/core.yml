@@ -1,4 +1,29 @@
+# core tables represent data that is part of the core D&D concepts and rules
 tables:
+  core/damage_type:
+    oneOf: [all, acid, bludgeoning, cold, fire, force, lightning, necrotic, piercing, poison, psychic, radiant, slashing, thunder]
+  core/ability_score:
+    oneOf: [Str, Dex, Con, Int, Wis, Cha]
+  core/money:
+    oneOf: [cp, sp, ep, gp, pp]
+  core/condition:
+    oneOf:
+      - Blinded
+      - Charmed
+      - Deafened
+      - Fatigued
+      - Frightened
+      - Grappled
+      - Incapacitated
+      - Invisible
+      - Paralyzed
+      - Petrified
+      - Poisoned
+      - Prone
+      - Restrained
+      - Stunned
+      - Unconscious
+      - Exhaustion
   core/monster_feature:
     oneOf:
       - Aggressive (similar to Orc)
