@@ -266,7 +266,7 @@
         <repository>
             <!-- includes snakeyaml snapshots  -->
             <id>sonatype-snapshots</id>
-            <url>http://oss.sonatype.org/content/groups/public/</url>
+            <url>https://oss.sonatype.org/content/groups/public/</url>
             <snapshots><enabled>true</enabled></snapshots>
             <releases><enabled>false</enabled></releases>
         </repository>

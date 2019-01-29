@@ -20,7 +20,7 @@ public class RollPluginTest {
         TomPlugin p = new RollPlugin();
 
         // valid expressions should run well and return a valid int
-        List.of("78", "1d20", "2d6", "3d12+3", "4d4-4").forEach(expr -> {
+        List.of("78", "1d20", "2d6", "3d12+3", "4d4-4", "7d2*6", "8d5/2").forEach(expr -> {
             assertDoesNotThrow(() -> {
                 log.info("attempting expr [{}]",expr);
                 String result = p.resolve(expr).orElseThrow();
@@ -32,7 +32,7 @@ public class RollPluginTest {
         });
 
         // invalid expressions should throw exceptions
-        List.of("5dz","6d6y","7d2*6", "8d5/2","9d12x3").forEach(expr -> {
+        List.of("5dz","6d6y", "9d12x3").forEach(expr -> {
             assertThrows(IllegalStateException.class, () -> {
                 log.info("attempting expr [{}]",expr);
                 String result = p.resolve(expr).orElseThrow();
