@@ -34,6 +34,7 @@ tables:
       - random ally (within <table wild_magic/range>)
       - random enemy (within <table wild_magic/range>)
       - <roll 1d4> random creatures (within <table wild_magic/range>)
+      - (caster chooses target)
   wild_magic/range:
     roll: 3d6
     results:
@@ -65,8 +66,8 @@ tables:
       - loses <roll 1d2> sorcery points
       - regains all expended sorcery points
       - regains lowest expended spell slot
-      - gains a temporary 1st level spell slot
-      - gains <roll 1d4> temporary sorcery points
+      - gains a temporary spell slot of level <roll 1d6> (lasts until it is used)
+      - gains <roll 1d12> temporary sorcery points (last until they are used)
       - has the ability to cast any cantrip for the next <roll 2d4> rounds
       - has the ability to cast any spell of level <roll 1d3-1> for <roll 1d4> rounds
       - has the ability to cast any spell of level <roll 1d3+2> for 1 round
