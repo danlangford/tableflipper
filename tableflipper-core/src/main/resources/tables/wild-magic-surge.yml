@@ -9,7 +9,7 @@ tables:
       - <table wild_magic/target> <table wild_magic/magic_fabric_modified>
       - <table wild_magic/ability_score_change>
       - <table wild_magic/effect>
-  # effect table represents either more rare or more unusual/random results that are necessarily magic in nature
+  # effect table represents either more rare or more unusual/random results that are not necessarily magic in nature
   wild_magic/effect:
     oneOf:
       - Roll a Wild Magic Surge effect for the next <roll 1d20> rounds
@@ -19,20 +19,39 @@ tables:
       - <table wild_magic/target> incurs the <table core/condition> condition for <roll 1d100> rounds
       - <roll 100d12> <table wild_magic/substantial_level>, <table utility/color>-colored <table wild_magic/floaty_things> float within <roll 2d8>' surrounding <table wild_magic/target>, for <roll 1d12> <table utility/duration_skewed>
       - <table wild_magic/target> instantly receives all of the benefits of a <table utility/short_or_long> rest
-      - <table wild_magic/target> has <roll 2d50> <table core/money> <table wild_magic/target_proximity>
+      - <table wild_magic/target> has <roll 1d10*10> <table core/money> <table wild_magic/target_proximity>
   wild_magic/ability_score_change:
     oneOf:
       - <table wild_magic/target> has <table core/ability_score> <table utility/modified> by <roll 1d4> points (min 1, max 30), for <roll 1d12> <table utility/duration_skewed>
-      - <table wild_magic/target> has <table core/ability_score> <table utility/modified> by <roll 2d4> points (min 1, max 30), returns to normal at the rate of 2 points per day
+      - <table wild_magic/target> has <table core/ability_score> <table utility/modified> by <roll 1d4*2> points (min 1, max 30), returns to normal at the rate of 2 points per day
       - <table wild_magic/target> has <table core/ability_score> <table utility/modified> by <roll 2d8> points (min 1, max 30), for <roll 1d12> rounds
       - <table wild_magic/target> has <table core/ability_score> <table utility/modified> by <roll 2d12> points (min 1, max 30), for <roll 1d12> seconds
   wild_magic/target:
     oneOf:
       - caster
       - target
-      - random ally (within 60')
-      - random enemy (within 60')
-      - <roll 1d4> random creatures (within 60')
+      - random ally (within <table wild_magic/range>)
+      - random enemy (within <table wild_magic/range>)
+      - <roll 1d4> random creatures (within <table wild_magic/range>)
+  wild_magic/range:
+    roll: 3d6
+    results:
+      3: 5'
+      4: 10'
+      5: 15'
+      6: 20'
+      7: 25'
+      8: 30'
+      9: 40'
+      10: 50'
+      11: 60'
+      12: 80'
+      13: 100'
+      14: 120'
+      15: 150'
+      16: 200'
+      17: 300'
+      18: 500'
   wild_magic/disposition:
     roll: 1d100
     results:
@@ -45,11 +64,12 @@ tables:
       - loses <roll 1d2> sorcery points
       - regains all expended sorcery points
       - regains lowest expended spell slot
-      - gains a 1st level spell slot
-      - gains <roll 1d4> sorcery points
+      - gains a temporary 1st level spell slot
+      - gains <roll 1d4> temporary sorcery points
       - has the ability to cast any cantrip for the next <roll 2d4> rounds
-      - has the ability to cast any 1st level spell for 1 round
-      - has all of their <table character_capability> become <table utility/multiplier> as potent for <roll 1d4> rounds
+      - has the ability to cast any spell of level <roll 1d3-1> for <roll 1d4> rounds
+      - has the ability to cast any spell of level <roll 1d3+2> for 1 round
+      - has all of their <table wild_magic/character_capability> become <table utility/multiplier> as potent for <roll 1d4> rounds
   wild_magic/target_proximity:
     oneOf:
       - appear in their hands
