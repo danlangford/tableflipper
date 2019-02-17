@@ -25,8 +25,8 @@ tables:
     oneOf:
       - <table wild_magic/target> has <table core/ability_score> <table utility/modified> by <roll 1d4> points (min 1, max 30), for <roll 1d12> <table utility/duration_skewed>
       - <table wild_magic/target> has <table core/ability_score> <table utility/modified> by <roll 1d4*2> points (min 1, max 30), returns to normal at the rate of 2 points per day
-      - <table wild_magic/target> has <table core/ability_score> <table utility/modified> by <roll 2d8> points (min 1, max 30), for <roll 1d12> rounds
-      - <table wild_magic/target> has <table core/ability_score> <table utility/modified> by <roll 2d12> points (min 1, max 30), for <roll 1d12> seconds
+      - <table wild_magic/target> has <table core/ability_score> <table utility/modified> by <roll 1d8*2> points (min 1, max 30), for <roll 1d12> rounds
+      - <table wild_magic/target> has <table core/ability_score> <table utility/modified> by <roll 1d12*2> points (min 1, max 30), for <roll 1d12> seconds
   wild_magic/target:
     oneOf:
       - caster
