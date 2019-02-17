@@ -9,3 +9,11 @@ tables:
       - <table test/recursive> and <table test/recursive>
   dndspeak/npc/generate:
     oneOf: ["__Adventurer:__ <table dndspeak/adventurer> \n__Race:__ <table spells/reincarnate> \n__Abilities:__ Str: <roll 3d6+1> Dex: <roll 3d6+1> Con: <roll 3d6+1> Int: <roll 3d6+1> Wis: <roll 3d6+1> Cha: <roll 3d6+1> \n__Background:__ <table dndspeak/character/background> \n__Money:__ <roll 1d3-1>pp <roll 1d20-1>gp <roll 1d6*10>sp <roll 1d100>cp \n__Trinket:__ <table dndspeak/interesting_trinket> \n__Heraldic Symbol:__ <table dndspeak/heraldic_symbol> \n__Title (optional):__ <table dndspeak/title> \n__Job:__ <table dndspeak/npc/job> \n__Physical Traits:__ <table dndspeak/npc/physical_trait> \n__Personality Quirk:__ <table dndspeak/personality_quirk> \n__Fear or Phobia:__ <table dndspeak/fear_phobia> \n__Catchphrase:__ <table dndspeak/npc/catchphrase> \n__Drunken Boast:__ <table dndspeak/drunken-boast> \n__Alternate Name:__ <table u/boltorian/name> \n<table encounter_flavor/flavor>"]
+  template/example:
+    roll: 1d100
+    results:
+      01-50: common
+      51-89: uncommon
+      90-97: rare
+      98-99: very rare
+      00: legendary
