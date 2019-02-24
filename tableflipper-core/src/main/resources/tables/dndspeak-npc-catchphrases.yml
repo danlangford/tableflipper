@@ -1,4 +1,5 @@
 tables:
+  # http://dndspeak.com/2018/01/100-npc-catchphrases/
   dndspeak/npc/catchphrase:
     oneOf:
       - "What happens happened and will happen again!"

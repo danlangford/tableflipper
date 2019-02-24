@@ -1,4 +1,5 @@
 tables:
+  # http://dndspeak.com/2017/12/100-drunken-boasts/
   dndspeak/drunken-boast:
     oneOf:
       - "“I once hit a medusa so hard in the face its eyes saw each other.”"

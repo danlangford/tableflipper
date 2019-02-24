@@ -1,4 +1,5 @@
 tables:
+  # http://dndspeak.com/2018/02/100-character-backgrounds/
   dndspeak/character/background:
     oneOf:
       - "You served as a squire to the younger son of a local lord, a minor political figure. Two years ago he moved to the city, to study magic and indulge in debauchery, and released you from your service (and your salary). You’ve heard that Bordertown has uses for someone with skill of arms, and so you’ve hopped onto the first coach available."

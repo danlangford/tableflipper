@@ -1,4 +1,5 @@
 tables:
+  # http://dndspeak.com/2017/12/100-npc-physical-traits/
   dndspeak/npc/physical_trait:
     oneOf:
       - A long, glorious beard. Each braid represents another person that has asked him what the braids mean.

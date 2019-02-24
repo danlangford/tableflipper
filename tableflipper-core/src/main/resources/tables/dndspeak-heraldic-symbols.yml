@@ -1,4 +1,5 @@
 tables:
+  # http://dndspeak.com/2017/12/100-heraldic-symbols/
   dndspeak/heraldic_symbol:
     oneOf:
       - "A fox and a lion chasing each other in a circle, representing the cunning and the strength of a powerful leader."

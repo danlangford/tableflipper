@@ -1,4 +1,5 @@
 tables:
+  # http://dndspeak.com/2019/01/100-fears-and-phobias/
   dndspeak/fear_phobia:
     oneOf:
       - "Panphobia – everything"

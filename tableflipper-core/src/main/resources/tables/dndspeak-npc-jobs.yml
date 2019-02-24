@@ -1,4 +1,5 @@
 tables:
+  # http://dndspeak.com/2019/01/100-npc-jobs/
   dndspeak/npc/job:
     oneOf:
       - "Tinkerer"

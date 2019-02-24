@@ -1,4 +1,5 @@
 tables:
+  # http://dndspeak.com/2019/01/100-interesting-trinkets-and-minor-magic-items/
   dndspeak/interesting_trinket:
     oneOf:
       - "A beautifully crafted silver pocket watch that works but the hands tick backwards."

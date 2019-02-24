@@ -1,4 +1,5 @@
 tables:
+  # http://dndspeak.com/2017/12/100-titles/
   dndspeak/title:
     oneOf:
       - ___ of the Seven Potencies

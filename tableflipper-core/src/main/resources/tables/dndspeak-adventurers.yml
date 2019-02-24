@@ -1,4 +1,5 @@
 tables:
+  # http://dndspeak.com/2018/01/100-adventurers/
   dndspeak/adventurer:
     oneOf:
       - "Bugboy – Wears a big jacket and shorts. He’s super skinny, but he appears like he has a beer-gut. But it’s just his bugs. His skin is crawling with them. Wherever he goes, ants are found and the sound of cicadas sing through the air. He can see through his bugs, fight with his bugs, stuff like that. But he’s powerless on his own."
