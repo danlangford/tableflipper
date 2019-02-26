@@ -17,3 +17,5 @@ tables:
       90-97: rare
       98-99: very rare
       00: legendary
+  tavern/options:
+    oneOf: ["===== TAVERN OPTIONS ===== \n__Food:__ <table dndspeak/tavern_food> \n__Food:__ <table dndspeak/tavern_food> \n__Food:__ <table dndspeak/tavern_food> \n =========== \n__Encounter:__ <table dndspeak/tavern_encounter> \n__Encounter:__ <table dndspeak/tavern_encounter> \n__Encounter:__ <table dndspeak/tavern_encounter> \n =========== \n__Rumor:__ <table donjon/rumor> \n__Rumor:__ <table donjon/rumor> \n__Rumor:__ <table donjon/rumor> \n =========== \n__Drunken Boast:__ <table dndspeak/drunken-boast> \n__Drunken Boast:__ <table dndspeak/drunken-boast> \n__Drunken Boast:__ <table dndspeak/drunken-boast> \n =========== \n__Long Rest Event (option #1):__ <table dndspeak/long-rest-event> \n__Long Rest Event (option #2):__ <table dndspeak/long-rest-event> \n =========== \n__Flavor__ (if needed anywhere):\n<table encounter_flavor/flavor>"]
