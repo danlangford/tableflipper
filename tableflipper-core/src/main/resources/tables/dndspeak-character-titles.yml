@@ -1,6 +1,6 @@
 tables:
   # http://dndspeak.com/2017/12/100-titles/
-  dndspeak/title:
+  dndspeak/character/title:
     oneOf:
       - ___ of the Seven Potencies
       - Grand Terakion ___

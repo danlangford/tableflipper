@@ -1,6 +1,6 @@
 tables:
   # http://dndspeak.com/2018/02/100-tavern-encounters/
-  dndspeak/tavern_encounter:
+  dndspeak/tavern/encounter:
     oneOf:
       - "Tonight is the 10th annual Dragonfire Drinking contest! The person who can stomach the most Dragonfire Ale (very, VERY hot) will win the grand prize!"
       - "A group in the back corner of the tavern are arm wrestling."

@@ -1,6 +1,6 @@
 tables:
-  # https://donjon.bin.sh via https://www.reddit.com/r/d100/comments/705bqp/d100_rumors_1/
-  dndspeak/tavern_food:
+  # http://dndspeak.com/2017/12/100-tavern-food/
+  dndspeak/tavern/food:
     oneOf:
       - "One of the local hunters haulded in a big buck, so we’re having venison stew."
       - "Darkmantle soufflé, with hollandaise sauce and a fried egg on top."

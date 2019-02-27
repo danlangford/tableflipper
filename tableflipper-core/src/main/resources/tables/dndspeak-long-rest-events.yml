@@ -1,6 +1,6 @@
 tables:
   # http://dndspeak.com/2017/12/100-long-rest-events/
-  dndspeak/long-rest-event:
+  dndspeak/long_rest_event:
     oneOf:
       - "Restless night. Do not gain any benefits from the long rest. roll to determine a party member which this happens to."
       - "A small rodent wanders through your camp. It seems to be begging you for food."

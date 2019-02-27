@@ -1,6 +1,6 @@
 tables:
   # http://dndspeak.com/2017/12/100-drunken-boasts/
-  dndspeak/drunken-boast:
+  dndspeak/drunken_boast:
     oneOf:
       - "“I once hit a medusa so hard in the face its eyes saw each other.”"
       - "“I once shouted the fire off of a burning orphanage.”"
