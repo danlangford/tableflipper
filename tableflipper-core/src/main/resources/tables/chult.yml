@@ -1,0 +1,1036 @@
+tables:
+  Port_Nyanzaru_side_quests:
+    roll: 1d10
+    results:
+      '1': "**Collect a Debt.** K’lahu (N female Chultan human thug), a bookie who takes bets at Executioner’s Run (see area 2), asks the adventurers to come with her as she collects a debt. The pay is 10 percent of whatever is collected on the 500 gp debt, which is owed by a man named Taban (N male Chultan human gladiator). Taban refuses to pay anything until he’s beaten down to 20 or fewer hit points, whereupon he offers up a pouch containing ten 50 gp gemstones. Ashamed by his defeat and eager to redeem himself, Taban offers to join the party as a follower, demanding no pay for the duration of the adventure."
+      '2': "**Create a Distraction at Fort Beluarian.** Rokah (N male Chultan human spy) works for the Zhentarim. The Zhents believe that pirates have formed an alliance with the Flaming Fist. Rokah has orders to infiltrate Fort Beluarian and find proof so that the Zhentarim can blackmail the fort’s commander. He asks the adventurers to escort him safely to the fort and create a distraction so that he can ransack the commander’s quarters. As a reward, Rokah offers to cover the cost of a charter of exploration (50 gp), which the characters will almost certainly need if they want to avoid future confrontations with the Flaming Fist. Rokah also offers to introduce the characters to two wilderness guides — a pair tabaxi siblings named River Mist and Flask of Wine (see “Finding a Guide”) — and pay the guides’ fees."
+      '3': "**Escort a Priest to Camp Vengeance.** Undril Silvertusk (LG female half-orc priest of Torm with darkvision out to a range of 60 feet) is a representative of the Order of the Gauntlet and newly arrived in Port Nyanzaru. She needs to deliver herself plus a packet of dispatches from her superiors to Commander Niles Breakbone at Camp Vengeance. Undril was led to believe she could simply buy a horse in the city and ride to the camp, but now that she sees the terrain and conditions, that’s clearly not possible. She hopes to join any expedition headed up the River Soshenstar. Undril is quite attached to her chain shirt, but she’s not unreasonable when presented with good arguments for shedding the armor. If characters gain Undril’s respect, she’ll intercede strongly on their behalf if any difficulties arise with Commander Breakbone (as they’re likely to, as discussed in chapter 2)."
+      '4': "**Explore the Aldani Basin.** Inete (LG female Chultan human acolyte of Savras) has had disturbing visions of red-robed wizards operating a secret base somewhere in the Aldani Basin. The head of her temple, Grandfather Zitembe, has too many other things on his mind, but he’s given Inete permission to investigate. Inete would like to accompany the characters’ expedition for safety, if characters are heading toward or through that region. She’ll provide her own food and supplies, and “donate” another 100 gp to the expedition’s expenses. She insists on stopping by the temple of Savras to gather her belongings and urges the characters to come along. If they do, the characters can meet Grandfather Zitembe (see area 7)."
+      '5': "**Find Artus Cimber.** A half-elf named Xandala (see appendix D) approaches the characters and claims to be Artus Cimber’s daughter. Feigning worry, she asks the characters to help her find him. Artus can’t be found using magic, but Xandala has heard that Artus left the city with a reptilian man who doesn’t talk and smells funny. Both were last seen heading into the jungle. Xandala wants the Ring of Winter in Artus’s possession, but she doesn’t share this with the characters. Summerwise, Xandala’s pet pseudodragon, thinks the quest for the ring is too dangerous but has given up trying to talk sense into its mistress. Good-aligned characters might be able to turn Summerwise against Xandala, or at least get information from it that they can use to thwart Xandala’s plan or to aid Artus."
+      '6': "**Help a Dyeing Man.** Omala (N male Chultan human commoner) is a master colorist at the dye works (area 23). He recently bought some dancing monkey fruit on the black market and used them to make and sell dye. Shortly thereafter, he received an iron token from the Ytepka Society — a grim warning. He wishes to atone for his crime and seeks an audience with Kwayothé, the merchant prince who controls the legal sale of fruit. Fearing for his life, Omala asks the adventurers to accompany him to Goldenthrone (see area 4), where he plans to beg for Kwayothé’s forgiveness. He has no money to offer the characters as a reward. Kwayothé is willing to forgive Omala’s lapse in judgment provided the characters agree to kill a man named Shago within the next 10 days — no questions asked — and speak of the deed to no one. Kwayothé tells them that Shago works as a guide out of Fort Beluarian. If the characters fail in this task, Kwayothé has Omala sentenced to Executioner’s Run (see area 2) for his crime."
+      '7': "**Help the Lords’ Alliance.** Lerek Dashlynd (LN male Illuskan human spy), an agent of the Lords’ Alliance, offers to trade a sailing ship for an accurate map of Chult that shows the exact location of the ruins of Nangalore and Orolunga. Lerek represents wealthy Waterdhavian interests, and the offer is genuine. If the characters present such a map, Lerek has a cleric cast augury before agreeing to buy it, to make sure he’s not buying a fake. Once he’s convinced that the map is genuine, Lerek arranges to have the promised ship arrive in 10 days."
+      '8': "**Hunt Pirates.** The harbormaster, Zindar (see area 13 and appendix D), is a secret member of the Ytepka Society. He knows that three pirate captains are attacking merchant ships heading to and from the Bay of Chult. The pirate ships are called the Dragonfang, the Emerald Eye, and the Stirge. Zindar has permission from the merchant princes to offer a bounty of 2,000 gp for each pirate ship that is captured and brought into port, and a bonus 500 gp for the capture of each pirate captain."
+      '9': "**Save an Innocent Man.** Belym (LG male Chultan human commoner) is distraught because his husband, Draza (LG male Chultan commoner), has been sentenced to Executioner’s Run for stealing. Belym asserts that his husband was a victim of mistaken identity and sentenced without a proper hearing or trial. He’s been unable to persuade anyone in authority that Draza is innocent. He’ll give the characters 25 sp (all his savings) if they can help Draza from the sidelines so he survives the run. Draza is about to be thrown into the pit with a pair of velociraptors, so the characters must act quickly. Both the authorities and the gamblers take a dim view of interference."
+      '10': "**Seek Wisdom at Orolunga.** Eshek (NG male Chultan human acolyte of Savras) stumbles up to the characters in the street and whispers, “Speak to the wise guardian of Orolunga, east of Mbala. She can direct you to that which you seek.” Then he collapses, unconscious. When he awakens moments later, Eshek has no memory of the last 12 hours aside from a driving need to find people matching the characters’ descriptions. He’s as puzzled by what just happened as the characters probably are, but he’ll help them however he can. At the very least, he knows where Mbala is from speaking to porters who’ve been to Camp Vengeance."
+
+  Betting_Odds_7_to_1:
+    roll: 1d8
+    results:
+      '1': Loose
+      '2-8': Win Payout=Wager/7
+
+  Betting_Odds_5_to_1:
+    roll: 1d6
+    results:
+      '1': Loose
+      '2-6': Win Payout=Wager/5
+
+  Betting_Odds_3_to_1:
+    roll: 1d4
+    results:
+      '1': Loose
+      '2-4': Win Payout=Wager/3
+
+  Betting_Odds_2_to_1:
+    roll: 1d3
+    results:
+      '1': Loose
+      '2-3': Win Payout=Wager/2
+
+  Betting_Odds_1_to_1:
+    roll: 1d2
+    results:
+      '1': Loose
+      '2': Win Payout=Wager
+
+  Betting_Odds_1_to_2:
+    roll: 1d3
+    results:
+      '1': Win Payout=Wager*2
+      '2-3': Loose
+
+  Betting_Odds_1_to_3:
+    roll: 1d4
+    results:
+      '1': Win Payout=Wager*3
+      '2-4': Loose
+
+  Betting_Odds_1_to_5:
+    roll: 1d6
+    results:
+      '1': Win Payout=Wager*5
+      '2-6': Loose
+
+  Betting_Odds_1_to_7:
+    roll: 1d8
+    results:
+      '1': Win Payout=Wager*7
+      '2-8': Loose
+
+  Chult_Rumors:
+    roll: 1d100
+    results:
+      '01–05': Bird folk inhabit a monastery that hangs on the side of a plateau many miles up the Olung River, past the Laughing Gorge. The bird folk are holding the last royal heir of Chult as their prisoner.
+      '06–12': Deep in the heart of the jungle is a city built by minotaurs. It’s now overrun by snake people, but even worse things dwell below. In visions, I have seen strange devils screaming in the dark.
+      '13–17': If you head up the Tiryki River about five days by canoe, you’ll see a stone spire to the east. Natives call it Firefinger. “Terror folk” nest there, and if they spot you, you’re in for a fight.
+      '18–22': One must purchase a charter of exploration at Fort Beluarian before undertaking any jungle expedition. The Flaming Fist punishes explorers who don’t have the required paperwork.
+      '23–28': Chult had many kings and queens, but none more beautiful than Queen Zalkoré. Thousands of warriors killed and died for her, but the only memorial of her reign is the garden palace of Nangalore, which lies near the eastern shore of the River Olung, north of Lake Luo.
+      '29–33': Chult was once a playground for a green dragon. Her bones mark the location of a hidden treasure trove. If you travel to Mezro and head east across the Laughing Gorge, then south toward Kir Sabal, you might stumble on the dragon’s bones and earn yourself a place in the history books!
+      '34–40': The city of Mezro was not destroyed during the Spellplague after all. Its ruins are an illusion. I heard a pale-skinned man whisper this to a dinosaur man with a big sword. The dinosaur man smelled like honeysuckle.
+      '41–45': Dwarves are determined to reclaim Wyrmheart Mine, but a red dragon lives there now. Haven’t seen one of them in a while.
+      '46–50': The jungle is full of nature spirits — weird little elemental creatures with masks. They don’t speak, and I’ve never known one to be harmful, but their magical powers should not be taken lightly.
+      '51–55': Some city folk were expecting the arrival of a Halruaan airship called the Star Goddess. It never arrived. I bet it crashed in the jungle somewhere.
+      '56–60': There are giant snapping turtles in Snapping Turtle Bay. One of them is as big as a house. He’s known as King Toba, and his shell has gemstones embedded in it.
+      '61–65': The Order of the Gauntlet came here to cleanse the jungle of undead. They lost one of their encampments not too long ago. They’re just barely hanging on to another one. I see their emissaries all the time, heading up the River Soshenstar in canoes to get more supplies and templars from Port Nyanzaru.
+      '66–71': Watch out for any mist with a blue tinge to it. It spreads a fever that drives people mad.
+      '72–77': A dragon turtle named Aremag lives in the Bay of Chult. If you wish to set sail from Port Nyanzaru, you’ll need treasure to appease the greedy monster. How much treasure, I can’t say. Aremag will tell you what it wants, and you’d best give it what it demands.
+      '78–82': A ruined city lies up the River Tath, past Kahakla Gorge. Supposedly, no one’s explored past the gorge, but that’s not true. It’s just that the few who made it out alive mostly keep quiet about what they found there. I have it on good authority that the ruins are guarded by a naga who is both wise and generous.
+      '83–87': The great god Ubtao once guided the people of Chult, be he tired of their constant warring and abandoned them. Since then, Chultans have turned to the worship of other gods, some of which were tricksters and deceivers.
+      '88–92': Long ago, a peaceful tribe of fisherfolk called the Aldani angered Ubtao by catching and eating all the lobsters in a river. As punishment for their greed, they were all transformed into monsters that dwell in the Aldani Basin.
+      '93–96': Perched atop a plateau overlooking the Aldani Basin is a ghost village. All the people there disappeared. No one knows why. You can reach the Aldani Basin by following the River Soshenstar.
+      '97–00': The great god Ubtao loved mazes. If you happen upon a maze of any kind, trace a path through it. You will earn Ubtao’s favor by doing so.
+
+  Travel_Fast_Pace:
+    roll: 1d4
+    results:
+      '1-2': -5 Passive Perception
+      '3-4': -5 Passive Perception & Advance 1 additional hex
+
+  Travel_Slow_Pace:
+    roll: 1d4
+    results:
+      '1-2': Stealth possible & Advance 1 fewer hex
+      '3-4': Stealth possible
+
+  Lost_Direction:
+    oneOf: [North, Northeast, Southeast, South, Southwest, Northwest]
+
+  Thorn_Maze_Encounters:
+    roll: 1d20
+    results:
+      '1–9': No encounter.
+      '10–12': <roll 1d6+6> grungs (green-skinned warriors) on patrol.
+      '13': <roll 1d3> assassin vines (see appendix D) blending in with the surrounding walls.
+      '14': <roll 1d4> ghouls lost in the maze.
+      '15': A harmless yahcha beetle (see appendix C).
+      '16': The characters hear a throaty croak that sounds at once both lusty and forlorn. Its source cannot be ascertained.
+      '17': <roll 1d6> zombies lost in the maze.
+      '18–19': A concealed pit 5 feet wide, 10 feet deep, and lined with poisoned wooden stakes. The lead character spots the pit with a successful DC 15 Wisdom (Perception) check. The first character to step on a pit falls in, taking 1d6=<roll 1d6> bludgeoning damage and landing on 1d4=<roll 1d4> stakes, each of which deals 1d6=<roll 1d6> piercing damage and 2d6=<roll 2d6> poison damage.
+      '20': An interior secret door. It requires a successful DC 15 Wisdom (Perception) check to spot.
+
+  Nangalore_Garden_Discoveries:
+    roll: 1d20
+    results:
+      '1': <roll 1d4> almiraj (see appendix D)
+      '2–3': 1 assassin vine (see appendix D)
+      '4–5': 1 chwinga (see appendix D) hiding in a flower
+      '6–7': <roll 1d4> flying monkeys (see appendix D) perched in a tree. The monkeys playfully hurl dancing monkey fruit (see appendix C) at nearby characters. They fly away if attacked.
+      '8–9': <roll 1d4> jaculis (see appendix D)
+      '10–11': Menga bush with <roll 2d6> ounces of leaves (see appendix C)
+      '12–13': <roll 1d4> ryath roots (see appendix C)
+      '14–15': <roll 4d6> sinda berries growing on a bush (see appendix C)
+      '16–17': <roll 1d4> wildroots (see appendix C)
+      '18–19': Yahcha beetle (see appendix C)
+      '20': The rotting corpse of a human mage who was strangled to death by an assassin vine. A search of the corpse yields a scholar’s pack, a pouch containing 15 gp, and a folding boat. This discovery can only be made once. If this result comes up again, re-roll on the table.
+
+  Wyrmheart_Mine_Big_Smash_Boulder_Hit:
+    roll: 1d6
+    results:
+      '1–2': The cart continues down the track unhindered.
+      '3–5': The cart derails into area 11. Each creature in the cart is thrown out, lands prone, and must succeed on a DC 12 Dexterity saving throw or take 1d10=<roll 1d10> bludgeoning damage.
+      '6': The cart tumbles off the track and falls 125 feet to area 12. A creature in the cart can make a DC 12 Dexterity saving throw to leap out before the cart goes over the edge and falls. On a successful save, the creature lands prone on the cart track. On a failed save, the creature goes over the edge with the cart and takes damage from the fall, as normal.
+
+  Omu_Ruin_Interior:
+    roll: 1d100
+    results:
+      '01–40': —
+      '41–50': Assassin vines
+      '51–55': Collapsing floor (and roll again)
+      '56–65': Mad monkey mist (and roll again)
+      '66–70': Nest
+      '71–75': Plant discovery
+      '76–85': Treasure
+      '86–00': Vegepygmies
+
+  Omu_Nest_Occupants:
+    roll: 1d6
+    results:
+      '1-2': <roll 1d6> giant wasps
+      '3-4': <roll 2d6> stirges
+      '5-6': <roll 1d3> swarms of poisonous snakes
+
+  Omu_Plant_Discovery:
+    roll: 1d6
+    results:
+      '1': <roll 2d6> dancing monkey fruit hanging from a tree
+      '2': Menga bush with <roll 1d6> ounces of leaves
+      '3': <roll 1d6> ryath roots growing in the ground
+      '4': <roll 4d6> sinda berries growing on a bush
+      '5': <roll 1d6> wildroots
+      '6': <roll 2d6> zabou growing on the floor
+
+  Yuan-ti_temple_slave_labors:
+    roll: 1d100
+    results:
+      '01–15': "**LABOR** Muck out the dinosaur pen in area 2. **DEVELOPMENT** The character learns that Nahth (area 1) is susceptible to bribery."
+      '16–40': "**LABOR** Help Azi Mas rearrange the contents of the storeroom (area 13). **DEVELOPMENT** Azi Mas shares his suspicions that Fenthaza is planning a coup."
+      '41–60': "**LABOR** Assist Xopal in the poison distillery (area 14). **DEVELOPMENT** Xopal sends the character, unescorted, to gather fungi from area 22."
+      '61–75': "**LABOR** Scrub the yuan-ti bathing in area 16. **DEVELOPMENT** The character learns that Fenthaza had a prophetic dream about the Black Opal Crown, a treasure which the yuan-ti believe has the power to usher forth Dendar the Night Serpent."
+      '76–90': "**LABOR** Clean the yuan-ti nests in area 18. **DEVELOPMENT** The character overhears one yuan-ti whisper to another, in Common, “White feather, black mask.” See area 4 for the significance of these words."
+      '91–00': "**LABOR** Feed a dead prisoner to the hydra in area 21. **DEVELOPMENT** The characters find a folded-up piece of parchment hidden on the dead prisoner. On one side, it bears a crude map of the temple."
+
+  Yuan-ti_temple_reinforcements:
+    roll: 1d100
+    results:
+      '01–15': "<roll 1d4> yuan-ti purebloods escorting a type 3 yuan-ti malison."
+      '16–30': "<roll 1d4+1> yuan-ti purebloods escorting <roll 2d4> captives (male and female Chultan human commoners of any alignment)."
+      '31–45': "<roll 2d4> yuan-ti purebloods returning to the temple from an expedition or patrol."
+      '46–60': "4 yuan-ti broodguards (see appendix D) carrying a type 2 yuan-ti malison on a litter."
+      '61–70': "1 yuan-ti malison returning to the temple. type=<table Yuan-ti_malison_type>"
+      '71–75': "1 yuan-ti abomination arriving at the temple to challenge Ras Nsi’s leadership. If Fenthaza is alive, she uses her influence to arrange a showdown between Ras Nsi and the abomination in the fane (area 9). If Fenthaza is incapacitated or dead, the abomination bullies its way to Ras Nsi’s throne room (area 11), where it is killed."
+      '76–85': "<roll 2d4> insane cult fanatics (NE male and female humans of mixed ethnicities) seeking an audience with Ras Nsi, to pledge their devotion to Dendar the Night Serpent. The cult fanatics bring tribute in the form of treasure (roll once on the Treasure Hoard: Challenge 0–4 table in chapter 7 of the Dungeon Master’s Guide)."
+      '86–00': "<roll 2d6> tribal warriors (N male and female Chultan humans) delivering tribute to Ras Nsi. This tribute consists of food, drink, and treasure (roll once on the Treasure Hoard: Challenge 0–4 table in chapter 7 of the Dungeon Master’s Guide)."
+
+  Yuan-ti_malison_type:
+    oneOf: [type 1, type 2, type 3]
+
+  Tomb_Magic_Fountain:
+    roll: 1d4
+    results:
+      '1': "The creature drinking the water must make a DC 12 Constitution saving throw, taking 8d10=<roll 8d10> necrotic damage on a failed save, or half as much damage on a successful one. If this damage reduces the creature to 0 hit points, it dies and turns to dust."
+      '2': "The creature drinking the water loses the ability to speak for 8 hours. A lesser restoration spell or similar magic ends this effect."
+      '3': "The creature drinking the water magically changes sex. A greater restoration spell restores the creature’s original sex, as does another drink from the fountain that yields this same result."
+      '4': "The creature drinking the water gains <roll 2d10> temporary hit points."
+
+  Tomb_Revolving_Room:
+    roll: 1d20
+    results:
+      '1–6': "The demon faces exhale jets of a soporific gas that dissipates quickly. Each creature in the room that is not immune to the poisoned condition must succeed on a DC 15 Constitution saving throw or fall unconscious. An unconscious creature can repeat the saving throw each time it takes damage, ending the effect on itself on a success."
+      '7–12': "The demon faces exhale jets of sparkling dust, which blind any creature in the room that does not succeed on a DC 15 Wisdom saving throw. A creature’s blindness lasts until it is cured with a lesser restoration spell or similar magic."
+      '13–18': "Stone spikes 6 inches long magically protrude from the walls. Any creature that takes damage from the room at the start of its turn takes an additional 2d10=<roll 2d10> piercing damage from the spikes. The spikes retract when the next room effect is triggered."
+      '19–20': "The demon faces spew jets of an incendiary gas that promptly ignites, filling the room with fire. Each creature in the room takes 10d8=<roll10d8> fire damage."
+
+  Tomb_Teleportation_Runes_Inbound:
+    roll: 1d6
+    results:
+      '1-2': North Rune. Malfunctioning. Take 4d8=<roll 4d8> force damage
+      '3-4': East Rune.
+      '5-6': South Rune.
+
+  Tomb_South_Teleportation_Run_Outbound:
+    oneOf: [baboon, bat, flying snake, quipper]
+
+  Tomb_Maze_Discoveries:
+    roll: 1d100
+    results:
+      '01–70': Nothing
+      '71–75': Skeletal remains of an Omuan child
+      '76–84': Minotaur that fights to the death
+      '85–87': Blue crystal key
+      '88–90': Gold crystal key
+      '91–93': Purple crystal key
+      '94–96': Green crystal key
+      '97–99': Red crystal key
+      '00': Black crystal key
+
+  backgrounds/anthropologist/culture:
+    oneOf: [Aarakocra, Dwarf, Elf, Goblin, Halfling, Human, Lizardfolk, Orc]
+
+  backgrounds/anthropologist/personality_trait:
+    oneOf:
+      - "I prefer the company of those who aren’t like me, including people of other races."
+      - "I’m a stickler when it comes to observing proper etiquette and local customs."
+      - "I would rather observe than meddle."
+      - "By living among violent people, I have become desensitized to violence."
+      - "I would risk life and limb to discover a new culture or unravel the secrets of a dead one."
+      - "When I arrive at a new settlement for the first time, I must learn all its customs."
+
+  backgrounds/anthropologist/ideal:
+    oneOf:
+      - "**Discovery.** I want to be the first person to discover a lost culture. (Any)"
+      - "**Distance.** One must not interfere with the affairs of another culture — even one in need of aid. (Lawful)"
+      - "**Knowledge.** By understanding other races and cultures, we learn to understand ourselves. (Any)"
+      - "**Power.** Common people crave strong leadership, and I do my utmost to provide it. (Lawful)"
+      - "**Protection.** I must do everything possible to save a society facing extinction. (Good)"
+      - "**Indifferent.** Life is cruel. What’s the point in saving people if they’re going to die anyway? (Chaotic)"
+
+  backgrouns/anthropologist/bond:
+    oneOf:
+      - "My mentor gave me a journal filled with lore and wisdom. Losing it would devastate me."
+      - "Having lived among the people of a primeval tribe or clan, I long to return and see how they are faring."
+      - "Years ago, tragedy struck the members of an isolated society I befriended, and I will honor them."
+      - "I want to learn more about a particular humanoid culture that fascinates me."
+      - "I seek to avenge a clan, tribe, kingdom, or empire that was wiped out."
+      - "I have a trinket that I believe is the key to finding a long-lost society."
+
+  backgrounds/anthropologist/flaw:
+    oneOf:
+      - "Boats make me seasick."
+      - "I talk to myself, and I don’t make friends easily."
+      - "I believe that I’m intellectually superior to people from other cultures and have much to teach them."
+      - "I’ve picked up some unpleasant habits living among goblins, lizardfolk, or orcs."
+      - "I complain about everything."
+      - "I wear a tribal mask and never take it off."
+
+  backgrounds/archaeologist/item:
+    oneOf: [10-foot pole, Crowbar, Hat, Hooded lantern, Medallion, Shovel, Sledgehammer, Whip]
+
+  background/archaeologist/personality_trait:
+    oneOf:
+      - "I love a good puzzle or mystery."
+      - "I’m a pack rat who never throws anything away."
+      - "Fame is more important to me than money."
+      - "I have no qualms about stealing from the dead."
+      - "I’m happier in a dusty old tomb than I am in the centers of civilization."
+      - "Traps don’t make me nervous. Idiots who trigger traps make me nervous."
+      - "I might fail, but I will never give up."
+      - "You might think I’m a scholar, but I love a good brawl. These fists were made for punching."
+
+  backgrounds/archaeologist/ideal:
+    oneOf:
+      - "**Preservation.** That artifact belongs in a museum. (Good)"
+      - "**Greed.** I won’t risk my life for nothing. I expect some kind of payment. (Any)"
+      - "**Death Wish.** Nothing is more exhilarating than a narrow escape from the jaws of death. (Chaotic)"
+      - "**Dignity.** The dead and their belongings deserve to be treated with respect. (Lawful)"
+      - "**Immortality.** All my exploring is part of a plan to find the secret of everlasting life. (Any)"
+      - "**Danger.** With every great discovery comes grave danger. The two walk hand in hand. (Any)"
+
+  backgrounds/archaeologist/bond:
+    oneOf:
+      - "Ever since I was a child, I’ve heard stories about a lost city. I aim to find it, learn its secrets, and earn my place in the history books."
+      - "I want to find my mentor, who disappeared on an expedition some time ago."
+      - "I have a friendly rival. Only one of us can be the best, and I aim to prove it’s me."
+      - "I won’t sell an art object or other treasure that has historical significance or is one of a kind."
+      - "I’m secretly in love with the wealthy patron who sponsors my archaeological exploits."
+      - "I hope to bring prestige to a library, a museum, or a university."
+
+  backgrounds/archaeologist/flaw:
+    oneOf:
+      - "I have a secret fear of some common wild animal — and in my work, I see them everywhere."
+      - "I can’t leave a room without searching it for secret doors."
+      - "When I’m not exploring dungeons or ruins, I get jittery and impatient."
+      - "I have no time for friends or family. I spend every waking moment thinking about and preparing for my next expedition."
+      - "When given the choice of going left or right, I always go left."
+      - "I can’t sleep except in total darkness."
+
+  IS_ISNOT:
+    oneOf: [IS, IS NOT]
+
+  encounter_Port_Nyanzaru:
+    roll: 1d20
+    results:
+      '1': "A parrot poops on a random character’s head."
+      '2': "Near the harbor, an ankylosaurus that tows boats through the warehouse canals goes on a rampage and must be calmed, restrained, or killed."
+      '3': "A merchant shouts, “Stop! Thief!” as a furtive youngster (commoner) rushes past the characters. If the thief is caught, the grateful merchant can introduce characters to a merchant prince or provide them one other favor."
+      '4': "A drunk foreign sailor (unarmored veteran) is loudly trying to pick a fight with three local commoners, who are clearly no match for the lout. If the characters intervene, the grateful locals become a reliable source of information about Port Nyanzaru, but the sailor and his shipmates ambush the characters elsewhere in the city later on."
+      '5': "A beggar (commoner) grabs a character by the arm and shouts, “The ancient one beneath the Forbidden City gives birth to a terrible new god! The snake-men know! They know!” Then he stumbles away into the crowd. Passersby tell the adventurers to ignore the beggar, and that his predictions are wrong most of the time."
+      '6': "Alarm horns declare that undead are attacking Malar’s Throat. Mercenaries keep the monsters out of the city proper, but people are trapped in the temple of Tymora and besieged by <roll 2d6> zombies and <roll 2d6> skeletons led by a ghoul. If the characters defeat the undead, the temple rewards them with 5 gallons of tej and a potion of healing."
+      '7': "Shouts of “Look out!” give a character a brief warning as a water barrel, building stone, or other heavy weight crashes down. The character must succeed on a DC 12 Dexterity saving throw or be struck, taking 4d6=<roll 4d6> bludgeoning damage. Any character who succeeds on a DC 15 Wisdom (Perception) check spots a disguised yuan-ti pureblood slinking away from the scene."
+      '8': "A tabaxi minstrel (see appendix D) asks one of the characters for a gold piece to stake her for gambling, promising to pay it back. If the character agrees, the tabaxi makes good on her promise the next day, returning a pouch containing 10 gp."
+      '9': "A thief (spy) tries to pick the pocket of one of the characters."
+      '10': "The characters run into Volothamp \"Volo\" Geddarm (see appendix D), who is delivering a copy of his new book to one of the city’s merchant princes. Volo <table IS_ISNOT> drunk."
+      '11–20': "The characters meet an NPC with a side quest (see “Side Quests”). Consider using this one: <table Port_Nyanzaru_side_quests>."
+
+  encounter_BEACH:
+    roll: 1d100
+    results:
+      '1-7': Aarakocra <desc aarakocra>
+      '8': Artus Cimber <desc artus_cimber>
+      '9-10': Cache <desc cache>
+      '11-12': Chwinga <desc chwinga>
+      '13-14': Dinosaurs, allosaurus <desc dinosaurs_allosaurus>
+      '15-16': Dinosaurs, dimetrodon <desc dinosaurs_dimetrodon>
+      '17-21': Dinosaurs, plesiosaurus <desc dinosaurs_plesiosaurus>
+      '22-28': Dinosaurs, pteranodon <desc dinosaurs_pteranodon>
+      '29-31': Dinosaurs, quetzalcoatlus <desc dinosaurs_quetzalcoatlus>
+      '32-37': Dinosaurs, velociraptor <desc dinosaurs_velociraptor>
+      '38-40': Dragon, red <desc dragon_red>
+      '41-42': Emerald Enclave <desc emerald_enclave>
+      '43-46': Explorers <desc explorers>
+      '47-49': Flaming Fist <desc flaming_fist>
+      '50-52': Flying monkeys <desc flying_monkeys>
+      '53-55': Flying snakes <desc flying_snakes>
+      '56-57': Frost giants <desc frost_giants>
+      '58-63': Giant lizards <desc giant_lizards>
+      '64-67': Giant snapping turtle <desc giant_snapping_turtle>
+      '68-71': Lizardfolk <desc lizardfolk>
+      '72-74': Red Wizard <desc red_wizard>
+      '75-84': Sea hags <desc sea_hags>
+      '85-87': Stirges <desc stirges>
+      '88-89': Swarms of bats <desc swarms_of_bats>
+      '90-94': Tabaxi hunter <desc tabaxi_hunter>
+      '95-100': Tri_flower frond <desc tri_flower_frond>
+  encounter_JUNGLE_NO_UNDEAD:
+    roll: 1d100
+    results:
+      '1': Albino dwarves <desc albino_dwarves>
+      '2': Almiraj <desc almiraj>
+      '3-4': Apes <desc apes>
+      '5': Artus Cimber <desc artus_cimber>
+      '6-7': Assassin vines <desc assassin_vines>
+      '8': Axe beaks <desc axe_beaks>
+      '9': Baboons <desc baboons>
+      '10-11': Cache <desc cache>
+      '12-13': Cannibals <desc cannibals>
+      '14-15': Chwinga <desc chwinga>
+      '16': Cyclops <desc cyclops>
+      '17': Dinosaurs, allosaurus <desc dinosaurs_allosaurus>
+      '18': Dinosaurs, ankylosaurus <desc dinosaurs_ankylosaurus>
+      '19': Dinosaurs, brontosaurus <desc dinosaurs_brontosaurus>
+      '20-21': Dinosaurs, deinonychus <desc dinosaurs_deinonychus>
+      '22-23': Dinosaurs, hadrosaurus <desc dinosaurs_hadrosaurus>
+      '24': Dinosaurs, pteranodon <desc dinosaurs_pteranodon>
+      '25-26': Dinosaurs, stegosaurus <desc dinosaurs_stegosaurus>
+      '27-28': Dinosaurs, triceratops <desc dinosaurs_triceratops>
+      '29-30': Dinosaurs, tyrannosaurus <desc dinosaurs_tyrannosaurus>
+      '31-35': Dinosaurs, velociraptor <desc dinosaurs_velociraptor>
+      '36': Dragon, faerie <desc dragon_faerie>
+      '37': Eblis <desc eblis>
+      '38-42': Emerald Enclave <desc emerald_enclave>
+      '43-44': Explorer, dead <desc explorer_dead>
+      '45': Explorers <desc explorers>
+      '46': Flail snail <desc flail_snail>
+      '47-50': Flaming Fist <desc flaming_fist>
+      '51': Flying monkeys <desc flying_monkeys>
+      '52-53': Flying snakes <desc flying_snakes>
+      '54-55': Frost giants <desc frost_giants>
+      '56': Giant boars <desc giant_boars>
+      '57': Giant frogs <desc giant_frogs>
+      '58': Giant lizards <desc giant_lizards>
+      '59': Giant scorpions <desc giant_scorpions>
+      '60': Giant wasps <desc giant_wasps>
+      '61-62': Girallons <desc girallons>
+      '63-64': Goblins <desc goblins>
+      '65-66': Grungs <desc grungs>
+      '67': Jaculis <desc jaculis>
+      '68': Kamadans <desc kamadans>
+      '69-70': Lizardfolk <desc lizardfolk>
+      '71-72': Mad monkey mist <desc mad_monkey_mist>
+      '73': Mantraps <desc mantraps>
+      '74': Night hag <desc night_hag>
+      '75': Pterafolk <desc pterafolk>
+      '76': Rare plant(s) <desc rare_plants>
+      '77': Red Wizard <desc red_wizard>
+      '78-79': Snake, constrictor <desc snake_constrictor>
+      '80': Snake, giant constrictor <desc snake_giant_constrictor>
+      '81': Snake, giant poisonous <desc snake_giant_poisonous>
+      '82': Spiders <desc spiders>
+      '83-85': Statue of Ubtao <desc statue_of_ubtao>
+      '86': Stirges <desc stirges>
+      '87': Su_monsters <desc su_monsters>
+      '88': Swarms of bats <desc swarms_of_bats>
+      '89': Swarms of insects <desc swarms_of_insects>
+      '90': Tabaxi hunter <desc tabaxi_hunter>
+      '91': Tiger <desc tiger>
+      '92': Tri_flower frond <desc tri_flower_frond>
+      '93': Vegepygmies <desc vegepygmies>
+      '94': Wereboar <desc wereboar>
+      '95': Weretiger <desc weretiger>
+      '96': Winterscape <desc winterscape>
+      '97': Yellow musk creeper and zombies <desc yellow_musk_creeper_and_zombies>
+      '98': Yuan_ti <desc yuan_ti>
+      '99': Zhentarim <desc zhentarim>
+      '100': Zorbos <desc zorbos>
+  encounter_JUNGLE_LESSER_UNDEAD:
+    roll: 1d100
+    results:
+      '1': Albino dwarves <desc albino_dwarves>
+      '2': Artus Cimber <desc artus_cimber>
+      '3-5': Assassin vines <desc assassin_vines>
+      '6': Axe beaks <desc axe_beaks>
+      '7-8': Cache <desc cache>
+      '9-10': Cannibals <desc cannibals>
+      '11': Dinosaurs, allosaurus <desc dinosaurs_allosaurus>
+      '12': Dinosaurs, ankylosaurus <desc dinosaurs_ankylosaurus>
+      '13': Dinosaurs, deinonychus <desc dinosaurs_deinonychus>
+      '14': Dinosaurs, hadrosaurus <desc dinosaurs_hadrosaurus>
+      '15': Dinosaurs, pteranodon <desc dinosaurs_pteranodon>
+      '16': Dinosaurs, stegosaurus <desc dinosaurs_stegosaurus>
+      '17': Dinosaurs, triceratops <desc dinosaurs_triceratops>
+      '18': Dinosaurs, tyrannosaurus <desc dinosaurs_tyrannosaurus>
+      '19-20': Emerald Enclave <desc emerald_enclave>
+      '21-22': Explorer, dead <desc explorer_dead>
+      '23': Explorers <desc explorers>
+      '24-26': Flaming Fist <desc flaming_fist>
+      '27': Flying snakes <desc flying_snakes>
+      '28': Giant lizards <desc giant_lizards>
+      '29': Giant wasps <desc giant_wasps>
+      '30-31': Girallons <desc girallons>
+      '32-33': Goblins <desc goblins>
+      '34-35': Grungs <desc grungs>
+      '36-39': Mad monkey mist <desc mad_monkey_mist>
+      '40-41': Mantraps <desc mantraps>
+      '42': Night hag <desc night_hag>
+      '43-44': Pterafolk <desc pterafolk>
+      '45': Rare plant(s) <desc rare_plants>
+      '46': Red Wizard <desc red_wizard>
+      '47-48': Snake, constrictor <desc snake_constrictor>
+      '49': Snake, giant constrictor <desc snake_giant_constrictor>
+      '50': Snake, giant poisonous <desc snake_giant_poisonous>
+      '51-52': Spiders <desc spiders>
+      '53-55': Statue of Ubtao <desc statue_of_ubtao>
+      '56-57': Stirges <desc stirges>
+      '58-59': Su_monsters <desc su_monsters>
+      '60-62': Swarms of bats <desc swarms_of_bats>
+      '63-65': Swarms of insects <desc swarms_of_insects>
+      '66': Tri_flower frond <desc tri_flower_frond>
+      '67': Troll <desc troll>
+      '68-72': Undead, ghouls <desc undead_ghouls>
+      '73-77': Undead, skeletons <desc undead_skeletons>
+      '78-79': Undead, specter <desc undead_specter>
+      '80': Undead, wight <desc undead_wight>
+      '81-89': Undead, zombies <desc undead_zombies>
+      '90-91': Vegepygmies <desc vegepygmies>
+      '92': Wereboar <desc wereboar>
+      '93': Weretiger <desc weretiger>
+      '94': Winterscape <desc winterscape>
+      '95-96': Yellow musk creeper and zombies <desc yellow_musk_creeper_and_zombies>
+      '97-98': Yuan_ti <desc yuan_ti>
+      '99': Zhentarim <desc zhentarim>
+      '100': Zorbos <desc zorbos>
+  encounter_JUNGLE_GREATER_UNDEAD:
+    roll: 1d100
+    results:
+      '1': Artus Cimber <desc artus_cimber>
+      '2': Assassin vines <desc assassin_vines>
+      '3-5': Cache <desc cache>
+      '6': Dinosaurs, allosaurus <desc dinosaurs_allosaurus>
+      '7': Dinosaurs, ankylosaurus <desc dinosaurs_ankylosaurus>
+      '8': Dinosaurs, hadrosaurus <desc dinosaurs_hadrosaurus>
+      '9': Dinosaurs, pteranodon <desc dinosaurs_pteranodon>
+      '10': Dinosaurs, stegosaurus <desc dinosaurs_stegosaurus>
+      '11-12': Dinosaurs, tyrannosaurus <desc dinosaurs_tyrannosaurus>
+      '13-14': Dinosaurs, velociraptor <desc dinosaurs_velociraptor>
+      '15-16': Emerald Enclave <desc emerald_enclave>
+      '17-20': Explorer, dead <desc explorer_dead>
+      '21': Explorers <desc explorers>
+      '22-23': Flaming Fist <desc flaming_fist>
+      '24': Giant wasps <desc giant_wasps>
+      '25': Mantraps <desc mantraps>
+      '26': Pterafolk <desc pterafolk>
+      '27': Rare plant(s) <desc rare_plants>
+      '28': Red Wizard <desc red_wizard>
+      '29-31': Snake, constrictor <desc snake_constrictor>
+      '32': Snake, giant constrictor <desc snake_giant_constrictor>
+      '33': Snake, giant poisonous <desc snake_giant_poisonous>
+      '34-36': Spiders <desc spiders>
+      '37-40': Statue of Ubtao <desc statue_of_ubtao>
+      '41-44': Stirges <desc stirges>
+      '45': Su_monsters <desc su_monsters>
+      '46': Swarms of bats <desc swarms_of_bats>
+      '47-49': Swarms of insects <desc swarms_of_insects>
+      '50': Tri_flower frond <desc tri_flower_frond>
+      '51': Troll <desc troll>
+      '52-63': Undead, ghouls <desc undead_ghouls>
+      '64-67': Undead, skeletons <desc undead_skeletons>
+      '68-70': Undead, specter <desc undead_specter>
+      '71-73': Undead, wight <desc undead_wight>
+      '74-85': Undead, zombies <desc undead_zombies>
+      '86-87': Vegepygmies <desc vegepygmies>
+      '88-89': Wereboar <desc wereboar>
+      '90-91': Weretiger <desc weretiger>
+      '92': Winterscape <desc winterscape>
+      '93-96': Yellow musk creeper and zombies <desc yellow_musk_creeper_and_zombies>
+      '97-98': Yuan_ti <desc yuan_ti>
+      '99-100': Zorbos <desc zorbos>
+  encounter_MOUNTAINS:
+    roll: 1d100
+    results:
+      '1-11': Aarakocra <desc aarakocra>
+      '12-17': Albino dwarves <desc albino_dwarves>
+      '18-20': Apes <desc apes>
+      '21-22': Baboons <desc baboons>
+      '23-25': Cache <desc cache>
+      '26-27': Chwinga <desc chwinga>
+      '28-29': Cyclops <desc cyclops>
+      '30-38': Dinosaurs, pteranodon <desc dinosaurs_pteranodon>
+      '39-42': Dinosaurs, quetzalcoatlus <desc dinosaurs_quetzalcoatlus>
+      '43-45': Dragon, red <desc dragon_red>
+      '46-47': Emerald Enclave <desc emerald_enclave>
+      '48-50': Explorer, dead <desc explorer_dead>
+      '51-53': Explorers <desc explorers>
+      '54-59': Flying monkeys <desc flying_monkeys>
+      '60-61': Flying snakes <desc flying_snakes>
+      '62': Giant boars <desc giant_boars>
+      '63': Giant lizards <desc giant_lizards>
+      '64-65': Giant wasps <desc giant_wasps>
+      '66-70': Girallons <desc girallons>
+      '71-73': Night hag <desc night_hag>
+      '74-80': Pterafolk <desc pterafolk>
+      '81': Red Wizard <desc red_wizard>
+      '82-84': Snake, giant poisonous <desc snake_giant_poisonous>
+      '85-87': Stirges <desc stirges>
+      '88-90': Swarms of bats <desc swarms_of_bats>
+      '91-92': Tabaxi hunter <desc tabaxi_hunter>
+      '93-97': Troll <desc troll>
+      '98-100': Wereboar <desc wereboar>
+  encounter_RIVERS:
+    roll: 1d100
+    results:
+      '1-3': Aarakocra <desc aarakocra>
+      '4-7': Aldani <desc aldani>
+      '8-9': Artus Cimber <desc artus_cimber>
+      '10': Assassin vines <desc assassin_vines>
+      '11-12': Cache <desc cache>
+      '13-15': Cannibals <desc cannibals>
+      '16-18': Chwinga <desc chwinga>
+      '19-23': Crocodiles <desc crocodiles>
+      '24': Dinosaurs, brontosaurus <desc dinosaurs_brontosaurus>
+      '25-26': Dinosaurs, dimetrodon <desc dinosaurs_dimetrodon>
+      '27-28': Dinosaurs, hadrosaurus <desc dinosaurs_hadrosaurus>
+      '29-31': Dinosaurs, plesiosaurus <desc dinosaurs_plesiosaurus>
+      '32-34': Dinosaurs, pteranodon <desc dinosaurs_pteranodon>
+      '35-36': Dinosaurs, quetzalcoatlus <desc dinosaurs_quetzalcoatlus>
+      '37': Dragon, faerie <desc dragon_faerie>
+      '38-40': Eblis <desc eblis>
+      '41-43': Emerald Enclave <desc emerald_enclave>
+      '44-45': Explorer, dead <desc explorer_dead>
+      '46-49': Explorers <desc explorers>
+      '50-51': Flaming Fist <desc flaming_fist>
+      '52-53': Flying monkeys <desc flying_monkeys>
+      '54-55': Flying snakes <desc flying_snakes>
+      '56-58': Giant crocodile <desc giant_crocodile>
+      '59-60': Giant frogs <desc giant_frogs>
+      '61-62': Giant snapping turtle <desc giant_snapping_turtle>
+      '63': Giant wasps <desc giant_wasps>
+      '64-66': Grungs <desc grungs>
+      '67': Jaculis <desc jaculis>
+      '68': Lizardfolk <desc lizardfolk>
+      '69-70': Mad monkey mist <desc mad_monkey_mist>
+      '71-72': Pterafolk <desc pterafolk>
+      '73': Rare plant(s) <desc rare_plants>
+      '74': Red Wizard <desc red_wizard>
+      '75-76': Sea hags <desc sea_hags>
+      '77-79': Snake, constrictor <desc snake_constrictor>
+      '80': Snake, giant constrictor <desc snake_giant_constrictor>
+      '81': Statue of Ubtao <desc statue_of_ubtao>
+      '82-83': Stirges <desc stirges>
+      '84-85': Swarms of insects <desc swarms_of_insects>
+      '86-91': Swarms of quippers <desc swarms_of_quippers>
+      '92-93': Tabaxi hunter <desc tabaxi_hunter>
+      '94': Undead, ghouls <desc undead_ghouls>
+      '95': Undead, skeletons <desc undead_skeletons>
+      '96': Undead, zombies <desc undead_zombies>
+      '97-98': Yuan_ti <desc yuan_ti>
+      '99-100': Zhentarim <desc zhentarim>
+  encounter_RUINS:
+    roll: 1d100
+    results:
+      '1-2': Albino dwarves <desc albino_dwarves>
+      '3': Almiraj <desc almiraj>
+      '4-6': Apes <desc apes>
+      '7-8': Artus Cimber <desc artus_cimber>
+      '9-12': Assassin vines <desc assassin_vines>
+      '13-14': Baboons <desc baboons>
+      '15-18': Cache <desc cache>
+      '19': Chwinga <desc chwinga>
+      '20-21': Cyclops <desc cyclops>
+      '22': Dinosaurs, deinonychus <desc dinosaurs_deinonychus>
+      '23': Dinosaurs, velociraptor <desc dinosaurs_velociraptor>
+      '24-26': Emerald Enclave <desc emerald_enclave>
+      '27-28': Explorer, dead <desc explorer_dead>
+      '29-31': Explorers <desc explorers>
+      '32-33': Flail snail <desc flail_snail>
+      '34-36': Flaming Fist <desc flaming_fist>
+      '37-38': Flying monkeys <desc flying_monkeys>
+      '39': Flying snakes <desc flying_snakes>
+      '40-41': Frost giants <desc frost_giants>
+      '42': Giant lizards <desc giant_lizards>
+      '43-45': Giant scorpions <desc giant_scorpions>
+      '46-48': Giant wasps <desc giant_wasps>
+      '49-50': Girallons <desc girallons>
+      '51-52': Goblins <desc goblins>
+      '53-54': Jaculis <desc jaculis>
+      '55-57': Kamadans <desc kamadans>
+      '58': Lizardfolk <desc lizardfolk>
+      '59-60': Mad monkey mist <desc mad_monkey_mist>
+      '61': Night hag <desc night_hag>
+      '62': Rare plant(s) <desc rare_plants>
+      '63': Red Wizard <desc red_wizard>
+      '64-66': Snake, giant poisonous <desc snake_giant_poisonous>
+      '67-68': Spiders <desc spiders>
+      '69-73': Statue of Ubtao <desc statue_of_ubtao>
+      '74-75': Stirges <desc stirges>
+      '76-77': Swarms of bats <desc swarms_of_bats>
+      '78': Tabaxi hunter <desc tabaxi_hunter>
+      '79-80': Tri_flower frond <desc tri_flower_frond>
+      '81': Troll <desc troll>
+      '82-84': Undead, ghouls <desc undead_ghouls>
+      '85-87': Undead, skeletons <desc undead_skeletons>
+      '88-89': Undead, specter <desc undead_specter>
+      '90-91': Undead, wight <desc undead_wight>
+      '92-93': Undead, zombies <desc undead_zombies>
+      '94': Weretiger <desc weretiger>
+      '95': Winterscape <desc winterscape>
+      '96': Yellow musk creeper and zombies <desc yellow_musk_creeper_and_zombies>
+      '97-98': Yuan_ti <desc yuan_ti>
+      '99-100': Zhentarim <desc zhentarim>
+  encounter_SWAMPS:
+    roll: 1d100
+    results:
+      '1-10': Aldani <desc aldani>
+      '11': Artus Cimber <desc artus_cimber>
+      '12-14': Assassin vines <desc assassin_vines>
+      '15-16': Chwinga <desc chwinga>
+      '17-21': Crocodiles <desc crocodiles>
+      '22': Dinosaurs, allosaurus <desc dinosaurs_allosaurus>
+      '23': Dinosaurs, ankylosaurus <desc dinosaurs_ankylosaurus>
+      '24-25': Dinosaurs, brontosaurus <desc dinosaurs_brontosaurus>
+      '26-30': Dinosaurs, dimetrodon <desc dinosaurs_dimetrodon>
+      '31-33': Dinosaurs, hadrosaurus <desc dinosaurs_hadrosaurus>
+      '34-35': Dinosaurs, pteranodon <desc dinosaurs_pteranodon>
+      '36-39': Eblis <desc eblis>
+      '40-41': Explorer, dead <desc explorer_dead>
+      '42-45': Explorers <desc explorers>
+      '46-47': Flail snail <desc flail_snail>
+      '48-50': Flying snakes <desc flying_snakes>
+      '51-53': Giant crocodile <desc giant_crocodile>
+      '54-56': Giant frogs <desc giant_frogs>
+      '57-58': Giant lizards <desc giant_lizards>
+      '59-60': Giant snapping turtle <desc giant_snapping_turtle>
+      '61-62': Giant wasps <desc giant_wasps>
+      '63-64': Grungs <desc grungs>
+      '65-66': Lizardfolk <desc lizardfolk>
+      '67-69': Mad monkey mist <desc mad_monkey_mist>
+      '70': Mephits <desc mephits>
+      '71': Night hag <desc night_hag>
+      '72': Rare plant(s) <desc rare_plants>
+      '73-76': Shambling mound <desc shambling_mound>
+      '77-80': Snake, constrictor <desc snake_constrictor>
+      '81-82': Snake, giant constrictor <desc snake_giant_constrictor>
+      '83-85': Statue of Ubtao <desc statue_of_ubtao>
+      '86-87': Stirges <desc stirges>
+      '88-89': Swarms of bats <desc swarms_of_bats>
+      '90-94': Swarms of insects <desc swarms_of_insects>
+      '95': Undead, ghouls <desc undead_ghouls>
+      '96-97': Undead, skeletons <desc undead_skeletons>
+      '98': Undead, zombies <desc undead_zombies>
+      '99': Yellow musk creeper and zombies <desc yellow_musk_creeper_and_zombies>
+      '100': Yuan_ti <desc yuan_ti>
+  encounter_WASTELAND:
+    roll: 1d100
+    results:
+      '1': Artus Cimber <desc artus_cimber>
+      '2-5': Cache <desc cache>
+      '6-9': Dragon, red <desc dragon_red>
+      '10-18': Explorer, dead <desc explorer_dead>
+      '19': Explorers <desc explorers>
+      '20-37': Firenewts <desc firenewts>
+      '38-45': Giant scorpions <desc giant_scorpions>
+      '46-54': Magmins <desc magmins>
+      '55-71': Mephits <desc mephits>
+      '72-78': Night hag <desc night_hag>
+      '79': Statue of Ubtao <desc statue_of_ubtao>
+      '80-83': Troll <desc troll>
+      '84-85': Undead, ghouls <desc undead_ghouls>
+      '86-95': Undead, skeletons <desc undead_skeletons>
+      '96-97': Undead, wight <desc undead_wight>
+      '98': Undead, zombies <desc undead_zombies>
+      '99-100': Zhentarim <desc zhentarim>
+  cache:
+    roll: 1d20
+    results:
+      '1': Rain catcher (see chapter 1) and mess kit
+      '2': 10_day supply of preserved rations
+      '3': 20_day supply of preserved rations
+      '4': 50_day supply of preserved rations
+      '5': <roll 1d4> casks of water holding 5 gallons each
+      '6': <roll 1d4> casks of tej (see chapter 1)
+      '7': <roll 1d4> climber’s kits
+      '8': Coffer containing <roll 2d4> vials of antitoxin
+      '9': 20_day supply of insect repellent salve (see chapter 1) in a leather tube
+      '10': <roll 1d4> quivers, each containing <roll 1d20> arrows
+      '11': Canoe with six paddles
+      '12': 2 hooded lanterns and 10 flasks of lamp oil
+      '13': Two_person tent and <roll 1d4> explorer’s packs
+      '14': Wooden box containing <roll 2d10> daggers (low quality, of the type used as trade goods)
+      '15': Set of navigator’s tools
+      '16': <roll 1d10> changes of woolen clothing
+      '17': Set of cartographer’s tools
+      '18': Two_person tent and <roll 1d4> healer’s kits
+      '19': 2 two_person tents, folding camp table, and four folding stools
+      '20': Wooden box containing <roll 2d4> potions of healing
+  treasure_drops:
+    roll: 1d100
+    results:
+      '1-50': None
+      '51-52': A crude map drawn on a scrap of tanned dinosaur hide, showing a route to Port Nyanzaru and the location of a randomly determined landmark or lair (250 gp)
+      '53-54': <roll 1d4> gemstones (10 gp each) in a small pouch
+      '55-56': A malachite ring inlaid with electrum (50 gp)
+      '57-58': An empty corked vial made from an aarakocra’s engraved wing bone (5 gp)
+      '59-60': A rotting quiver containing <roll 1d10> silvered arrows
+      '61-62': A gold nugget the size of a dwarf’s fist (50 gp)
+      '63-64': A stoppered vial of serpent venom (see chapter 8 of the Dungeon Master’s Guide)
+      '65-66': An engraved ivory smoking pipe (25 gp)
+      '67-68': Case containing <roll 2d12> blocks of insect repellent incense
+      '69-70': An iron token bearing the symbol of a triceratops (the sign of the Ytepka Society), worth 50 gp in Port Nyanzaru
+      '71-72': Potion of animal friendship
+      '73-74': Potion of vitality
+      '75-76': Spell scroll (choose a 1st_level spell)
+      '77-78': A stoppered vial of wyvern poison (see chapter 8 of the Dungeon Master’s Guide)
+      '79-80': An obsidian knife (25 gp)
+      '81-82': A stoppered, wooden tube containing <roll 1d4> gemstones (50 gp each)
+      '83-84': A small onyx orb with maze_like patterns carved into its surface (75 gp), usable as an arcane or druidic focus
+      '85-86': A Batiri goblin mask made of painted wood, set with nine gemstones (10 gp each)
+      '87-88': A spyglass (1,000 gp)
+      '89-90': A lute (35 gp) with one broken string
+      '91-92': A set of thieves’ tools (25 gp)
+      '93-94': An excellent lock (50 gp) that requires a successful DC 20 Dexterity check to pick using thieves tools (the lock’s key is missing)
+      '95-96': Jar of Keoghtom’s ointment
+      '97-98': Horn of blasting
+      '99-100': Wand of secrets
+  explorers_dead:
+    roll: 1d20
+    results:
+      '1': The bloated corpse of a dead halfling, riddled with tiny arrows and dangling from a tree vine. (The halfling trespassed on grung sacred ground, and the corpse was hung here as a warning.)
+      '2': The bones of an unarmored humanoid, lashed to a tree by vines. (This explorer was captured by Batiri goblins, doused in honey, and left to be devoured by hungry insects.)
+      '3': The crushed remains of an unarmored dwarf, showing signs that she was stomped to death by a rampaging dinosaur.
+      '4': The gnawed and charred bones of a humanoid. (This unfortunate was murdered and cannibalized by his starving, fever_crazed companions.)
+      '5': The mangled body of a half_elf, seemingly bludgeoned to death. (She was dropped from high altitude by pterafolk.)
+      '6': The scattered bones of a dwarf, torn to pieces before being devoured. (A hunting pack of velociraptors did the dwarf in.)
+      '7': The swollen, purple corpse of an elf, dead only a few days ago from the bite of a poisonous snake.
+      '8': A fresh human corpse stuffed into a hollow tree. (Girallons plan to return and devour it later.)
+      '9': The skeleton of a humanoid seated on a folding camp stool, clutching a knife and fork in its bony hands.
+      '10': The desiccated husk of a gnome, cocooned in giant spider webs.
+      '11': The body of a human — from the waist up. Signs show that the explorer crawled a considerable distance after being bitten in half by a tyrannosaurus. (A Flaming Fist charter found on the corpse identifies it as Lord Onovan IV, of the Dales.)
+      '12': A charred elf’s skeleton inside a charred constrictor snake’s skeleton. (Both were killed by a lightning bolt spell.)
+      '13': The rotting body of a giant frog with the blade of a shortsword poking out its back. (If the frog is cut open, the partially digested body of a halfling is found inside.)
+      '14': A tabaxi spread_eagled on the ground, but with its limbs and head severed from its torso and crudely stitched back on in the wrong arrangement.
+      '15': A half_orc spiked to an enormous tree by the broken_off horn of a triceratops.
+      '16': A gnome, spitted over a burned_out fire pit and thoroughly overcooked, but not eaten. (Goblin weapons and tools are scattered around amid velociraptor tracks.)
+      '17': A headless humanoid, hung upside down from a tree and with six Batiri goblin spears thrust symmetrically through the body. (It was a Red Wizard, judging by the robes. The head is nowhere to be found.)
+      '18': An elf, balanced on a tree branch 40 feet above the ground, arms and legs dangling downward. (A note pressed between the body and the branch explains that the elf climbed the tree to get away from a prowling allosaurus and was too terrified to come down.)
+      '19': The moldering remains of a human wearing a Flaming Fist_style helmet, his legs broken. (He succumbed to a faerie dragon’s euphoria breath weapon and stepped off a cliff. A companion tried to carry him back to Fort Beluarian, but the warrior died en route.)
+      '20': A dwarf with six large holes piercing her armor and chest. (A stegosaurus caught her squarely with a swipe of its tail.)
+  explorers:
+    roll: 1d6
+    results:
+      '1-2': The explorers are lost and hungry.
+      '3-4': The explorers are in good shape but are actively hunted by firenewts, ghouls, goblins, or grungs (see the appropriate entry in this appendix).
+      '5': The explorers are healthy and headed toward the nearest landmark, intent on exploring it.
+      '6': The explorers are healthy and heading back to Port Nyanzaru for rest and supplies.
+  rare_plants:
+    roll: 1d6
+    results:
+      '1': <roll 2d6> dancing monkey fruit growing on a tree
+      '2': Menga bush with <roll 2d6> ounces of leaves
+      '3': <roll 1d4> ryath roots growing in the ground
+      '4': <roll 4d6> sinda berries growing on a bush
+      '5': Wukka tree with <roll 2d6> wukka nuts
+      '6': <roll 1d6> zabou growing on a dead tree
+  statue_of_ubtao:
+    roll: 1d4
+    results:
+      '1': Treasure lies at the foot of the statue, left there as tribute by some jungle creature. what treasure is found is treasure <table treasure_drops>. If the roll indicates no treasure, the characters find worthless pieces of bone jewelry instead.
+      '2': Goblin, grung, and su_monster skulls are piled around the statue’s base.
+      '3': A glyph of warding is inscribed on the statue. To spot the glyph, a character searching the statue must succeed on a DC 15 Intelligence (Investigation) check. If any creature touches the statue, the glyph erupts with magical energy in a 20_foot_radius sphere centered on the statue. Each creature in the area must succeed on a DC 14 Dexterity saving throw, taking 22 (5d8) thunder damage on a failed save, or half as much damage on a successful one. The thunderous noise has a 75 percent chance of attracting stirges or a troll lurking nearby (see “Stirges” and “Troll” below).
+      '4': The statue has grooves carved into its stomach that form a maze. Any character who studies the grooves and succeeds on a DC 10 Intelligence check sees a clear pathway through the labyrinth. That character is then bestowed with the power to cast the find the path spell as an action, no components required, by tracing the same path with his or her finger. Once used, this ability goes away. Once the statue has granted this benefit, it can’t do so again until the next dawn.
+  undead_zombies:
+    roll: 1d10
+    results:
+      '1-3': <roll 3d6> zombies
+      '4-5': 1 ankylosaurus zombie (see appendix D)
+      '6-7': <roll 1d4> girallon zombies (see appendix D)
+      '8-9': <roll 1d4> ogre zombies
+      '10': 1 tyrannosaurus zombie (see appendix D)
+  shambling_mound:
+    roll: 1d2
+    results:
+      '1': a shambling mound lurks within a mass of vegetation, where it can be noticed by any character with a passive Wisdom (Perception) score of 15 or higher.
+      '2': the characters hear the creature trudging through the muck before it attacks them
+  dinosaurs_deinonychus:
+    roll: 1d2
+    results:
+      '1': the dimetrodons take no notice of the characters
+      '2': they’re hungry and attack at the slightest provocation, or if the characters approach within 100 feet of them.
+  flying_snakes:
+    roll: 1d2
+    results:
+      '1': the characters encounter <roll 2d6> flying snakes.
+      '2': the party encounters a single flying snake.
+
+  encounter_Omu_RUINS:
+    roll: 1d100
+    results:
+      '01–05': Apes <desc apes>
+      '06–10': Baboons <desc baboons>
+      '11–15': Cannibals <desc cannibals>
+      '16–20': Dragon, faerie <desc dragon_faerie>
+      '21–25': Gargoyles <desc gargoyles>
+      '26–30': Giant wasps <desc giant_wasps>
+      '31–35': Giant wolf spiders <desc giant_wolf_spiders>
+      '36–40': Goblins <desc goblins>
+      '41–45': Grungs <desc grungs>
+      '46–50': King of Feathers <desc king_of_feathers>
+      '51–55': Kobolds <desc kobolds>
+      '56–60': Red Wizard <desc red_wizard>
+      '61–65': Shambling mound <desc shambling_mound>
+      '66–70': Su-monsters <desc su_monsters>
+      '71–75': Tabaxi hunter <desc tabaxi_hunter>
+      '76–80': Undead, ghouls <desc undead_ghouls>
+      '81–85': Undead, zombies <desc undead_zombies>
+      '86–90': Vegepygmies <desc vegepygmies>
+      '91–95': Yellow musk creeper and yellow musk zombies <desc yellow_musk_creeper_and_zombies>
+      '96–00': Yuan-ti <desc yuan_ti>
+
+  encounter_Omu_PALACE:
+    roll: 1d100
+    results:
+      '01–10': Baboons <desc baboons>
+      '11–15': Dragon, faerie <desc dragon_farie>
+      '16–25': Gargoyles <desc gargoyles>
+      '26–35': Giant wolf spiders <desc giant_wolf_spiders>
+      '36–40': Goblins <desc goblins>
+      '41–50': King of Feathers <desc king_of_feathers>
+      '51–60': Kobolds <desc kobolds>
+      '61–70': Red Wizard <desc red_wizard>
+      '71–75': Su-monsters <desc su_monsters>
+      '76–80': Tabaxi hunter <desc tabaxi_hunter>
+      '81–90': Yellow musk creeper and yellow musk zombies <desc yellow_musk_creeper_and_zombies>
+      '91–00': Yuan-ti <desc yuan_ti>
+
+  encounter_Omu_SWAMP:
+    roll: 1d100
+    results:
+      '01–10': Crocodiles <desc crocodiles>
+      '11–15': Gargoyles <desc gargoyles>
+      '16–25': Giant wasps <desc giant_wasps>
+      '26–35': Grungs <desc grungs>
+      '36–50': King of Feathers <desc king_of_feathers>
+      '51–60': Shambling mound <desc shambling_mound>
+      '61–65': Undead, ghouls <desc undead_ghouls>
+      '66–70': Undead, zombies <desc undead_zombies>
+      '71–80': Vegepygmies <desc vegepygmies>
+      '81–90': Yellow musk creeper and yellow musk zombies <desc yellow_musk_creeper_and_zombies>
+      '91–00': Yuan-ti <desc yuan_ti>
+
+  Black_Skull_Transformation:
+    roll: 1d100
+    results:
+      '01–20': The symbol of Acererak is burned into your flesh, a curse that can only be removed with a remove curse spell or similar magic. Until the curse ends, your hit points can’t be restored by magic.
+      '21–35': You grow larger as if affected by an enlarge/reduce spell, except the effect lasts for 1 hour.
+      '36–50': You grow smaller as if affected by an enlarge/reduce spell, except the effect lasts for 1 hour.
+      '51–70': You arrive at the destination wearing nothing but the amulet of the black skull. Everything else that you were wearing or carrying appears in a random unoccupied space within 100 feet of you.
+      '71–95': You are paralyzed for 1 minute or until this effect is ended with a lesser restoration spell or similar magic.
+      '96–00': You become petrified. This effect can be ended only with a greater restoration spell or similar magic.
+
+  Flail_Snail_Antimagic_Shell:
+    roll: 1d6
+    results:
+      '1-2': If the spell affects an area or has multiple targets, it fails and has no effect. If the spell targets only the snail, it has no effect on the snail and is reflected back at the caster, using the spell slot level, spell save DC, attack bonus, and spellcasting ability of the caster.
+      '3-4': No additional effect.
+      '5-6': The snail’s shell converts some of the spell’s energy into a burst of destructive force. Each creature within 30 feet of the snail must make a DC 15 Constitution saving throw, taking <roll 1d6> force damage per level of the spell on a failed save, or half as much damage on a successful one.
+
+  Kobold_Weapon_Invention:
+    roll: 1d8
+    results:
+      '1': "_Acid._ The kobold hurls a flask of acid. Ranged Weapon Attack: +4 to hit, range 5/20 ft., one target. Hit: 2d6=<roll 2d6> acid damage."
+      '2': "_Alchemist’s Fire._ The kobold throws a flask of alchemist’s fire. Ranged Weapon Attack: +4 to hit, range 5/20 ft., one target. Hit: 1d4=<roll 1d4> fire damage at the start of each of the target’s turns. A creature can end this damage by using its action to make a DC 10 Dexterity check to extinguish the flames."
+      '3': "_Basket of Centipedes._ The kobold throws a small basket into a 5-foot-square space within 20 feet of it. A swarm of insects (centipedes) with 11 hit points emerges from the basket and rolls initiative. At the end of each of the swarm’s turns, there’s a 50 percent chance that the swarm disperses."
+      '4': "_Green Slime Pot._ The kobold throws a clay pot full of green slime at the target, and it breaks open on impact. Ranged Weapon Attack: +4 to hit, range 5/20 ft., one target. Hit: The target is covered in a patch of green slime (see chapter 5 of the Dungeon Master’s Guide). Miss: A patch of green slime covers a randomly determined 5-foot-square section of wall or floor within 5 feet of the target."
+      '5': "_Rot Grub Pot._ The kobold throws a clay pot into a 5-foot-square space within 20 feet of it, and it breaks open on impact. A swarm of rot grubs emerges from the shattered pot and remains a hazard in that square."
+      '6': "_Scorpion on a Stick._ The kobold makes a melee attack with a scorpion tied to the end of a 5-foot-long pole. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1 piercing damage, and the target must make a DC 9 Constitution saving throw, taking 1d8=<roll 1d8> poison damage on a failed save, or half as much damage on a successful one."
+      '7': "_Skunk in a Cage._ The kobold releases a skunk into an unoccupied space within 5 feet of it. The skunk has a walking speed of 20 feet, AC 10, 1 hit point, and no effective attacks. It rolls initiative and, on its turn, uses its action to spray musk at a random creature within 5 feet of it. The target must make a DC 9 Constitution saving throw. On a failed save, the target retches and can’t take actions for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. A creature that doesn’t need to breathe or is immune to poison automatically succeeds on the saving throw. Once the skunk has sprayed its musk, it can’t do so again until it finishes a short or long rest."
+      '8': "_Wasp Nest in a Bag._ The kobold throws a small bag into a 5-foot-square space within 20 feet of it. A swarm of insects (wasps) with 11 hit points emerges from the bag and rolls initiative. At the end of each of the swarm’s turns, there’s a 50 percent chance that the swarm disperses."
+
+  Tyrannosaurus_Zombie__Disgorge:
+    roll: 1d6
+    results:
+      '1': the tyrannosaurus zombie runs out of zombies to disgorge and loses the _Disgorge Zombie_ trait.
+      '2-6': the tyrannosaurus zombie DOES NOT run out of zombies to disgorge.
+
+descriptions:
+  aarakocra: Any character with a passive Wisdom (Perception) score of 15 or higher spots <roll 1d4+1> aarakocra flying overhead. These creatures are scouts from Kir Sabal or another aerie. They observe the party from a safe distance but don’t approach unless the characters demonstrate peaceful intentions. The bird folk are friendly and can point characters in the direction of nearby landmarks.
+  albino_dwarves: The characters are ambushed by <roll 1d4+3> albino dwarf warriors (see appendix D) that attack from hidden burrows. Any character with a passive Wisdom (Perception) score of 13 or higher spots the dwarves, but all others are surprised. The dwarves knock characters out rather than killing them, stealing food, water, and gear from those rendered unconscious. They break off their attack if any character speaks Dwarvish to them or demonstrates peaceful intentions.
+  aldani: The characters are shadowed by <roll 1d4> aldani (lobsterfolk) (see appendix D), which are noticed by any character with a passive Wisdom (Perception) score of 12 or higher. The aldani don’t communicate with others unless they must, and they won’t fight unless the characters refuse to take a bribe to leave the area. The aldani will aid the characters only if they’re offered something of great value in return — for example, an offer to drive off a pack of predatory dinosaurs encroaching on their territory.
+  almiraj: Any character with a passive Wisdom (Perception) score of 12 or higher spots <roll 1d6> almiraj (see appendix D) 60 feet away. The almiraj run from any creature that they can see within 30 feet of them. Any character who successfully traps an almiraj can use an action to make a DC 14 Wisdom (Animal Handling) check. If the check succeeds, the almiraj becomes calm and doesn’t attack the character or run away unless it feels threatened or is harmed.
+  apes: The characters stumble upon <roll 2d4> apes enjoying some excellent fruit. The apes feel threatened and show signs of defending their food. If the characters immediately back away slowly, the apes do nothing but make threatening displays. Otherwise, they attack.
+  artus_cimber: Artus Cimber (with or without his saurial traveling companion, Dragonbait) can be encountered almost anywhere. See appendix D for more information on these NPCs. The characters might stumble into Artus’s camp in the evening, or he might walk into theirs. They could find him at the camp of another group of explorers, or telling a story to Dragonbait. He could appear out of nowhere and use the powers of the Ring of Winter to help characters caught up in a tough encounter.
+  assassin_vines: The characters unwittingly enter the hunting grounds of <roll 1d3> assassin vines (see appendix D). The vines are indistinguishable from normal plants and can’t be spotted with Wisdom (Perception) checks. However, they draw carrion to their roots, so characters might smell a dead body nearby. Because assassin vines can move, an encounter in the evening or at night might involve the vines creeping into the characters’ camp and strangling them as they sleep.
+  axe_beaks: A flock of <roll 1d6+3> axe beaks stampede through the characters. The characters can hear the birds charging toward them but can’t see anything through the thick undergrowth until the axe beaks burst forth and attack, slashing at anyone they can reach.
+  baboons: A pack of <roll 3d6> baboons take umbrage at the characters’ intrusion. The baboons can be distracted by tossing each of them a day’s supply of food. Otherwise, they attack.
+  cache: you find <table cache>
+  cannibals: Chultan cannibals prowl the jungles in small groups, killing and eating zombies while avoiding faster, more dangerous undead. Abandoned by their gods, the cannibals have turned to the worship of Dendar the Night Serpent and pay tribute to Ras Nsi in exchange for his favor and protection. They paint a blue triangle (Ras Nsi’s symbol) on their foreheads as proof of their devotion and are known to venture into Omu to hunt and deliver tribute. If this encounter occurs during the day, the characters spot <roll 3d6> tribal warriors feeding on the rotting remains of a dismembered zombie. If the characters remain quiet and keep their distance, they can move away without being noticed by the cannibals. If this encounter occurs at night, <roll 3d6> tribal warriors try to sneak into the adventurers’ camp and murder them. Any character on guard is warned of the attack with a successful DC 10 Wisdom (Perception) check.
+  chwinga: A chwinga (see appendix D) takes an interest in the characters. It attempts to steal something valuable from an unguarded pack or canoe, but is noticed by any character with a passive Wisdom (Perception) score of 17 or higher. The chwinga always leaves something else in exchange… a pretty shell, a handful of nuts, or an uncut gemstone (10 gp).
+  crocodiles: Any character with a passive Wisdom (Perception) score of 12 or higher sees and hears <roll 1d4+1> crocodiles moments before they attack; all other characters are surprised. A crocodile can capsize a canoe and throw its occupants into the water by using its action and succeeding on a DC 15 Strength (Athletics) check.
+  cyclops: A cyclops is journeying toward its home near Snapping Turtle Bay. It isn’t looking for a fight, but any sudden moves or hostility from the characters might trigger one. The cyclops knows the region around Lake Luo and the western end of the Valley of Dread quite well, and it’s never seen anything like Omu in those areas. Treasure… <table treasure_drops> & <table treasure_drops>
+  dinosaurs_allosaurus: The party’s scent attracts <roll 1d3> allosauruses, which appear 100 yards away when the characters first notice them. Any character who succeeds on a DC 15 Wisdom (Survival) check can find a safe refuge (a high branch, a small crevice, a hollow log, and so forth) that the predators can’t reach or enter.
+  dinosaurs_ankylosaurus: An ornery ankylosaurus is gorging on plants, but it attacks any characters who disturb it.
+  dinosaurs_brontosaurus: A lone brontosaurus (see appendix D) lumbers toward the characters, oblivious to their presence. Though it might step on characters who don’t get out of its way, it fights only in self_defense.
+  dinosaurs_deinonychus: A wild boar races across the party’s path, followed closely by a hunting pack of <roll 1d4+2> deinonychuses (see appendix D). The predators decide the characters are more interesting prey.
+  dinosaurs_dimetrodon: A pack of <roll 2d6> dimetrodons (see appendix D) are spotted along a sunny riverbank or on rocks above the water. <table dinosaurs_deinonychus>
+  dinosaurs_hadrosaurus: A herd of <roll 3d6> hadrosauruses (see appendix D) are grazing nearby, with <roll 1d6> noncombatant young among them. The adults don’t attack unless they’re attacked or antagonized. The young are Small beasts that can be sold to Ifan Talro’a in Port Nyanzaru for 50 gp each, or for 100 gp if a character succeeds on a DC 15 Charisma (Persuasion) check to negotiate the price. The young dinosaurs are easy to handle if separated from their parents, but the adults fight if their young are captured.
+  dinosaurs_plesiosaurus: Two plesiosauruses are fighting over a dead giant octopus. If the characters are on a river, the creatures are spotted at a distance of 300 feet, whereupon they bellow menacingly and move to attack the party. To paddle a canoe to a safe spot along the riverbank, one character in the canoe must succeed on a DC 13 Strength (Athletics) check, with other characters in the canoe using the Help action. Canoes that don’t reach the bank are flipped and demolished by the reptiles, which then attack swimmers in the water.
+  dinosaurs_pteranodon: A flock of <roll 2d6> pteranodons is spotted overhead. They keep their distance and attack only if threatened.
+  dinosaurs_quetzalcoatlus: A flight of <roll 1d4+1> quetzalcoatluses (see appendix D) is spotted overhead. They keep their distance and attack only if threatened.
+  dinosaurs_stegosaurus: This lone stegosaurus (see appendix D) is in a genial mood. It approaches the characters out of curiosity, but anyone who touches it triggers a swipe from its tail.
+  dinosaurs_triceratops: A triceratops that appears to be grazing alone is actually a mother with a nearby nest containing one noncombatant hatchling and two unhatched eggs. The mother eyes the characters suspiciously but doesn’t attack unless they position themselves between her and the nest. Ifan Talro’a in Port Nyanzaru offers 50 gp for an intact triceratops egg or hatchling, or a character can talk him up to 150 gp with a successful DC 15 Charisma (Persuasion) check.
+  dinosaurs_tyrannosaurus: The characters spot a tyrannosaurus rex 300 yards away. There’s a 50 percent chance that the hungry behemoth is fighting either a stegosaurus, a triceratops, a pair of giant constrictor snakes, a giant ape, or a mob of ghouls and zombies. None of these creatures will voluntarily team up with the party, but their presence might weaken the tyrannosaurus to the point where the characters have a chance of slaying it. Characters can avoid an encounter with the tyrannosaurus if they keep their distance and succeed on a DC 15 group Dexterity (Stealth) check. If any character is trained in the Survival skill, all the characters’ checks are made with advantage.
+  dinosaurs_velociraptor: A pack of <roll 3d6> velociraptors (see appendix D) burst out from behind cover and attack. Make a single Dexterity (Stealth) check for the dinosaurs, with advantage. Any character whose passive Wisdom (Perception) score equals or exceeds the velociraptors’ check result is not surprised.
+  dragon_faerie: An invisible green faerie dragon takes an interest in the adventurers and follows them for a while. If the characters are in good spirits, the tiny dragon plays harmless pranks on them during the party’s next short or long rest. If the characters are not angered by this trickery, the dragon appears and truthfully answers three of their questions before bidding the party farewell. If the characters seem dour or mean, or if the faerie dragon’s pranks sour them, it flutters off without providing any sort of aid. The faerie dragon visited Omu recently and knows about the evil gargoyles and “snake people” that watch over the city. It also knows things about other nearby landmarks or locations, as you determine.
+  dragon_red: If the characters are within 50 miles of Wyrmheart Mine (see chapter 2), they see the young red dragon known as Tzindelor or Tinder circling over that location. If they’re farther away, they see her flying in the direction of the mine. The dragon ignores the characters unless they do something to attract her attention.
+  eblis: If the characters are on the move when this encounter occurs, they stumble across <roll 1d4+1> eblis (see appendix D) living in reed huts built on stilts above a swampy marsh or pond. The eblis attack wounded or weak_looking characters but offer to trade information for precious gemstones if faced with a strong, well_armed group. For 50 gp worth of gems, they point the adventurers in the direction of nearby landmarks. If the characters follow these directions, they have advantage on checks made to reach those landmarks (see “Navigation”). If the characters defeat the eblis and search the huts, the treasure is <table treasure_drops> & <table treasure_drops> & <table treasure_drops>. If this encounter occurs while the party is camped, the eblis sneak into the camp and try to drag one character away.
+  emerald_enclave: The characters encounter a band of Emerald Enclave scouts or stumble upon one of their outposts. Choose whichever encounter works best for the circumstances and location. ENCLAVE SCOUTS. The party meets <roll 1d4+1> members of the Emerald Enclave working to rid the jungle of its undead menace. The group works with a priest of Mielikki, but all other members are scouts. If one of the adventurers has died recently, you can use this encounter to introduce a new character — either a member of the Emerald Enclave, someone the scouts have rescued, or a character who hired the scouts as guides. The scouts are willing to trade information on an equal basis with a non_evil party. Characters can also convince the scouts to join their party for up to 3 days by succeeding on a DC 12 group Charisma (Persuasion) check. The Emerald Enclave scouts have enough food and water to nourish themselves, and each scout has an explorer’s pack. The priest carries a priest’s pack. ENCLAVE OUTPOST. Any character with a passive Wisdom (Perception) score of 13 or higher spots a wooden platform in a tree. The platform is <roll 2d6>x5 feet above ground, and a successful DC 12 Strength (Athletics) check is required to climb the tree. The platform is 10 feet square and sturdy enough to support six characters and their gear.
+  explorer_dead: Chult is strewn with the corpses and bones of those who have fallen victim to its terrors. When the characters discover one such victim, they find <table explorers_dead>. found on or near the remains is treasure <table treasure_drops>.
+  explorers: The party runs into another band of explorers, consisting of a mage, a priest, a scout, and <roll 1d6> tribal warriors. the group’s situation is  <table explorers>
+  firenewts: A light firenewt patrol consists of <roll 1d4> firenewt warriors mounted on giant striders. A heavy patrol consists of <roll 2d4> firenewt warriors and a firenewt warlock of Imix, all mounted on giant striders. Statistics for all these creatures appear in appendix D. The firenewts always strike their final blows with the intention of knocking out enemies, who are then taken back to the creatures’ cave lair to be tortured and eaten.
+  flail_snail: Characters spot the slimy trail of a flail snail (see appendix D). If they wish to follow it, a successful DC 10 Wisdom (Survival) check correctly deduces which direction the snail was traveling.
+  flaming_fist: The soldiers of the Flaming Fist know the dangers of Chult better than most, and they don’t take the wilderness lightly. A typical patrol is made up of a knight or veteran leading an acolyte, a scout, and <roll 2d6> guards — and is sometimes accompanied by <roll 1d4> deinonychuses (see appendix D) trained to fight and hunt alongside their handlers. The Flaming Fist is friendly and helpful toward adventurers possessing a charter of exploration issued by Commander Liara Portyr of Fort Beluarian. If the party has no such document, the patrol tries to confiscate the adventurers’ critical gear and advises them to replace it at Fort Beluarian — and to obtain a proper charter while they’re at it.
+  flying_monkeys: The sound of wings heralds the arrival of <roll 3d6> flying monkeys (see appendix D), which swoop through the adventurers in a wave of grasping hands and feet. Each character must succeed on a DC 12 Dexterity saving throw or lose a useful piece of gear to the furry thieves. If this encounter occurs near Mbala (see chapter 2), the monkeys are servants of the green hag Nanny Pu’pu. These sociable creatures are curious about humanoids and have little fear of them. A flying monkey that is successfully grappled, caught in a net, or otherwise prevented from escaping can be trained to perform simple tricks by a character with proficiency in Animal Handling who spends a few hours a day working with the monkey. At the end of 1 week, the character makes a DC 10 Wisdom (Animal Handling) check. On a success, the flying monkey learns to perform a simple trick on command (such as fetching a specific object or dancing to music). An individual monkey can learn a maximum <roll 1d6> tricks and can be taught one trick per week.
+  flying_snakes: <table flying_snakes> These snakes attack only when threatened. A flying snake that is successfully grappled can be stuffed in a sack or other soft container. After 1 hour of confinement, the snake settles down. A character who succeeds on a DC 13 Wisdom (Animal Handling) check can remove a calm snake from the container without causing it to attack or fly away. Characters can sell captured flying snakes to Ifan Talro’a in Port Nyanzaru. He offers 25 gp for each snake, but a character who succeeds on a DC 15 Charisma (Persuasion) check can talk him up to 50 gp.
+  frost_giants: The characters hear the sound of huge creatures stomping through the wilderness. If they follow the noise, they encounter a search party of three frost giants accompanied by <roll 1d2> winter wolves. For each such encounter, there is a 20 percent chance that this is Drufi’s search party (see “Hvalspyd”). The frost giants are concerned chiefly with locating the Ring of Winter, and they might help characters who can provide useful information. They immediately attack characters who withhold information, or who threaten to reveal the giants’ presence to the Flaming Fist. The frost giants carry no treasure with them while they hunt.
+  giant_boars: The characters see and hear <roll 1d4+1> giant boars foraging ahead of them. Skirting around the boars to prevent them from charging requires a successful DC 12 group Dexterity (Stealth) check.
+  giant_crocodile: Before it rises out of the water, make a Dexterity (Stealth) check for the giant crocodile. Any character with a passive Wisdom (Perception) score less than the check result is surprised when the monstrous creature attacks.
+  giant_frogs: These <roll 2d6> giant frogs have come together in hunger and try to eat everything that crosses their path. The characters have plenty of warning as the amphibians hop noisily toward them.
+  giant_lizards: The characters encounter <roll 1d6> giant lizards sunning themselves on warm rocks. The lizards pose no threat unless they’re attacked, and they’re too set in their ways to be trained as pack animals.
+  giant_scorpions: Any character with a passive Wisdom (Perception) score of 11 or higher spots <roll 1d3> giant scorpions moments before they emerge from hiding and attack. At the end of the encounter, any character damaged by a giant scorpion must succeed on a DC 11 Constitution saving throw or become infected with shivering sickness (see “Diseases”).
+  giant_snapping_turtle: The characters spot a giant snapping turtle (see appendix D) sunning itself on the shore. The turtle attacks any character it can see within 30 feet of it.
+  giant_wasps: A droning sound announces the presence of <roll 1d6> giant wasps before the characters see them. The wasps attack at once, ignoring heavily armored targets in favor of those with little or no defensive protection. At the end of the encounter, any character damaged by a giant wasp must succeed on a DC 11 Constitution saving throw or become infected with shivering sickness (see “Diseases”).
+  girallons: Two girallons (see appendix D) hang in the trees, perch atop rocks, or lumber between crumbling, vine_covered ruins. The characters spot them automatically and can avoid a hostile encounter if they withdraw and succeed on a DC 13 group Dexterity (Stealth) check. If the characters defeat the girallons or frighten them away, a search of the area reveals a hidden cache, <table cache>. The girallons might also have some treasure hidden near the cache; found after a search of the area is treasure <table treasure_drops>.
+  goblins: A typical Batiri patrol or hunting party consists of a goblin boss leading <roll 2d6+3> goblins, all wearing painted wooden masks. They move quietly through familiar areas and seldom range outside their home territory. Batiri prefer to hunt at night and lay low in ambush positions during the day. A night encounter with Batiri goblins involves an attack on the characters’ camp. Each party member standing watch must attempt a DC 16 Wisdom (Perception) check, made with disadvantage because of the noise of the jungle at night. On a success, a character detects the goblins moving into attack positions and can rouse the rest of the party. If no one on watch succeeds on the check, all the characters are surprised. If this encounter occurs while the characters are traveling during the day, have each party member make a DC 16 Wisdom (Perception or Survival) check to spot the telltale signs of an ambush… disadvantageous terrain coupled with an eerie silence not normal for the jungle. Goblins bargain for their lives if captured. If the characters can force or coerce a vow of cooperation from goblin prisoners, the Batiri will serve as guides. They have the following additional skill… Survival +1.
+  grungs: A grung hunting party consists of <roll 2d6> grungs led by a grung elite warrior (see appendix D for both). If this encounter occurs while the characters are traveling, the grungs have set up an ambush in the trees. Any character with a passive Wisdom (Perception) score of 14 or higher spots them just in time. All other characters are surprised. If this encounter occurs while the party is camped, the grungs spotted the characters earlier in the day and have shadowed them unseen. Each character standing watch must succeed on a DC 14 Wisdom (Perception) check, made with disadvantage because of the noise of the jungle at night. On a success, a character detects the encroaching grungs and can rouse the rest of the party. If no one on watch succeeds on the check, all the characters are surprised. If the characters capture one or more grungs, the frogfolk offer to lead the characters to treasure in exchange for a promise of freedom. The “treasure” is a half_mile away from the party’s present location and consists of a cache, <table cache>.
+  jaculis: Without warning, <roll 1d6> jaculis (see appendix D) launch themselves at the party from the trees. Any character with a passive Wisdom (Perception) score of 14 or higher is able to react, but all others are surprised.
+  kamadans: The party is ambushed by <roll 1d2> kamadans (see appendix D). Any character with a passive Wisdom (Perception) score of 16 or higher gets a warning of the attack, but all others are surprised. Characters who prevail against the kamadans can search the area for their lair, finding it with a successful DC 15 Wisdom (Survival) check. A kamadan lair has a 25 percent chance of containing <roll 1d3> noncombatant young the size of house cats. With their snakes not yet grown out, they look like leopard cubs. Ifan Talro’a in Port Nyanzaru will pay 150 gp for a live kamadan cub, but a successful DC 15 Charisma (Persuasion) check talks him up to 300 gp.
+  lizardfolk: The characters encounter <roll 2d4> lizardfolk and a lizardfolk shaman. These lizardfolk belong to a tribe or kingdom in the Valley of Dread and can be appeased with food (one day’s supply per lizardfolk in the group). Otherwise they attack.
+  mad_monkey_mist: A bank of blue mist drifts toward the party, covering an area of <roll 1d6> 20_foot squares. Any character with a passive Wisdom (Perception) score of 13 or higher notices the mist and can warn others of its approach. If the encounter occurs while the party is camped, the mist drifts through the camp at a speed of 5 feet per round. Characters who come into contact with the mist are exposed to mad monkey fever (see “Diseases”).
+  magmins: The characters are attacked by <roll 2d6> magmins, which flee if reduced to fewer than half their starting number.
+  mantraps: The characters blunder into a patch of <roll 1d4+1> mantraps (see appendix D), which are undetectable until they attack. The plants are 10 feet apart, so that only one plant attacks on the first round. The others must wait until characters maneuver within 5 feet of them.
+  mephits: The characters might encounter magma mephits, mud mephits, smoke mephits, or steam mephits (each appearing as a group of 2d6). The mephits don’t attack unless they outnumber the characters two to one, but they’re reluctant to be helpful unless they themselves are outnumbered.
+  night_hag: One of the Sewn Sisters (see chapter 5) shadows the party while staying in the Border Ethereal. During the party’s next long rest, the night hag materializes and snatches some blood or hair from a random character before returning to the Ethereal Plane.
+  pterafolk: Looming in the sky, <roll 1d4+2> pterafolk (see appendix D) watch the characters’ every move and wait until they blunder into danger. The next time a random encounter occurs, the pterafolk take advantage of the distraction and attack from the air, launching javelin attacks at wounded characters while staying out of melee. If they meet firm resistance, the pterafolk fly away, but they might regroup for a follow_up attack at your discretion.
+  rare_plants: The characters find one or more unusual plants (see appendix C), <table rare_plants>
+  red_wizard: This group consists of a Red Wizard (LE male or female Thayan human mage), <roll 1d6> guards, and <roll 1d6> skeletons, all answerable to Valindra Shadowmantle (see “Heart of Ubtao”). If this encounter occurs outside of Omu, these reinforcements are on their way to the city. If the encounter takes place in Omu, the Red Wizard is searching the city for shrines (see chapter 3). The Thayans aren’t spoiling for a fight; if defeat seems inevitable, the Red Wizard surrenders and offers a crude map of Chult marking the regions occupied by undead (see map 2.1). The characters can use the map to steer clear of these regions.
+  salamander: The characters see a salamander tending a nest of <roll 1d6> fire snakes. The salamander has no interest in fighting and attacks only to protect itself and the snakes.
+  sea_hags: The characters encounter three sea hags that comprise a coven. Their favorite trick is to pull a damaged or abandoned canoe onto a riverbank and pretend to be stranded or wounded explorers in need of rescue. If the characters defeat the sea hags and search the area, treasures <table treasure_drops> & <table treasure_drops> & <table treasure_drops>. Whatever treasure the hags have is stowed inside a rotted wooden chest.
+  shambling_mound: <table shambling_mound>
+  snake_constrictor: A constrictor snake attacks a random party member from hiding. The character targeted by the snake is surprised unless he or she has a passive Wisdom (Perception) score of 12 or higher.
+  snake_giant_constrictor: A giant constrictor snake attacks from hiding in the same manner as a constrictor snake.
+  snake_giant_poisonous: A giant poisonous snake shoots out from the undergrowth to attack a random character. The character targeted by the snake is surprised unless he or she has a passive Wisdom (Perception) score of 14 or higher.
+  spiders: Giant spider webs are easily concealed in Chult’s dense jungles and swamps. Any character with a passive Wisdom (Perception) score of 13 or higher spots the webs in time to alert the other characters to an encounter with <roll 1d6> giant spiders. Otherwise, the spiders attack with surprise when the lead party member blunders into a sticky web and becomes grappled by it (escape DC 12). Hundreds of baby giant spiders crawl through the webs, but they are harmless.
+  statue_of_ubtao: Any character with a passive Wisdom (Perception) score of 12 or higher spots a 10_foot_tall statue overgrown with vines. The statue depicts a stylized Chultan king — a representation of Ubtao. Whats special about the statue? <table statue_of_ubtao>
+  stirges: Chult is rich in caves, ruins, and hollow logs in which stirges can hide. By day, the characters disturb <roll 2d6> stirges as they move through the jungle. At night, the same number of stirges descend on the party’s camp.
+  su_monsters: The party comes across <roll 1d4+1> su_monsters (see appendix D). The su_monsters approach cautiously, feigning curiosity. If allowed to get close, each su_monster uses its Psychic Crush in the hope of stunning an adventurer before attacking with its bite and claws. The su_monsters flee to their treetop lairs if the fight goes against them. The su_monsters might have treasure stashed in one of their trees; a search of the tree yields treasure <table treasure_drops>.
+  swarms_of_bats: Ruins, hollow trees, and hidden caverns can all be homes to bats. This encounter sees the characters disturb <roll 1d4> swarms of bats that have become unnaturally aggressive from feeding on undead flesh.
+  swarms_of_insects: The characters are beset by <roll 1d4> swarms of insects (centipedes). At the end of the encounter, any character damaged by a swarm must succeed on a DC 11 Constitution saving throw or become infected with shivering sickness (see “Diseases”).
+  swarms_of_quippers: This encounter indicates that <roll 1d4> swarms of quippers catch sight of the party, but these creatures are dangerous only if the characters are in the water with them. Creatures on the shore or in canoes are safe, but in both cases, the swarms follow the characters until they’re out of sight and away from the water.
+  tabaxi_hunter: Any character with a passive Wisdom (Perception) score of 15 or higher spots a tabaxi hunter (see appendix D) watching the party from a vantage point 300 feet away. If the tabaxi goes unseen, it might shadow the characters for a while, then suddenly appear to help them fight off a tough encounter or warn them of danger in the vicinity. If this encounter takes place in Omu, see chapter 3 for more information on the tabaxi hunters found there.
+  tiger: A tiger lies in wait for the party but is noticed by any character whose passive Wisdom (Perception) score is 16 or higher. If not detected, the tiger pounces at a character who comes within 40 feet of it. The tiger retreats if it loses more than half its hit points.
+  tri_flower_frond: If this encounter occurs while the characters are traveling, they wander into a patch of <roll 1d4> tri_flower fronds (see appendix D) which seem like ordinary plants until they strike. If the encounter occurs while the party is camped, the plants try to infiltrate the camp, anesthetize characters with their orange blossoms, then slay them with their yellow and red blossoms.
+  troll: A hungry troll comes crashing out of the jungle, intent on eating the characters.
+  undead_ghouls:  Any character with a passive Wisdom (Perception) score of 12 or higher hears and smells a ghoul pack approaching, consisting of <roll 2d6> ghouls led by a ghast. The ghast has a blue triangle tattooed on its forehead — an indicator that it once served Ras Nsi.
+  undead_skeletons: The characters come across <roll 3d6> skeletons. If the encounter occurs while the party is traveling, the skeletons are either lying on the ground or buried under it, ready to spring up when wayward explorers pass by. If the party is camped, the skeletons wander into the camp and attack.
+  undead_specter: The evil remnant of a dead explorer has become a specter that attacks the party. The explorer’s body can be found with a successful DC 13 Wisdom (Survival) check. If the characters locate the body, see “Explorer, Dead” earlier in this section to determine what they find. <table explorers_dead>
+  undead_wight: The characters encounter a wight that has lurked in the Chultan jungle since before the Spellplague. It harbors an eternal hatred for Chultans and everything related to Ubtao. If the party includes any Chultans or any character wearing the holy symbol of Ubtao, the wight attacks those characters in preference to other targets.
+  undead_zombies: Characters catch the scent of death on the air and hear the undead lumbering through the jungle. what appears? <table undead_zombies>
+  vegepygmies: The characters cross paths with <roll 1d4> vegepygmies, each one mounted on a thorny (see appendix D for both). These vegepygmy hunters have wandered far from their tribe. They flee if outnumbered; otherwise, they attack.
+  wereboar: A wereboar masquerading as a Chultan priest takes a dim view of explorers encroaching on its territory and demands that the characters turn back. Around its neck, it wears a wooden holy symbol of Ubtao (a labyrinthine pattern carved into a circular disk). The wereboar might be guarding a shrine to Ubtao, a grove of wukka trees (see appendix C), or a cave it uses as a lair. The creature might also have treasure in its lair; a search of the wereboar’s lair yields treasures <table treasure_drops> & <table treasure_drops> & <table treasure_drops>
+  weretiger: A weretiger in human form offers to escort the party through a particularly dangerous stretch of wilderness. It has no ulterior motive and doesn’t ask for payment. If the characters accept its assistance, they have no hostile random encounters while the weretiger is with them. It leaves after accompanying the party for 24 hours or when it reaches a location it does not wish to explore, including Omu, Nangalore, or Orolunga.
+  winterscape: The characters stumble into a wondrous sight… a 120_foot_radius sphere of winter weather. To drive off some monsters, Artus Cimber (see appendix D) created the sphere using the Ring of Winter. All plants and surfaces within the sphere are covered with glittering ice and frost, and the temperature within the sphere is a biting −30 degrees Fahrenheit. The effect was created by an artifact and can’t be dispelled.
+  yellow_musk_creeper_and_zombies: The characters pass close to a ruin inhabited by <roll 3d6> yellow musk zombies (see appendix D). The zombies might be spread across the area or bunched together, depending on the terrain. In the heart of the ruin, a yellow musk creeper(see appendix D) clings to a crumbling archway, statue, or polluted well. If this encounter occurs while the party is camped, the zombies emerge from a nearby ruin to attack the camp and attempt to knock characters unconscious. They then drag those characters back to the yellow musk creeper.
+  yuan_ti: Yuan_ti patrols consist of <roll 1d6+1> yuan_ti purebloods, which keep their distance as they try to gather information to take back to Ras Nsi. The yuan_ti are camouflaged, but any character who succeeds on a DC 13 Wisdom (Perception) check made with disadvantage catches sight of the serpent folk as they withdraw. If this encounter occurs within 25 miles of Omu, the patrol is instead made up of <roll 1d4> yuan_ti malisons (type 1), and it takes a DC 14 Wisdom (Perception) check to spot them. If the characters chase after the malisons, they transform into snakes and vanish into the jungle.
+  zhentarim: A Zhent assassin with a flying snake pet leads a priest, <roll 2d6> thugs, and <roll 1d6> tribal warriors through the wilderness in search of Artus Cimber and the Ring of Winter. If Artus is with the characters, the Zhents demand the ring and attack if they don’t receive it quickly. Otherwise, they show little interest in the characters. The Zhents carry treasure <table treasure_drops>.
+  zorbos: If this encounter occurs while the characters are traveling, they spot <roll 2d6> zorbos (see appendix D) in wukka trees (see appendix C). The creatures growl and bare their teeth if any characters approach them. If the characters act in a threatening manner, the zorbos attack. If this encounter occurs while the party is camped, the hungry zorbos drop from the surrounding trees and attack.
+  gargoyles: Perched on a cliff are <roll 2d4> gargoyles that swoop down to attack. Two of them carry a net between them. As an action, either gargoyle can use the net to make a melee weapon attack (+4 to hit) against one Small or Medium creature. If the attack hits, the gargoyles hoist the character into the air and fly off with their catch. It takes both gargoyles to lift the net if it has a creature caught in it. The gargoyles flee if reduced to half their number.
+  giant_wolf_spiders: The characters are attacked by <roll 1d6> giant wolf spiders living in hidey-holes in the nearby ruins. A search of the spiders’ lair might yield treasure; roll once on the Treasure Drops table to determine what, if anything, is found.
+  king_of_feathers: The characters encounter the tyrannosaurus rex known as the King of Feathers. See chapter 3 for more information on this unique beast.
+  kobolds: Moving through the city or palace ruins are <roll 1d4+1> kobolds led by a kobold inventor (see appendix D). Characters with a passive Wisdom (Perception) score of 12 or higher spot the kobolds, which flee if approached or attacked. The kobolds serve the kobold scale sorcerer Kakarol (see chapter 3). They might be on their way to one of the city’s shrines to reset its traps, or they might be returning to their lair with a recently discovered treasure. They found <table treasure_drops>

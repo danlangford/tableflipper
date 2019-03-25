@@ -13,7 +13,6 @@ import javafx.scene.control.MenuBar;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.media.AudioClip;
 import javafx.scene.text.TextFlow;
 
 import javax.inject.Inject;
@@ -51,15 +50,11 @@ public class SceneController {
     private MenuBar menuBar;
 
     MutableDataSet options = new MutableDataSet();
-    AudioClip diceRollAudio = new AudioClip(getClass().getResource("/diceroll.mp3").toExternalForm());
-
 
     @FXML
     public void handleClick(MouseEvent event){
         String selected = tableList.getSelectionModel().getSelectedItem();
         if(selected!=null&&selected.trim().length()>0) {
-
-            diceRollAudio.play();
 
             String rollResult = flipper.rollOnTable(selected);
             Document node = VladschUtils.jfxParser().parse(rollResult);

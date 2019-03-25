@@ -17,6 +17,7 @@ import java.util.regex.Pattern;
 import static java.text.MessageFormat.format;
 import static java.util.Arrays.asList;
 import static java.util.Optional.empty;
+import static java.util.stream.Collectors.toList;
 
 /**
  * the "engine" that makes this work is the recursive templating. this class finds fragment tokens and resolves them with the necessary services. those services may someday be "plugins"
@@ -89,6 +90,6 @@ public class TableFlipper {
     }
 
     public Collection<String> getTableNames() {
-        return table.getTableNames();
+        return table.getTableNames().stream().sorted().collect(toList());
     }
 }
