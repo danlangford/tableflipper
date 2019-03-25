@@ -10,19 +10,17 @@
     <groupId>dan.langford.tableflipper</groupId>
     <artifactId>tableflipper</artifactId>
     <version>${revision}</version>
-    <packaging>pom</packaging>
 
     <properties>
 
-        <revision>0.0.7</revision>
+        <revision>0.0.8-SNAPSHOT</revision>
 
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
 
-        <lombok.version>1.18.4</lombok.version>
         <guice.version>4.2.2</guice.version>
-        <slf4j.version>1.8.0-beta2</slf4j.version>
-        <junit.version>5.4.0-M1</junit.version>
+        <slf4j.version>1.8.0-beta4</slf4j.version>
+        <junit.version>5.4.1</junit.version>
         <surefire.version>3.0.0-M3</surefire.version>
         <javafx.version>11.0.1</javafx.version>
 
@@ -30,111 +28,103 @@
 
         <auto-gen-notice>CAUTION: this README.asc was auto created from original src/main/doc</auto-gen-notice>
     </properties>
-
-    <modules>
-        <module>tableflipper-core</module>
-        <module>tableflipper-cli</module>
-        <module>tableflipper-ui</module>
-        <!--<module>tableflipper-cli-jlink</module>-->
-        <!--<module>tableflipper-ui-jlink</module>-->
-        <module>tableflipper-cli-fatjar</module>
-        <module>tableflipper-ui-fatjar</module>
-    </modules>
-
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>dan.langford.tableflipper</groupId>
-                <artifactId>tableflipper-core</artifactId>
-                <version>${revision}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.yaml</groupId>
-                <artifactId>snakeyaml</artifactId>
-                <version>1.24-SNAPSHOT</version>
-            </dependency>
-            <dependency>
-                <groupId>javax.inject</groupId>
-                <artifactId>javax.inject</artifactId>
-                <version>1</version>
-            </dependency>
-            <dependency>
-                <groupId>com.google.inject</groupId>
-                <artifactId>guice</artifactId>
-                <!-- adding classifier here doesnt actually do anything, its just a reminder that we want this classifier to make Java 11 builds easier. it does remove the ability for Guice to use reflection though -->
-                <classifier>no_aop</classifier>
-                <version>${guice.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>slf4j-api</artifactId>
-                <version>${slf4j.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>slf4j-simple</artifactId>
-                <version>${slf4j.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.projectlombok</groupId>
-                <artifactId>lombok</artifactId>
-                <version>${lombok.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.junit.jupiter</groupId>
-                <artifactId>junit-jupiter-api</artifactId>
-                <version>${junit.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.openjfx</groupId>
-                <artifactId>javafx-controls</artifactId>
-                <version>${javafx.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.openjfx</groupId>
-                <artifactId>javafx-fxml</artifactId>
-                <version>${javafx.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.openjfx</groupId>
-                <artifactId>javafx-web</artifactId>
-                <version>${javafx.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.openjfx</groupId>
-                <artifactId>javafx-swing</artifactId>
-                <version>${javafx.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.openjfx</groupId>
-                <artifactId>javafx-media</artifactId>
-                <version>${javafx.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.openjfx</groupId>
-                <artifactId>javafx-graphics </artifactId>
-                <version>${javafx.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.openjfx</groupId>
-                <artifactId>javafx-graphics </artifactId>
-                <version>${javafx.version}</version>
-                <classifier>mac</classifier>
-            </dependency>
-            <dependency>
-                <groupId>org.openjfx</groupId>
-                <artifactId>javafx-graphics </artifactId>
-                <version>${javafx.version}</version>
-                <classifier>linux</classifier>
-            </dependency>
-            <dependency>
-                <groupId>org.openjfx</groupId>
-                <artifactId>javafx-graphics </artifactId>
-                <version>${javafx.version}</version>
-                <classifier>win</classifier>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>org.yaml</groupId>
+            <artifactId>snakeyaml</artifactId>
+            <version>1.24</version>
+        </dependency>
+        <dependency>
+            <groupId>com.bernardomg.tabletop</groupId>
+            <artifactId>dice</artifactId>
+            <version>1.4.0</version>
+            <!-- possible log4j-slf4j-api exclusion maybe be needed in future -->
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
+            <version>1</version>
+        </dependency>
+        <dependency>
+            <groupId>io.github.classgraph</groupId>
+            <artifactId>classgraph</artifactId>
+            <version>4.8.21</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.testfx</groupId>
+            <artifactId>openjfx-monocle</artifactId>
+            <version>jdk-11+26</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.google.inject</groupId>
+            <artifactId>guice</artifactId>
+            <version>${guice.version}</version>
+            <classifier>no_aop</classifier>
+            <!-- adding classifier here doesnt actually do anything, its just a reminder that we want this classifier to make Java 11 builds easier. it does remove the ability for Guice to use reflection though -->
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+            <version>${javafx.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-graphics</artifactId>
+            <version>${javafx.version}</version>
+            <classifier>mac</classifier>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-graphics</artifactId>
+            <version>${javafx.version}</version>
+            <classifier>win</classifier>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-graphics</artifactId>
+            <version>${javafx.version}</version>
+            <classifier>linux</classifier>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-fxml</artifactId>
+            <version>${javafx.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-swing</artifactId>
+            <version>${javafx.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.vladsch.flexmark</groupId>
+            <artifactId>flexmark</artifactId>
+            <version>0.40.26</version>
+        </dependency>
+        <dependency>
+            <groupId>org.testfx</groupId>
+            <artifactId>testfx-junit5</artifactId>
+            <version>4.0.15-alpha</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
     <build>
         <pluginManagement>
@@ -151,37 +141,7 @@
                 <plugin>
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>3.8.0</version>
-                    <!-- could i use version range here? -->
-                    <configuration>
-                        <source>${maven.compiler.source}</source>
-                        <target>${maven.compiler.target}</target>
-                        <!--<annotationProcessorPaths>-->
-                            <!--<path>-->
-                                <!--<groupId>org.projectlombok</groupId>-->
-                                <!--<artifactId>lombok</artifactId>-->
-                                <!--<version>${lombok.version}</version>-->
-                            <!--</path>-->
-                        <!--</annotationProcessorPaths>-->
-                        <!--&lt;!&ndash; this helps when getting error: file should be on source path, or on patch path for module &ndash;&gt;-->
-                        <!--<compilerArgs>-->
-                            <!--<arg>-sourcepath</arg>-->
-                            <!--<arg>${project.basedir}/src/main/java${path.separator}${project.basedir}/target/generated-sources/annotations${path.separator}/</arg>-->
-                        <!--</compilerArgs>-->
-                    </configuration>
                 </plugin>
-                <!--<plugin>-->
-                    <!--&lt;!&ndash; jlink wont work until all dependencies have proper module-info.java files &ndash;&gt;-->
-                    <!--<artifactId>maven-jlink-plugin</artifactId>-->
-                    <!--<version>3.0.0-alpha-2-SNAPSHOT</version>-->
-                    <!--<extensions>true</extensions>-->
-                    <!--<dependencies>-->
-                        <!--<dependency>-->
-                            <!--<groupId>org.ow2.asm</groupId>-->
-                            <!--<artifactId>asm</artifactId>-->
-                            <!--<version>7.0</version>-->
-                        <!--</dependency>-->
-                    <!--</dependencies>-->
-                <!--</plugin>-->
             </plugins>
         </pluginManagement>
 
@@ -191,11 +151,34 @@
                 <configuration>
                     <archive>
                         <manifest>
+                            <!--<mainClass>dan.langford.tableflipper.cli.TableFlipperCli</mainClass>-->
+                            <mainClass>dan.langford.tableflipper.ui.ShadeLauncher</mainClass>
                             <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
                         </manifest>
                     </archive>
                 </configuration>
             </plugin>
+
+            <plugin>
+                <artifactId>maven-shade-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <transformers>
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                    <!--<mainClass>dan.langford.tableflipper.ui.TableFlipperCli</mainClass>-->
+                                    <mainClass>dan.langford.tableflipper.ui.ShadeLauncher</mainClass>
+                                </transformer>
+                            </transformers>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
             </plugin>
@@ -264,13 +247,6 @@
 
     <repositories>
         <repository>
-            <!-- includes snakeyaml snapshots  -->
-            <id>sonatype-snapshots</id>
-            <url>https://oss.sonatype.org/content/groups/public/</url>
-            <snapshots><enabled>true</enabled></snapshots>
-            <releases><enabled>false</enabled></releases>
-        </repository>
-        <repository>
             <!-- includes org.apache:apache parent pom snapshots -->
             <id>apache-snapshot</id>
             <url>https://repository.apache.org/content/repositories/snapshots-group</url>
@@ -278,14 +254,4 @@
             <releases><enabled>false</enabled></releases>
         </repository>
     </repositories>
-    <!--<pluginRepositories>-->
-        <!--<pluginRepository>-->
-            <!--&lt;!&ndash; includes maven-jlink-plugin snapshot builds &ndash;&gt;-->
-            <!--<id>apache-snapshot</id>-->
-            <!--<url>https://repository.apache.org/content/repositories/snapshots-group</url>-->
-            <!--<snapshots><enabled>true</enabled></snapshots>-->
-            <!--<releases><enabled>false</enabled></releases>-->
-        <!--</pluginRepository>-->
-    <!--</pluginRepositories>-->
-
 </project>

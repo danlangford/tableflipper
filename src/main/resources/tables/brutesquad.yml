@@ -1,0 +1,87 @@
+tables:
+
+  travel_pace_FOOT_FAST:
+    roll: 1d6
+    results:
+      '1': "2:00"
+      '2-4': "2:30"
+      '5-6': "3:00"
+  travel_pace_FOOT_NORMAL:
+    roll: 1d1
+    results:
+      '1': "3:00"
+  travel_pace_FOOT_SLOW:
+    roll: 1d6
+    results:
+      '1': "4:00"
+      '2-4': "3:30"
+      '5-6': "3:00"
+  travel_pace_CANOE_FAST:
+    roll: 1d6
+    results:
+      '1': "1:00"
+      '2-4': "1:30"
+      '5-6': "2:00"
+  travel_pace_CANOE_NORMAL:
+    roll: 1d1
+    results:
+      '1': "2:00"
+  travel_pace_CANOE_SLOW:
+    roll: 1d6
+    results:
+      '1': "3:00"
+      '2-4': "2:30"
+      '5-6': "2:00"
+  precipitation:
+    roll: 1d20
+    results:
+      '1-4': Sunny, not a cloud in the sky
+      '5-16': Lightly raining, as per the norm
+      '17-19': HEAVY rain. HALF distance for ranged weapons, DIS on perception, fires cant stay lit
+      '20': TROPICAL STORM!!!! HALF distance for ranged weapons, DIS on perception, fires cant stay lit, canoes swamped, DIS vs LOST, constant exhaustion checks
+  encounter_roll:
+    roll: 1d20
+    results:
+      '1-4': Uneventful
+      '5-9': no encounter, weird <table weird>
+      '10-15': no encounter, monument <table monument>
+      '16-20': ENCOUNTER <table encounter_<var terrain>>
+  monument:
+    roll: 1d20
+    results:
+      '1': Sealed burial mound or pyramid
+      '2': Plundered burial mound or pyramid
+      '3': Faces carved into a mountainside or cliff
+      '4': Giant statues carved out of a mountainside or cliff
+      '5-6': Intact obelisk etched with a warning, historical lore, dedication, or religious iconography
+      '7-8': Ruined or toppled obelisk1
+      '9-10': Intact statue of a person or deity
+      '11-13': Ruined or toppled statue of a person or deity
+      '14': Great stone wall, intact, with tower fortifications spaced at one-mile intervals
+      '15': Great stone wall in ruins
+      '16': Great stone arch
+      '17': Fountain
+      '18': Intact circle of standing stones
+      '19': Ruined or toppled circle of standing stones
+      '20': Totem pole
+  weird:
+    roll: 1d20
+    results:
+      '1-2': Dead magic zone (similar to an antimagic field)
+      '3': Wild magic zone (roll on the Wild Magic Surge table in the Player’s Handbook whenever a spell is cast within the zone)
+      '4': Boulder carved with talking faces
+      '5': Crystal cave that mystically answers questions
+      '6': Ancient tree containing a trapped spirit
+      '7-8': Battlefield where lingering fog occasionally assumes humanoid forms
+      '9-10': Permanent portal to another plane of existence
+      '11': Wishing well
+      '12': Giant crystal shard protruding from the ground
+      '13': Wrecked ship, which might be nowhere near water
+      '14-15': Haunted hill or barrow mound
+      '16': River ferry guided by a skeletal captain
+      '17': Field of petrified soldiers or other creatures
+      '18': Forest of petrified or awakened trees
+      '19': Canyon containing a dragons’ graveyard
+      '20': Floating earth mote with a tower on it
+
+
