@@ -82,7 +82,7 @@ tables:
   wild_magic/floaty_things:
     oneOf: [butterflies, flower petals, bubbles, gnats, feathers, humming birds, balls, balloons, leaves, plumes of smoke, motes of light, flames, droplets, dandelion seeds, flies]
   wild_magic/float_action:
-    oneOf: [float, dance, hover, twirl, swirl, hover, waft, drift, bob, spin, flicker, flutter, waver]
+    oneOf: [float, dance, hover, twirl, swirl, waft, drift, bob, spin, flicker, flutter, waver]
   wild_magic/substantial_level:
     oneOf: [real, illusory, ethereal, astral, shadowfell, feywild, celestial, demonic]
   # character capability could potentially be move to utility or core, but for now it is here
