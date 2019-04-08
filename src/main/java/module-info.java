@@ -20,6 +20,11 @@ module dan.langford.tableflipper {
   opens dan.langford.tableflipper.cli to
       com.google.guice;
 
+  opens dan.langford.tableflipper.core.plugin to
+      com.google.guice;
+  opens dan.langford.tableflipper.core to
+      com.google.guice;
+
   requires javafx.controls;
   requires javafx.fxml;
   requires flexmark;
