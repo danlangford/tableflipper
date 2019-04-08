@@ -13,28 +13,25 @@ import org.testfx.matcher.control.ListViewMatchers;
 @ExtendWith(ApplicationExtension.class)
 public class TableFlipperTest {
 
-    @Start
-    void onStart(Stage stage) throws Exception {
-        new TableFlipperApp().start(stage);
-    }
+  @Start
+  void onStart(Stage stage) throws Exception {
+    new TableFlipperApp().start(stage);
+  }
 
-    @Test
-    void should_contain_list_items() {
+  @Test
+  void should_contain_list_items() {
 
-        // expect:
-        FxAssert.verifyThat("#tableList",  CoreMatchers.not(ListViewMatchers.isEmpty()));
-    }
+    // expect:
+    FxAssert.verifyThat("#tableList", CoreMatchers.not(ListViewMatchers.isEmpty()));
+  }
 
-    @Test
-    void should_filter_away_items(FxRobot robot) {
+  @Test
+  void should_filter_away_items(FxRobot robot) {
 
-        // when:
-        robot.clickOn("#filter");
-        robot.write("asdfasdfasdfasdf");
+    // when:
+    robot.clickOn("#filter");
+    robot.write("asdfasdfasdfasdf");
 
-        FxAssert.verifyThat("#tableList",  ListViewMatchers.isEmpty());
-
-
-    }
-
+    FxAssert.verifyThat("#tableList", ListViewMatchers.isEmpty());
+  }
 }

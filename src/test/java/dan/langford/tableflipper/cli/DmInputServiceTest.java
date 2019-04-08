@@ -1,28 +1,26 @@
 package dan.langford.tableflipper.cli;
 
-
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.util.List;
 import java.util.Scanner;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
 
 public class DmInputServiceTest {
 
-    @Test
-    public void test(){
+  @Test
+  public void test() {
 
-        DmInputService dm = new DmInputService(new Scanner("dan"));
+    DmInputService dm = new DmInputService(new Scanner("dan"));
 
-        String response = dm.ask("what is your name");
+    String response = dm.ask("what is your name");
 
-        assertEquals("dan",response);
+    assertEquals("dan", response);
 
-        dm = new DmInputService(new Scanner("t\n1"));
+    dm = new DmInputService(new Scanner("t\n1"));
 
-        response = dm.promptFor(List.of("one","two","three"));
+    response = dm.promptFor(List.of("one", "two", "three"));
 
-        assertEquals("three",response);
-    }
+    assertEquals("three", response);
+  }
 }
