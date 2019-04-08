@@ -24,6 +24,7 @@ module dan.langford.tableflipper {
   requires javafx.fxml;
   requires flexmark;
   requires flexmark.util;
+  requires commons.cli;
 
   opens dan.langford.tableflipper.ui to
       com.google.guice,
