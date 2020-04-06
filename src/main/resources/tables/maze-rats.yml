@@ -1,0 +1,100 @@
+tables:
+  mazerats/npc-reactions:
+    roll: 1d6
+    results:
+      1: hostile
+      2-3: wary
+      4-5: friendly
+      6: helpful
+  mazerats/char-gen:
+    oneOf:
+      - <table mazerats/char-gen/roll-abilities> Carrying <table mazerats/char-gen/items>, <table mazerats/char-gen/items>, <table mazerats/char-gen/items>, <table mazerats/char-gen/items>, <table mazerats/char-gen/items>, <table mazerats/char-gen/items>.
+  mazerats/char-gen/roll-abilities:
+    oneOf:
+      - +2STR +1DEX +0WIL
+      - +2STR +0DEX +1WIL
+      - +1STR +2DEX +0WIL
+      - +0STR +2DEX +1WIL
+      - +1STR +0DEX +2WIL
+      - +0STR +1DEX +2WIL
+  mazerats/char-gen/roll-ind-abil:
+    roll: 1d6
+    results:
+      1-2: +0
+      3-5: +1
+      6: +2
+  mazerats/char-gen/roll-abilities-seperatly:
+    oneOf:
+      - <table mazerats/char-gen/roll-ind-abil>STR <table mazerats/char-gen/roll-ind-abil>DEX <table mazerats/char-gen/roll-ind-abil>WIL
+  mazerats/char-gen/items:
+    oneOf: [Animal Scent, Beartrap, Bedroll, Caltrops, Chain (10'), Chalk,
+            Chisel, Crowbar, Fishing Net, Glass Marbles, Glue, Grappling Hook,
+            Grease, Hacksaw, Hammer, Hand Drill, Horn, Iron Spikes,
+            Iron Tongs, Lantern and Oil, Large Sack, Lockpicks (3), Manicles, Medicine (3),
+            Metal File, Rations (3), Rope (50'), Steel Wire, Shovel, Steel Mirror,
+            Ten Foot Pole, Tinderbox, Torch, Vial of Acid, Vial of Poison, Waterskin]
+
+
+  mazerats/spell-gen:
+    oneOf: [cast <table mazerats/spell-gen/formula/<roll 1d6>>]
+  mazerats/spell-gen/formula/1:
+    oneOf: [<table mazerats/spell-gen/physical-effect> <table mazerats/spell-gen/physical-form>, <table mazerats/spell-gen/ethereal-element> <table mazerats/spell-gen/physical-form>]
+  mazerats/spell-gen/formula/2:
+    oneOf: [<table mazerats/spell-gen/physical-effect> <table mazerats/spell-gen/ethereal-form>, <table mazerats/spell-gen/ethereal-element> <table mazerats/spell-gen/ethereal-form>]
+  mazerats/spell-gen/formula/3:
+    oneOf: [<table mazerats/spell-gen/ethereal-effect>  <table mazerats/spell-gen/physical-form>,  <table mazerats/spell-gen/physical-effect>  <table mazerats/spell-gen/physical-element>]
+  mazerats/spell-gen/formula/4:
+    oneOf: [<table mazerats/spell-gen/ethereal-effect> <table mazerats/spell-gen/ethereal-form>,  <table mazerats/spell-gen/physical-effect> <table mazerats/spell-gen/ethereal-element>]
+  mazerats/spell-gen/formula/5:
+    oneOf: [<table mazerats/spell-gen/physical-element>  <table mazerats/spell-gen/physical-form>, <table mazerats/spell-gen/ethereal-effect> <table mazerats/spell-gen/physical-element>]
+  mazerats/spell-gen/formula/6:
+    oneOf: [<table mazerats/spell-gen/physical-element> <table mazerats/spell-gen/ethereal-form>, <table mazerats/spell-gen/ethereal-effect> <table mazerats/spell-gen/ethereal-element>]
+
+  mazerats/spell-gen/physical-effect:
+    oneOf: [Animating, Attracting, Binding, Blossoming, Consuming, Creeping,
+            Crushing, Diminishing, Dividing, Duplicating, Enveloping, Expanding,
+            Fusing, Grasping, Hastening, Hindering, Illuminating, Imprisoning,
+            Levitating, Opening, Petrifying, Phasing, Piercing, Pursuing,
+            Reflecting, Regenerating, Rending, Repelling, Resurrecting, Screaming,
+            Sealing, Shapeshifting, Sheilding, Spawning, Transmuting, Transporting]
+
+  mazerats/spell-gen/physical-element:
+    oneOf: [Acid, Amber, Bark, Blood, Bone, Brine,
+            Clay, Crow, Crystal, Ember, Flesh, Fungus,
+            Glass, Honey, Ice, Insect, Wood, Lava,
+            Moss, Obsidian, Oil, Poison, Rat, Salt,
+            Sand, Sap, Serpent, Slime, Stone, Tar,
+            Thorn, Vine, Water, Wine, Wood, Worm]
+
+  mazerats/spell-gen/physical-form:
+    oneOf: [Altar, Armor, Arrow, Beast, Blade, Cauldron,
+            Chain, Chariot, Claw, Cloak, Colossus, Crown,
+            Elemental, Eye, Fountain, Gate, Golem, Hammer,
+            Horn, Key, Mask, Monolith, Pit, Prison,
+            Sentinel, Servant, Shield, Spear, Steed, Swarm,
+            Tentacle, Throne, Torch, Trap, Wall, Web]
+
+  mazerats/spell-gen/ethereal-effect:
+    oneOf: [Avenging, Banishing, Bewildering, Blinding Charming Communicating,
+            Compelling, Concealing, Deafening, Deceiving, Deciphering, Disquising,
+            Dispelling, Emboldening, Encoding, Energizing, Enlightening, Enraging,
+            Excruciating, Foreseeing, Intoxicating, Maddening, Mesmerizing, Mindreading,
+            Nullifying, Paralyzing, Revealing, Revolting, Scrying, Silencing,
+            Soothing, Summmoning, Terrifying, Warding, Wearying, Withering]
+
+  mazerats/spell-gen/ethereal-element:
+    oneOf: [Ash, Chaos, Distortion, Dream Dust, Echo,
+            Ectoplasm, Fire Fog, Ghost, Harmony, Heat,
+            Light, Lightening, Memory, Mind, Mutation, Negation,
+            Plague, Plasma, Probability, Rain, Rot, Shadow,
+            Smoke, Snow, Soul, Star, Statsis, Steam,
+            Thunder, Time, Void, Warp, Whisper, Wind]
+
+  mazerats/spell-gen/ethereal-form:
+    oneOf: [Aura, Beacon, Beam, Blast, Bob, Bolt,
+            Bubble, Call, Cascade, Circle, Cloud, Coil,
+            Cone, Cube, Dance, Disk, Field, Form,
+            Gaze, Loop, Moment, Nexus, Portal, Pulse,
+            Pyramid, Ray, Shard, Sphere, Spray, Storm,
+            Swarm, Torrent, Touch, Vortex, Wave, Word]
+
